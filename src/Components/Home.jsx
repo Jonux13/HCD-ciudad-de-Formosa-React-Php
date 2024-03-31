@@ -13,7 +13,7 @@ function Home() {
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Acerca del HCD</h2>
-              <p>Honorable Consejo Deliberante de la Ciudad de Formosa. </p>
+              <p>Honorable Concejo Deliberante de la Ciudad de Formosa. </p>
             </div>
             <div className="row content">
               <div className="col-lg-6">
