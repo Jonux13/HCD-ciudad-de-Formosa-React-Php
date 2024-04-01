@@ -35,7 +35,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div className="image-container position-relative">
                 <img
-                  src="../assets/img/edificio/foto8.jpeg"
+                  src="../assets/img/edificio/foto8.webp"
                   alt="Descripción de la imagen"
                   className="imagen img-fluid mt-4"
                   data-overlay-text="Fachada edificio día"
@@ -47,7 +47,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto9.jpg"
+                src="../assets/img/edificio/foto9.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Fachada edificio noche"
@@ -58,7 +58,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto10.jpeg"
+                src="../assets/img/edificio/foto10.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Perspectiva edificio noche"
@@ -69,7 +69,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto3.jpeg"
+                src="../assets/img/edificio/foto3.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Recinto deliberativo"
@@ -80,7 +80,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto4.jpeg"
+                src="../assets/img/edificio/foto4.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Salón central"
@@ -91,7 +91,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto2.jpeg"
+                src="../assets/img/edificio/foto2.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Recinto deliberativo"
@@ -102,7 +102,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto6.jpeg"
+                src="../assets/img/edificio/foto6.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Salón de conferencias"
@@ -113,7 +113,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto7.jpeg"
+                src="../assets/img/edificio/foto7.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Despacho presidencial"
@@ -124,7 +124,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto1.jpeg"
+                src="../assets/img/edificio/foto1.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Atril de autoridades deliberativas"
@@ -135,7 +135,7 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="image-container position-relative">
               <img
-                src="../assets/img/edificio/foto5.jpeg"
+                src="../assets/img/edificio/foto5.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
                 data-overlay-text="Administración"

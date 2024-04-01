@@ -78,7 +78,7 @@ function Home() {
                 data-aos-delay={100}
               >
                 <img
-                  src="assets/img/seccion_en_vivo/consejo deliberante sala.jpg"
+                  src="assets/img/seccion_en_vivo/consejo deliberante sala.webp"
                   className="img-fluid"
                   alt
                 />

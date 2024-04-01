@@ -22,7 +22,7 @@ function AutoridadesActuales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/institucional/autoridades_actuales/foto1.jpg"
+                    src="/assets/img/institucional/autoridades_actuales/foto1.webp"
                     className="img-fluid"
                     alt
                   />
@@ -43,7 +43,7 @@ function AutoridadesActuales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/institucional/autoridades_actuales/foto2.jpeg"
+                    src="/assets/img/institucional/autoridades_actuales/foto2.webp"
                     className="img-fluid"
                     alt
                   />
@@ -64,7 +64,7 @@ function AutoridadesActuales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/institucional/autoridades_actuales/foto2.jpeg"
+                    src="/assets/img/institucional/autoridades_actuales/foto2.webp"
                     className="img-fluid"
                     alt
                   />

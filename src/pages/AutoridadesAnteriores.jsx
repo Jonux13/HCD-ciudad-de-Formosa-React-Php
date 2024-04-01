@@ -21,7 +21,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto1.jpg"
+                    src="../assets/img/institucional/foto1.webp"
                     className="img-fluid"
                     alt
                   />
@@ -40,7 +40,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto2.jpeg"
+                    src="../assets/img/institucional/foto2.webp"
                     className="img-fluid"
                     alt
                   />
@@ -60,7 +60,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto3.jpeg"
+                    src="../assets/img/institucional/foto3.webp"
                     className="img-fluid"
                     alt
                   />
@@ -80,7 +80,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto4.jpeg"
+                    src="../assets/img/institucional/foto4.webp"
                     className="img-fluid"
                     alt
                   />
@@ -104,7 +104,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto5.jpeg"
+                    src="../assets/img/institucional/foto5.webp"
                     className="img-fluid"
                     alt
                   />
@@ -124,7 +124,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto6.jpeg"
+                    src="../assets/img/institucional/foto6.webp"
                     className="img-fluid"
                     alt
                   />
@@ -144,7 +144,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto7.jpeg"
+                    src="../assets/img/institucional/foto7.webp"
                     className="img-fluid"
                     alt
                   />
@@ -164,7 +164,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto8.jpeg"
+                    src="../assets/img/institucional/foto8.webp"
                     className="img-fluid"
                     alt
                   />
@@ -184,7 +184,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto9.jpeg"
+                    src="../assets/img/institucional/foto9.webp"
                     className="img-fluid"
                     alt
                   />
@@ -204,7 +204,7 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto10.jpeg"
+                    src="../assets/img/institucional/foto10.webp"
                     className="img-fluid"
                     alt
                   />
@@ -224,24 +224,10 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto11.jpeg"
+                    src="../assets/img/institucional/foto11.webp"
                     className="img-fluid"
                     alt
-                  />
-                  <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div>
+                  />              
                 </div>
                 <div className="member-info">
                   <h4>Fernando Antonio De Vido</h4>
@@ -257,24 +243,10 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto12.jpeg"
+                    src="../assets/img/institucional/foto12.webp"
                     className="img-fluid"
                     alt
-                  />
-                  <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div>
+                  />              
                 </div>
                 <div className="member-info">
                   <h4>Antonio Taboada</h4>
@@ -290,24 +262,10 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto13.jpeg"
+                    src="../assets/img/institucional/foto13.webp"
                     className="img-fluid"
                     alt
-                  />
-                  <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div>
+                  />               
                 </div>
                 <div className="member-info">
                   <h4>Hugo Orlando Garcia</h4>
@@ -323,24 +281,10 @@ function AutoridadesAnteriores() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/institucional/foto14.jpeg"
+                    src="../assets/img/institucional/foto14.webp"
                     className="img-fluid"
                     alt
-                  />
-                  <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div>
+                  />           
                 </div>
                 <div className="member-info">
                   <h4>Rube Dario Di Martino </h4>

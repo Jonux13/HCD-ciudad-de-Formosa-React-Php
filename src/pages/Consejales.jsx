@@ -20,7 +20,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto1.jpg"
+                    src="../assets/img/consejales/foto1.webp"
                     className="img-fluid"
                     alt
                   />
@@ -53,7 +53,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto2.jpg"
+                    src="../assets/img/consejales/foto2.webp"
                     className="img-fluid"
                     alt
                   />
@@ -86,7 +86,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto3.jpg"
+                    src="../assets/img/consejales/foto3.webp"
                     className="img-fluid"
                     alt
                   />
@@ -119,7 +119,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto4.jpg"
+                    src="../assets/img/consejales/foto4.webp"
                     className="img-fluid"
                     alt
                   />
@@ -152,7 +152,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto5.jpg"
+                    src="../assets/img/consejales/foto5.webp"
                     className="img-fluid"
                     alt
                   />
@@ -185,7 +185,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto6.jpg"
+                    src="../assets/img/consejales/foto6.webp"
                     className="img-fluid"
                     alt
                   />
@@ -218,7 +218,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto7.jpg"
+                    src="../assets/img/consejales/foto7.webp"
                     className="img-fluid"
                     alt
                   />
@@ -251,7 +251,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto8.jpg"
+                    src="../assets/img/consejales/foto8.webp"
                     className="img-fluid"
                     alt
                   />
@@ -284,7 +284,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto12.jpg"
+                    src="/assets/img/consejales/foto12.webp"
                     className="img-fluid"
                     alt
                   />
@@ -317,7 +317,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto9.jpg"
+                    src="../assets/img/consejales/foto9.webp"
                     className="img-fluid"
                     alt
                   />
@@ -350,7 +350,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto10.jpg"
+                    src="../assets/img/consejales/foto10.webp"
                     className="img-fluid"
                     alt
                   />
@@ -383,7 +383,7 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="../assets/img/consejales/foto11.jpg"
+                    src="../assets/img/consejales/foto11.webp"
                     className="img-fluid"
                     alt
                   />

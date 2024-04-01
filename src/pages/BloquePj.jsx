@@ -22,7 +22,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto1.jpg"
+                    src="/assets/img/consejales/foto1.webp"
                     className="img-fluid"
                     alt
                   />
@@ -56,7 +56,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto5.jpg"
+                    src="/assets/img/consejales/foto5.webp"
                     className="img-fluid"
                     alt
                   />
@@ -90,7 +90,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto6.jpg"
+                    src="/assets/img/consejales/foto6.webp"
                     className="img-fluid"
                     alt
                   />
@@ -124,7 +124,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto7.jpg"
+                    src="/assets/img/consejales/foto7.webp"
                     className="img-fluid"
                     alt
                   />
@@ -160,7 +160,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto8.jpg"
+                    src="/assets/img/consejales/foto8.webp"
                     className="img-fluid"
                     alt
                   />
@@ -194,7 +194,7 @@ function BloquePj() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto12.jpg"
+                    src="/assets/img/consejales/foto12.webp"
                     className="img-fluid"
                     alt
                   />

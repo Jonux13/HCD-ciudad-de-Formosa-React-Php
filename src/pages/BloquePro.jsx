@@ -20,7 +20,7 @@ function BloquePro() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto2.jpg"
+                    src="/assets/img/consejales/foto2.webp"
                     className="img-fluid"
                     alt
                   />

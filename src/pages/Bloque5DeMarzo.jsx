@@ -20,7 +20,7 @@ function Bloque5DeMarzo() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/consejales/foto10.jpg"
+                    src="/assets/img/consejales/foto10.webp"
                     className="img-fluid"
                     alt
                   />

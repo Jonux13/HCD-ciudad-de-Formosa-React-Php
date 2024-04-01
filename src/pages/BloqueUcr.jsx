@@ -21,7 +21,7 @@ function BloqueUcr() {
                 <div className="member">
                   <div className="member-img">
                     <img
-                      src="/assets/img/consejales/foto9.jpg"
+                      src="/assets/img/consejales/foto9.webp"
                       className="img-fluid"
                       alt
                     />
@@ -55,7 +55,7 @@ function BloqueUcr() {
                 <div className="member">
                   <div className="member-img">
                     <img
-                      src="/assets/img/consejales/foto11.jpg"
+                      src="/assets/img/consejales/foto11.webp"
                       className="img-fluid"
                       alt
                     />
