@@ -120,39 +120,18 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/legislativo/orden del dia"
-                      className="nav-link scrollto"
-                    >
-                      Orden del día
-                    </NavLink>
-
-                    {/* <NavLink
-                      to="/legislativo/sesiones"
-                      className="nav-link scrollto"
-                    >
-                      Sesiones
-                    </NavLink> */}
-
-                    <NavLink
                       to="/legislativo/sesionesOrdinarias"
                       className="nav-link scrollto"
                     >
                       Sesiones Ordinarias
                     </NavLink>
 
-                    {/* <NavLink
-                      to="/legislativo/comisiones"
-                      className="nav-link scrollto"
-                    >
-                      Comisiones
-                    </NavLink> */}
-
                     <li>
                       <a
                         href="https://www.facebook.com/FormosaTuCiudad/videos/524025079814022"
                         target="_blank"
                       >
-                        sesiones en vivo
+                        Sesiones en vivo
                       </a>
                     </li>
                   </div>
@@ -193,7 +172,10 @@ function Header() {
                     <a href>Ordenanzas</a>
                   </h4>
                   <div className="description decription-box">
-                    <NavLink to="/ordenanzas/ordenanzas" className="nav-link scrollto">
+                    <NavLink
+                      to="/ordenanzas/ordenanzas"
+                      className="nav-link scrollto"
+                    >
                       Ordenanzas
                     </NavLink>
                     <NavLink

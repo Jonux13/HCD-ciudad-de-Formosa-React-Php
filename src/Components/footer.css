@@ -7,6 +7,10 @@
   margin-bottom: 12px;
 }
 
+.footer-contact {
+  margin-bottom: 10px;
+}
+
 .footer-container h3 {
   margin-top: 6px;
   margin-left: 5px;
@@ -51,3 +55,28 @@
   margin-top: 5px;
   font-weight: 600;
 }
+
+.social-instagram {
+  margin-left: 20px;
+}
+
+.social-instagram span {
+  margin-left: 5px;
+  color: #2487ce;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .social-facebook {
+    display: inline-block;
+  .social-instagram {
+    margin-left: 0;
+    margin-top: -30px;
+  }  
+  }
+}
+

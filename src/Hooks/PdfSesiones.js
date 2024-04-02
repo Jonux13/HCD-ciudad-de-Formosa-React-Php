@@ -10,7 +10,8 @@ const getPdfUrls = async (fileName) => {
     const pdfUrls = await Promise.all(
       pdfFilesSnapshot.items.map(async (item) => {
         const url = await item.getDownloadURL();
-        return { name: item.name, url };
+        const fileType = item.name.split('.').pop().toLowerCase(); // Obtener la extensión del archivo y convertirla en minúscula
+        return { name: item.name, url, type: fileType }; 
       })
     );
 

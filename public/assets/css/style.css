@@ -40,8 +40,8 @@ h6 {
   bottom: 15px;
   z-index: 996;
   background: #2487ce;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 4px;
   transition: all 0.4s;
 }
@@ -418,7 +418,7 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/hero/fachada_COF_hero_section1.jpeg") top center;
+  background: url("../img/hero/fachada_COF_hero_section1.webp") top center;
   background-size: cover;
   transition: background-image 0.5s ease;
   position: relative;
@@ -594,7 +594,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-top: -15px;
   font-size: 12px;
   color: #919191;
 }
@@ -666,7 +666,8 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 15px 0;
+  padding: 10px 0;
+  /* box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08); */
 }
 
 .counts .count-box {
@@ -1726,7 +1727,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 53px 0 0 0;
+  padding: 55px 0 0 0;
   background: #fff;
 }
 

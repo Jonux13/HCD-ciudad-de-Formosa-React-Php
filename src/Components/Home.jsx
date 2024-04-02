@@ -105,9 +105,9 @@ function Home() {
                     <i className="ri-circle-fill" /> Es un honor darles la
                     bienvenida a este espacio de participación Ciudadana y
                     transparencia democrática. Las sesiones en vivo del Concejo
-                    Deliberante de la ciudad de Formosa representan un canal directo para presenciar el
-                    proceso deliberativo que da forma a nuestra comunidad en
-                    tiempo real.
+                    Deliberante de la ciudad de Formosa representan un canal
+                    directo para presenciar el proceso deliberativo que da forma
+                    a nuestra comunidad en tiempo real.
                   </li>
                   <li>
                     <i className="ri-circle-fill" /> Durante estas sesiones, se
@@ -216,11 +216,12 @@ function Home() {
                       defender los derechos de los vecinos, procurándoles
                       mayores servicios con el propósito de mejorar su calidad
                       de vida, elevando al Departamento Ejecutivo (Municipalidad
-                      de la ciudad de Formosa) proyectos y propuestas para que éste los
-                      haga cumplir. Se preocupa por obras, servicios, cultura y
-                      educación. El Honorable Concejo Deliberante de la ciudad de Formosa está formado por 12 concejales, organizados en
-                      distintas comisiones para desarrollar un trabajo fecundo y
-                      coherente.
+                      de la ciudad de Formosa) proyectos y propuestas para que
+                      éste los haga cumplir. Se preocupa por obras, servicios,
+                      cultura y educación. El Honorable Concejo Deliberante de
+                      la ciudad de Formosa está formado por 12 concejales,
+                      organizados en distintas comisiones para desarrollar un
+                      trabajo fecundo y coherente.
                     </p>
                   </div>
                 </li>
@@ -231,7 +232,8 @@ function Home() {
                     data-bs-target="#faq-list-4"
                     className="collapsed"
                   >
-                    ¿Cómo funciona el Concejo Deliberante? <i className="bx bx-chevron-down icon-show" />
+                    ¿Cómo funciona el Concejo Deliberante?{" "}
+                    <i className="bx bx-chevron-down icon-show" />
                     <i className="bx bx-chevron-up icon-close" />
                   </a>
                   <div
@@ -240,7 +242,8 @@ function Home() {
                     data-bs-parent=".faq-list"
                   >
                     <p>
-                    Los concejales se convocan a través de sesiones, además de las reuniones de comisión que cada una de ésta propone.
+                      Los concejales se convocan a través de sesiones, además de
+                      las reuniones de comisión que cada una de ésta propone.
                     </p>
                   </div>
                 </li>
@@ -261,7 +264,10 @@ function Home() {
                     data-bs-parent=".faq-list"
                   >
                     <p>
-                    Es una reunión de concejales conducida por uno de ellos electo como presidente durante la cual se tratan asuntos de incumbencia del Concejo, de acuerdo con un Orden del Día, votándose las decisiones.
+                      Es una reunión de concejales conducida por uno de ellos
+                      electo como presidente durante la cual se tratan asuntos
+                      de incumbencia del Concejo, de acuerdo con un Orden del
+                      Día, votándose las decisiones.
                     </p>
                   </div>
                 </li>

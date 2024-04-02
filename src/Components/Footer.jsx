@@ -58,15 +58,27 @@ function Footer() {
                     <br />
                   </p>
                   <div className="social-links text-md-right pt-3 pt-md-0 social-facebook">
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61557813812573"
-                      className="facebook"
-                      target="blank" 
-                    >
-                      <i className="bx bxl-facebook" />
-                      
-                    </a>
-                    <span>Facebook</span>
+                    <div>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61557813812573"
+                        className="facebook"
+                        target="blank"
+                      >
+                        <i className="bx bxl-facebook" />
+                      </a>
+                      <span>Facebook</span>
+                    </div>
+
+                    <div className="social-links text-md-right pt-3 pt-md-0 social-instagram">
+                      <a
+                        href="https://www.instagram.com/formosahcd/"
+                        class="instagram"
+                        target="blank"
+                      >
+                        <i class="bx bxl-instagram"></i>
+                      </a>
+                      <span>Instagram</span>
+                    </div>
                   </div>
                 </div>
 
