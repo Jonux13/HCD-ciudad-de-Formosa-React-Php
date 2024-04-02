@@ -1,0 +1,21 @@
+.icono-pdf {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ec3f3f;
+}
+
+.icono-imagen {
+  cursor: pointer;
+  font-size: 18px;
+  color: #2487ce;
+}
+
+.custom-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-list li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
