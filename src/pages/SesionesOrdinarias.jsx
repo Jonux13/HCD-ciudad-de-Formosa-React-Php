@@ -1,9 +1,6 @@
 import React from "react";
 import PdfList from "../Hooks/PdfList";
-import "./sesionesOrdinarias.css"
-
-
-
+import "./sesionesOrdinarias.css";
 
 function SesionesOrdinarias() {
   return (
@@ -18,34 +15,34 @@ function SesionesOrdinarias() {
             <ul className="custom-list">
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA
-                06-03-24 A LAS 19:00 Hs.{" "}
-                <div className="d-flex">
-                  <PdfList  fileName="1° Sesion Ordinaria 06.03.24.pdf" />
-                  <PdfList  fileName="1°Sesion.webp" />
-                  <PdfList  fileName="1°Sesion_2.webp" />
-                  <PdfList  fileName="1°Sesion_3.webp" />
-
+                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
+                <span>06-03-24</span> A LAS 19:00 Hs.{" "}
+                <div className="d-flex container-list">
+                  <PdfList fileName="1° Sesion Ordinaria 06.03.24.pdf" />
+                  <PdfList fileName="1°Sesion.webp" />
+                  <PdfList fileName="1°Sesion_2.webp" />
+                  <PdfList fileName="1°Sesion_3.webp" />
                 </div>
               </li>
 
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA
-                13-03-24 A LAS 19:00 Hs.
-                <PdfList fileName="2° Sesion Ordinaria 11.03.24.pdf" />
+                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
+                <span>13-03-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="2° Sesion Ordinaria 11.03.24.pdf" />
+                </div>
               </li>
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA
-                20-03-24 A LAS 19:00 Hs.
-                <div className="d-flex">
-                <PdfList  fileName="3° Sesion ORdinaria 18.03.24.pdf" />
-                <PdfList  fileName="3° Sesion_1.webp" />
-                <PdfList  fileName="3° Sesion_2.webp" />
-                <PdfList  fileName="3° Sesion_3.webp" />
+                SUMARIO DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
+                <span>20-03-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="3° Sesion ORdinaria 18.03.24.pdf" />
+                  <PdfList fileName="3° Sesion_1.webp" />
+                  <PdfList fileName="3° Sesion_2.webp" />
+                  <PdfList fileName="3° Sesion_3.webp" />
                 </div>
-                
               </li>
             </ul>
           </div>
