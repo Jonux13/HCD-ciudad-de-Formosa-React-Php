@@ -2,14 +2,14 @@
 import React from "react";
 import { useState } from "react";
 //import FileList from "./FileList";
-import { obtenerDocumentos } from "../Hooks/ObtenerDocumentosHook";
+import { obtenerResoluciones } from "../Hooks/ObtenerResoluciones";
 import { filteredFiles } from "../Hooks/FilteredFilesHook";
 import FileTableResoluciones from "./FileTableResoluciones";
 import "../pages/ordenanzas.css";
 
 export const BuscarResolucion = () => {
   const [docusSearch, setDocusSearch] = useState(""); // Estado para almacenar el término de búsqueda
-  const [docus, setDocus] = useState([]); // Estado para almacenar la lista de archivos
+  const [resoluciones, setResolucion] = useState([]); // Estado para almacenar la lista de archivos
   const [isSearching, setIsSearching] = useState(false); // Estado para controlar si se está realizando una búsqueda
   const [showFiles, setShowFiles] = useState(false); // Estado para controlar si se deben mostrar los archivos
   const [buscando, setBuscando] = useState(false); // Estado para controlar "Buscando..."
@@ -19,7 +19,7 @@ export const BuscarResolucion = () => {
     e.preventDefault();
     setIsSearching(true);
     setBuscando(true); // Indicar que se está realizando una búsqueda
-    await obtenerDocumentos(setDocus, setBuscando); // Obtener documentos y finalizar búsqueda
+    await obtenerResoluciones(setResolucion, setBuscando); // Obtener documentos y finalizar búsqueda
     setShowFiles(true); // Mostrar archivos después de la búsqueda
   };
 
@@ -57,7 +57,7 @@ export const BuscarResolucion = () => {
       {buscando && <h2 className="buscando">Buscando...</h2>}
       {showFiles && !buscando && (
         <FileTableResoluciones
-          files={filteredFiles(isSearching, docus, docusSearch)}
+          files={filteredFiles(isSearching, resoluciones, docusSearch)}
           handleFileClick={handleFileClick}
         />
       )}

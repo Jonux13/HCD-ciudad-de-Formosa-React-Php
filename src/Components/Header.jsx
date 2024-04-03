@@ -57,7 +57,7 @@ function Header() {
             data-aos-delay={100}
           >
             <div className="row justify-content-left custom-margin">
-              <div className="col-xl-7 col-lg-9 text-left">
+              <div className="col-xl-7 col-lg-9 text-left custom-margin">
                 <h1>
                   <p class="word">Honorable</p>
                   <p class="word">Concejo</p>
@@ -71,7 +71,7 @@ function Header() {
 
             <div className="row icon-boxes">
               <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 caja-container"
                 data-aos="zoom-in"
                 data-aos-delay={200}
               >
@@ -107,7 +107,7 @@ function Header() {
                 </div>
               </div>
               <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 caja-container"
                 data-aos="zoom-in"
                 data-aos-delay={300}
               >
@@ -138,7 +138,7 @@ function Header() {
                 </div>
               </div>
               <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 caja-container"
                 data-aos="zoom-in"
                 data-aos-delay={400}
               >
@@ -160,7 +160,7 @@ function Header() {
                 </div>
               </div>
               <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+                className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 caja-container"
                 data-aos="zoom-in"
                 data-aos-delay={500}
               >

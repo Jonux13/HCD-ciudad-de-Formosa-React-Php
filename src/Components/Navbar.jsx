@@ -16,11 +16,12 @@ function Navbar() {
     <div>
       {/* ======= Header ======= */}
       <header id="header" className="fixed-top">
-        <a href="#" className="logo">
-          <img src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png" alt="Logo" className="img-fluid" />
-        </a>
+        
 
         <div className="container d-flex align-items-center justify-content-between">
+          <a href="#" className="logo">
+          <img src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png" alt="Logo" className="img-fluid" />
+        </a>
           <h1 className="logo">
             <a href="#">HCD</a>
           </h1>
