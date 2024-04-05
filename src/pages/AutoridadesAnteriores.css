@@ -1,3 +1,15 @@
 .autoridades h2 {
   margin-top: 20px;
 }
+
+@media (min-width: 360px) {
+  .container-anteriores {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* background-color: red; */
+  }
+
+
+  
+}

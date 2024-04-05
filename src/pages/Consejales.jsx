@@ -1,4 +1,5 @@
 import React from "react";
+import "./concejales.css"
 
 function Consejales() {
   return (
@@ -13,7 +14,7 @@ function Consejales() {
           </div>
           <div className="row">
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={100}
             >
@@ -46,7 +47,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={200}
             >
@@ -79,7 +80,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={300}
             >
@@ -112,7 +113,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -145,7 +146,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -178,7 +179,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -211,7 +212,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -244,7 +245,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -277,7 +278,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -310,7 +311,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -343,7 +344,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -376,7 +377,7 @@ function Consejales() {
               </div>
             </div>
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >

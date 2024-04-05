@@ -1,4 +1,5 @@
 import React from "react";
+import "./concejales.css"
 
 function Bloque5DeMarzo() {
   return (
@@ -13,7 +14,7 @@ function Bloque5DeMarzo() {
           </div>
           <div className="row justify-content-center">
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >

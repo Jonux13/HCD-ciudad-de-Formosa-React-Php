@@ -1,4 +1,5 @@
 import React from "react";
+import "./concejales.css"
 import "./BloquePj.css";
 
 function BloquePj() {
@@ -15,7 +16,7 @@ function BloquePj() {
 
           <div className="row justify-content-center">
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={100}
             >
@@ -49,7 +50,7 @@ function BloquePj() {
             </div>
 
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -83,7 +84,7 @@ function BloquePj() {
             </div>
 
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -117,7 +118,7 @@ function BloquePj() {
             </div>
 
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -153,7 +154,7 @@ function BloquePj() {
 
           <div className="row justify-content-center">
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch center"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch center container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >
@@ -187,7 +188,7 @@ function BloquePj() {
             </div>
 
             <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch"
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
               data-aos-delay={400}
             >

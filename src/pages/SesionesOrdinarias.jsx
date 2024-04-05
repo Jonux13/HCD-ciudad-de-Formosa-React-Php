@@ -44,6 +44,21 @@ function SesionesOrdinarias() {
                   <PdfList fileName="3° Sesion_3.webp" />
                 </div>
               </li>
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
+                <span>27-03-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="2024-03-29 1.pdf" />
+                  <PdfList fileName="2024-03-29 2.pdf" />
+                  <PdfList fileName="2024-03-29 3.pdf" />
+                  <PdfList fileName="2024-03-29 at 19.38.02 (2).pdf" />
+                  <PdfList fileName="3° Sesion_3.webp" />
+                  <PdfList fileName="1°Sesion_2.webp" />
+                  <PdfList fileName="2024-03-29 at 19.38.02 (3).webp" />
+                  <PdfList fileName="2024-03-29 at 19.38.02 (4).webp" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>

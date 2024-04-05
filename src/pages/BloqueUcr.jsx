@@ -1,4 +1,5 @@
 import React from "react";
+import "./concejales.css"
 
 function BloqueUcr() {
   return (
@@ -14,7 +15,7 @@ function BloqueUcr() {
             </div>
             <div className="row justify-content-center">
               <div
-                className="col-lg-3 col-md-6 d-flex align-items-stretch"
+                className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
                 data-aos="fade-up"
                 data-aos-delay={400}
               >
@@ -48,7 +49,7 @@ function BloqueUcr() {
               </div>
 
               <div
-                className="col-lg-3 col-md-6 d-flex align-items-stretch"
+                className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
                 data-aos="fade-up"
                 data-aos-delay={400}
               >

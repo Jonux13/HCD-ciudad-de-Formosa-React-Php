@@ -140,8 +140,8 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="container d-md-flex py-4">
-            <div className="me-md-auto text-center text-md-start d-flex">
+          <div className="container container-t  d-md-flex py-4">
+            <div className="me-md-auto text-center text-md-start d-flex container-powered">
               <div className="copyright me-2">
                 © Copyright{" "}
                 <strong>
