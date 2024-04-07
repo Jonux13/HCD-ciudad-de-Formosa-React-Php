@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
+import Home from "./pages/Home";
 import Footer from "./Components/Footer";
 import Ordenanzas from "./pages/Ordenanzas";
 import Navbar from "./Components/Navbar";
@@ -18,8 +18,7 @@ import Bloque5DeMarzo from "./pages/Bloque5DeMarzo";
 import BloquePro from "./pages/BloquePro";
 import SesionesOrdinarias from "./pages/SesionesOrdinarias";
 import Resoluciones from "./pages/Resoluciones";
-
-
+import Comisiones from "./pages/Comisiones";
 
 function AppRouter() {
   return (
@@ -39,11 +38,12 @@ function AppRouter() {
         />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/consejales/concejales" element={<Consejales />} />
+        <Route path="/consejales/comisiones" element={<Comisiones />} />
         <Route
           path="/consejales/bloqueDeConcejales/pj"
           element={<BloquePj />}
         />
-         <Route
+        <Route
           path="/consejales/bloqueDeConcejales/ucr"
           element={<BloqueUcr />}
         />
@@ -51,17 +51,20 @@ function AppRouter() {
           path="/consejales/bloqueDeConcejales/nuevoPais"
           element={<BloqueNuevoPais />}
         />
-            <Route
+        <Route
           path="/consejales/bloqueDeConcejales/5DeMarzo"
           element={<Bloque5DeMarzo />}
         />
-             <Route
+        <Route
           path="/consejales/bloqueDeConcejales/pro"
           element={<BloquePro />}
         />
         <Route path="/ordenanzas/ordenanzas" element={<Ordenanzas />} />
-        <Route path="/ordenanzas/resoluciones" element={<Resoluciones/>} />
-        <Route path="/legislativo/sesionesOrdinarias" element={<SesionesOrdinarias />} />
+        <Route path="/ordenanzas/resoluciones" element={<Resoluciones />} />
+        <Route
+          path="/legislativo/sesionesOrdinarias"
+          element={<SesionesOrdinarias />}
+        />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />

@@ -3,50 +3,59 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const [dropdownInstitucionalOpen, setDropdownInstitucionalOpen] = useState(false);
+  const [dropdownInstitucionalOpen, setDropdownInstitucionalOpen] =
+    useState(false);
   const [dropdownConcejalesOpen, setDropdownConcejalesOpen] = useState(false);
-  const [dropdownBloqueConcejalesOpen, setDropdownBloqueConcejalesOpen] = useState(false);
+  const [dropdownBloqueConcejalesOpen, setDropdownBloqueConcejalesOpen] =
+    useState(false);
   const [dropdownOrdenanzasOpen, setDropdownOrdenanzasOpen] = useState(false);
   const [dropdownLegislativoOpen, setDropdownLegislativoOpen] = useState(false);
 
   const toggleMobileNav = () => {
+    console.log("Toggling mobile nav");
+
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
   const closeMobileNav = () => {
+    console.log("Closing mobile nav");
     setIsMobileNavOpen(false);
   };
 
-  const toggleDropdownInstitucional = (event) => {
-    event.preventDefault();
+  const toggleDropdownInstitucional = () => {
+    console.log("Toggle dropdown Institucional");
+
     setDropdownInstitucionalOpen(!dropdownInstitucionalOpen);
   };
 
-  const toggleDropdownConcejales = (event) => {
-    event.preventDefault();
+  const toggleDropdownConcejales = (e) => {
+    console.log("Toggle dropdown Concejales");
+    e.preventDefault();
     setDropdownConcejalesOpen(!dropdownConcejalesOpen);
-    setDropdownBloqueConcejalesOpen(false);
   };
 
-  const toggleDropdownBloqueConcejales = (event) => {
-    event.preventDefault();
+  const toggleDropdownBloqueConcejales = (e) => {
+    console.log("BloqueConcejales");
+    e.preventDefault();
     setDropdownBloqueConcejalesOpen(!dropdownBloqueConcejalesOpen);
   };
 
-  const toggleDropdownOrdenanzas = (event) => {
-    event.preventDefault();
+  const toggleDropdownOrdenanzas = () => {
     setDropdownOrdenanzasOpen(!dropdownOrdenanzasOpen);
   };
 
-  const toggleDropdownLegislativo = (event) => {
-    event.preventDefault();
+  const toggleDropdownLegislativo = () => {
     setDropdownLegislativoOpen(!dropdownLegislativoOpen);
+  };
+
+  const handleClickInicio = () => {
+    console.log("Se hizo clic en el enlace de inicio");
   };
 
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
-      <NavLink to="/" className="logo">
+        <NavLink to="/" className="logo">
           <img
             src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
             alt="Logo"
@@ -65,7 +74,10 @@ function Navbar() {
               <NavLink
                 to="/"
                 className="nav-link scrollto"
-                onClick={closeMobileNav}
+                onClick={(e) => {
+                  handleClickInicio();
+                  closeMobileNav();
+                }}
               >
                 Inicio
               </NavLink>
@@ -79,15 +91,27 @@ function Navbar() {
                 Acerca
               </NavLink>
             </li>
-            <li className={`dropdown ${dropdownInstitucionalOpen ? "active" : ""}`}>
+
+            <li
+              className={`dropdown ${
+                dropdownInstitucionalOpen ? "active" : ""
+              }`}
+            >
               <a
-                href="#" 
+                href="#"
                 className="nav-link scrollto"
-                onClick={toggleDropdownInstitucional}
+                onClick={(e) => {
+                  toggleDropdownInstitucional(e);
+                }}
               >
                 Institucional <i className="bi bi-chevron-down" />
               </a>
-              <ul className={`${dropdownInstitucionalOpen ? 'dropdown-active' : ''}`}>
+
+              <ul
+                className={`${
+                  dropdownInstitucionalOpen ? "dropdown-active" : ""
+                }`}
+              >
                 <li>
                   <NavLink
                     to="/institucional/autoridadesActuales"
@@ -118,11 +142,21 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className={`dropdown ${dropdownConcejalesOpen ? "active" : ""}`}>
-              <a href="" className="nav-link scrollto" onClick={toggleDropdownConcejales}>
+            <li
+              className={`dropdown ${dropdownConcejalesOpen ? "active" : ""}`}
+            >
+              <a
+                href="#"
+                className="nav-link scrollto"
+                onClick={toggleDropdownConcejales}
+              >
                 Concejales <i className="bi bi-chevron-down" />
               </a>
-              <ul className={`dropdown-menu ${dropdownConcejalesOpen ? "dropdown-menu-open" : ""}`}>
+              <ul
+                className={`dropdown ${
+                  dropdownConcejalesOpen ? "dropdown-active" : ""
+                }`}
+              >
                 <li>
                   <NavLink
                     to="/consejales/concejales"
@@ -132,11 +166,34 @@ function Navbar() {
                     Concejales
                   </NavLink>
                 </li>
-                <li className={`dropdown ${dropdownBloqueConcejalesOpen ? "active" : ""}`}>
-                  <a href="" className="nav-link scrollto" onClick={toggleDropdownBloqueConcejales}>
+                <li>
+                  <NavLink
+                    to="/consejales/comisiones"
+                    className="nav-link scrollto"
+                    onClick={closeMobileNav}
+                  >
+                    Comisiones
+                  </NavLink>
+                </li>
+                <li
+                  className={`dropdown ${
+                    dropdownBloqueConcejalesOpen ? "active" : ""
+                  }`}
+                >
+                  <a
+                    href="#"
+                    className="nav-link scrollto"
+                    onClick={toggleDropdownBloqueConcejales}
+                  >
                     Bloque de Concejales <i className="bi bi-chevron-right" />
                   </a>
-                  <ul className={`dropdown ${dropdownConcejalesOpen ? "dropdown-active" : ""}`}>
+                  <ul
+                    className={`dropdown ${
+                      dropdownConcejalesOpen && dropdownBloqueConcejalesOpen
+                        ? "dropdown-active"
+                        : ""
+                    }`}
+                  >
                     <li>
                       <NavLink
                         to="/consejales/bloqueDeConcejales/pj"
@@ -187,11 +244,19 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className={`dropdown ${dropdownOrdenanzasOpen ? "active" : ""}`}>
-              <a href="#" className="nav-link scrollto" onClick={toggleDropdownOrdenanzas}>
+            <li
+              className={`dropdown ${dropdownOrdenanzasOpen ? "active" : ""}`}
+            >
+              <a
+                href="#"
+                className="nav-link scrollto"
+                onClick={toggleDropdownOrdenanzas}
+              >
                 Ordenanzas <i className="bi bi-chevron-down" />
               </a>
-              <ul className={`${dropdownOrdenanzasOpen ? 'dropdown-active' : ''}`}>
+              <ul
+                className={`${dropdownOrdenanzasOpen ? "dropdown-active" : ""}`}
+              >
                 <li>
                   <NavLink
                     to="/ordenanzas/ordenanzas"
@@ -213,11 +278,21 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className={`dropdown ${dropdownLegislativoOpen ? "active" : ""}`}>
-              <a href="#" className="nav-link scrollto" onClick={toggleDropdownLegislativo}>
+            <li
+              className={`dropdown ${dropdownLegislativoOpen ? "active" : ""}`}
+            >
+              <a
+                href="#"
+                className="nav-link scrollto"
+                onClick={toggleDropdownLegislativo}
+              >
                 Legislativo <i className="bi bi-chevron-down" />
               </a>
-              <ul className={`${dropdownLegislativoOpen ? 'dropdown-active' : ''}`}>
+              <ul
+                className={`${
+                  dropdownLegislativoOpen ? "dropdown-active" : ""
+                }`}
+              >
                 <li>
                   <NavLink
                     to="/legislativo/sesionesOrdinarias"
@@ -229,8 +304,8 @@ function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/FormosaTuCiudad/videos/524025079814022"
-                    target="_blank"
+                    href="#"
+                    // target="_blank"
                     rel="noreferrer"
                     onClick={closeMobileNav}
                   >

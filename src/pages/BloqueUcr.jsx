@@ -1,5 +1,5 @@
 import React from "react";
-import "./concejales.css"
+import "./concejales.css";
 
 function BloqueUcr() {
   return (
@@ -10,7 +10,8 @@ function BloqueUcr() {
             <div className="section-title edificio">
               <h2>Bloque UCR</h2>
               <p>
-              Concejales electos pertenecientes al bloque de la Unión Civica Radical.
+                Concejales electos pertenecientes al bloque de la Unión Civica
+                Radical.
               </p>
             </div>
             <div className="row justify-content-center">
@@ -26,24 +27,10 @@ function BloqueUcr() {
                       className="img-fluid"
                       alt
                     />
-                    {/* <div className="social">
-                      <a href>
-                        <i className="bi bi-twitter" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-facebook" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-instagram" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-linkedin" />
-                      </a>
-                    </div> */}
                   </div>
                   <div className="member-info">
                     <h4>Enzo Mariano Roig Casadei</h4>
-                    <span>Concejal</span>
+                    <span>Presidente</span>
                   </div>
                 </div>
               </div>
@@ -60,24 +47,9 @@ function BloqueUcr() {
                       className="img-fluid"
                       alt
                     />
-                    {/* <div className="social">
-                      <a href>
-                        <i className="bi bi-twitter" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-facebook" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-instagram" />
-                      </a>
-                      <a href>
-                        <i className="bi bi-linkedin" />
-                      </a>
-                    </div> */}
                   </div>
                   <div className="member-info">
                     <h4>Diego Fernando Herrera</h4>
-                    <span>Concejal</span>
                   </div>
                 </div>
               </div>

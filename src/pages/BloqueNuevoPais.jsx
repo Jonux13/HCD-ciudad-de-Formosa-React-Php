@@ -1,5 +1,5 @@
 import React from "react";
-import "./concejales.css"
+import "./concejales.css";
 
 function BloqueNuevoPais() {
   return (
@@ -8,9 +8,7 @@ function BloqueNuevoPais() {
         <div className="container" data-aos="fade-up">
           <div className="section-title edificio">
             <h2>Bloque Nuevo Pais</h2>
-            <p>
-            Concejal electo perteneciente al bloque Nuevo País .
-            </p>
+            <p>Concejal electo perteneciente al bloque Nuevo País .</p>
           </div>
           <div className="row justify-content-center">
             <div
@@ -25,24 +23,9 @@ function BloqueNuevoPais() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>Patricio Guillermo Evans</h4>
-                  <span>Concejal</span>
                 </div>
               </div>
             </div>

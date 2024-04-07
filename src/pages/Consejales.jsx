@@ -1,5 +1,5 @@
 import React from "react";
-import "./concejales.css"
+import "./concejales.css";
 
 function Consejales() {
   return (
@@ -9,7 +9,8 @@ function Consejales() {
           <div className="section-title edificio">
             <h2>Concejales</h2>
             <p>
-              Concejales del Honorable Concejo Deliberantes de la ciudad de Formosa. 
+              Concejales del Honorable Concejo Deliberantes de la ciudad de
+              Formosa.
             </p>
           </div>
           <div className="row">
@@ -25,20 +26,6 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>Ruben Dario Di Martino</h4>
@@ -46,105 +33,7 @@ function Consejales() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto2.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Cecilia M. Romero Depretto</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={300}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto3.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Patricio Guillermo Evans</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto4.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Delia T. del Carmen Galvan</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
+
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
@@ -157,24 +46,9 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>José Enrique Delguy</h4>
-                  <span>Concejal</span>
                 </div>
               </div>
             </div>
@@ -190,90 +64,9 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>Marcelo Adrián Sosa</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto7.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Horacio Antonio Pettit</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto8.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Hilda Beatriz Segovia</h4>
-                  <span>Concejal</span>
                 </div>
               </div>
             </div>
@@ -289,24 +82,63 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>María Argarañaz</h4>
-                  <span>Concejal</span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto7.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Horacio Antonio Pettit</h4>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto8.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Hilda Beatriz Segovia</h4>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto4.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Delia T. del Carmen Galvan</h4>
                 </div>
               </div>
             </div>
@@ -322,57 +154,9 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>Enzo Mariano Roig Casadei</h4>
-                  <span>Concejal</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto10.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
-                </div>
-                <div className="member-info">
-                  <h4>Juan Marcelo Ocampo</h4>
-                  <span>Concejal</span>
                 </div>
               </div>
             </div>
@@ -388,24 +172,66 @@ function Consejales() {
                     className="img-fluid"
                     alt
                   />
-                  {/* <div className="social">
-                    <a href>
-                      <i className="bi bi-twitter" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-facebook" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-instagram" />
-                    </a>
-                    <a href>
-                      <i className="bi bi-linkedin" />
-                    </a>
-                  </div> */}
                 </div>
                 <div className="member-info">
                   <h4>Diego Fernando Herrera</h4>
-                  <span>Concejal</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto2.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Cecilia M. Romero Depretto</h4>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={300}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto3.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Patricio Guillermo Evans</h4>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto10.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Juan Marcelo Ocampo</h4>
                 </div>
               </div>
             </div>

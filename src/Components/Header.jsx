@@ -3,49 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 import ContadorVistas from "./ContadorVistas";
 
+
 function Header() {
-  useEffect(() => {
-    const toggleNav = (event) => {
-      const navbar = document.querySelector("#navbar");
-      const toggle = document.querySelector(".mobile-nav-toggle");
-      if (toggle && navbar && event.target === toggle) {
-        navbar.classList.toggle("navbar-mobile");
-        toggle.classList.toggle("bi-list");
-        toggle.classList.toggle("bi-x");
-      }
-    };
-
-    const hideNav = () => {
-      const navbar = document.querySelector("#navbar");
-      const toggle = document.querySelector(".mobile-nav-toggle");
-      if (navbar && navbar.classList.contains("navbar-mobile")) {
-        navbar.classList.remove("navbar-mobile");
-        toggle.classList.remove("bi-x");
-        toggle.classList.add("bi-list");
-      }
-    };
-
-    document
-      .querySelector(".mobile-nav-toggle")
-      .addEventListener("click", toggleNav);
-
-    // Ocultar el menú móvil cuando se hace clic en un elemento del menú
-    const menuItems = document.querySelectorAll("#navbar ul li a");
-    menuItems.forEach((item) => {
-      item.addEventListener("click", hideNav);
-    });
-
-    // Limpieza del efecto
-    return () => {
-      document
-        .querySelector(".mobile-nav-toggle")
-        .removeEventListener("click", toggleNav);
-      menuItems.forEach((item) => {
-        item.removeEventListener("click", hideNav);
-      });
-    };
-  }, []);
-
   return (
     <>
       <div>

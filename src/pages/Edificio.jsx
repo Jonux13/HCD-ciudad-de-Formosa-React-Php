@@ -132,7 +132,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mx-auto">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto5.webp"
