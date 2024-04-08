@@ -1,4 +1,3 @@
-// useEffectContador.js
 import { useEffect, useState } from 'react';
 import { index } from "../../Db";
 
@@ -23,3 +22,4 @@ const useContador = () => {
 };
 
 export default useContador;
+

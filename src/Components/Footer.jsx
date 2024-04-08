@@ -124,7 +124,7 @@ function Footer() {
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/consejales/concejales">Consejales</NavLink>
+                      <NavLink to="/concejales/concejales">Concejales</NavLink>
                     </li>
 
                     <li>

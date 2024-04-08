@@ -12,7 +12,7 @@ function ContadorVistas() {
   return (
     <div>
       <div className="text-left">
-        <a href="#" className="btn-get-started scrollto">
+        <a href="#" className="btn-get-started scrollto" onClick={(e) => e.preventDefault()}>
           <span className="label">visitas: </span>
           <span className="contador">{contador}</span>
         </a>

@@ -159,7 +159,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/consejales/concejales"
+                    to="/concejales/concejales"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -168,7 +168,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/consejales/comisiones"
+                    to="/concejales/comisiones"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -196,7 +196,7 @@ function Navbar() {
                   >
                     <li>
                       <NavLink
-                        to="/consejales/bloqueDeConcejales/pj"
+                        to="/concejales/bloqueDeConcejales/pj"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -205,7 +205,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/consejales/bloqueDeConcejales/ucr"
+                        to="/concejales/bloqueDeConcejales/ucr"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -214,7 +214,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/consejales/bloqueDeConcejales/nuevoPais"
+                        to="/concejales/bloqueDeConcejales/nuevoPais"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -223,7 +223,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/consejales/bloqueDeConcejales/5DeMarzo"
+                        to="/concejales/bloqueDeConcejales/5DeMarzo"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -232,7 +232,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/consejales/bloqueDeConcejales/pro"
+                        to="/concejales/bloqueDeConcejales/pro"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >

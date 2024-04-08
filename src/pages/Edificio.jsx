@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./edificio.css";
 
 function Edificio() {
+
+  //  crea overlays sobre imágenes específicas cuando el mouse se posa sobre ellas, mostrando un texto personalizado y ocultándolo cuando el mouse se aleja.
   useEffect(() => {
     const imgContainers = document.querySelectorAll(".col-lg-4 img");
     imgContainers.forEach((imgContainer) => {

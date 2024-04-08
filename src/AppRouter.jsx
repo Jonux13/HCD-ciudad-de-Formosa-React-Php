@@ -37,26 +37,26 @@ function AppRouter() {
           element={<AutoridadesAnteriores />}
         />
         <Route path="/institucional/edificio" element={<Edificio />} />
-        <Route path="/consejales/concejales" element={<Consejales />} />
-        <Route path="/consejales/comisiones" element={<Comisiones />} />
+        <Route path="/concejales/concejales" element={<Consejales />} />
+        <Route path="/concejales/comisiones" element={<Comisiones />} />
         <Route
-          path="/consejales/bloqueDeConcejales/pj"
+          path="/concejales/bloqueDeConcejales/pj"
           element={<BloquePj />}
         />
         <Route
-          path="/consejales/bloqueDeConcejales/ucr"
+          path="/concejales/bloqueDeConcejales/ucr"
           element={<BloqueUcr />}
         />
         <Route
-          path="/consejales/bloqueDeConcejales/nuevoPais"
+          path="/concejales/bloqueDeConcejales/nuevoPais"
           element={<BloqueNuevoPais />}
         />
         <Route
-          path="/consejales/bloqueDeConcejales/5DeMarzo"
+          path="/concejales/bloqueDeConcejales/5DeMarzo"
           element={<Bloque5DeMarzo />}
         />
         <Route
-          path="/consejales/bloqueDeConcejales/pro"
+          path="/concejales/bloqueDeConcejales/pro"
           element={<BloquePro />}
         />
         <Route path="/ordenanzas/ordenanzas" element={<Ordenanzas />} />

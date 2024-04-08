@@ -1,6 +1,7 @@
 import React from "react";
 import SwiperUltimasNovedades from "../Components/SwiperUltimasNovedades";
 import Header from "../Components/Header";
+import VideoEnVivo from "../Components/VideoEnVivo";
 import { NavLink } from "react-router-dom";
 
 function Home() {
@@ -41,7 +42,7 @@ function Home() {
                 <p>
                   Comprometido con los principios de transparencia,
                   representatividad y participación ciudadana, el Concejo
-                  Deliberante de Formosa trabaja incansablemente para promover
+                  Deliberante de Formosa trabaja persistentemente para promover
                   el bienestar y el progreso de todos los habitantes de nuestra
                   ciudad.
                 </p>
@@ -72,24 +73,8 @@ function Home() {
         <section id="about-video" className="about-video">
           <div className="container" data-aos="fade-up">
             <div className="row">
-              <div
-                className="col-lg-6 video-box align-self-baseline position-relative"
-                data-aos="fade-right"
-                data-aos-delay={100}
-              >
-                <img
-                  src="assets/img/seccion_en_vivo/consejo deliberante sala.webp"
-                  className="img-fluid"
-                  alt
-                />
-                <a
-                  href="https://www.facebook.com/100000250836807/videos/1807096469759657/"
-                  className="glightbox play-btn mb-4"
-                  data-vbtype="video"
-                  data-autoplay="true"
-                  target="_blank"
-                />
-              </div>
+              <VideoEnVivo />
+
               <div
                 className="col-lg-6 pt-3 pt-lg-0 content"
                 data-aos="fade-left"
@@ -97,7 +82,7 @@ function Home() {
               >
                 <h3>Sesiones en vivo.</h3>
                 <p className="fst-italic">
-                  ¡Bienvenido a las sesiones en vivo del Consejo Deliberante de
+                  ¡Bienvenido a las sesiones en vivo del Concejo Deliberante de
                   la Ciudad de Formosa!
                 </p>
                 <ul>

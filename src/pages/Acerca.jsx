@@ -16,7 +16,7 @@ function Acerca() {
               entidad legislativa local, despliega un rol primordial en el
               desarrollo y la gestión de nuestra comunidad. Guiados por los
               pilares de transparencia, representatividad y participación
-              ciudadana, nuestro Concejo Deliberante se dedica infatigablemente
+              ciudadana, nuestro Concejo Deliberante se dedica 
               a impulsar el bienestar y el progreso de todos los ciudadanos.
               Constituido por representantes democráticamente elegidos, el
               Concejo Deliberante asume la vital tarea de formular y aprobar

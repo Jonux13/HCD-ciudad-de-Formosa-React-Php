@@ -110,10 +110,16 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/consejales/concejales"
+                      to="/concejales/concejales"
                       className="nav-link scrollto"
                     >
                       Concejales
+                    </NavLink>
+                    <NavLink
+                      to="/concejales/comisiones"
+                      className="nav-link scrollto"
+                    >
+                      Comisiones
                     </NavLink>
                   </div>
                 </div>
