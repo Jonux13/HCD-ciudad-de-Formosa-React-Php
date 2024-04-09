@@ -129,7 +129,6 @@ h6 {
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
-
 #header .logo {
   font-size: 27px;
   margin: 0;
@@ -160,7 +159,6 @@ h6 {
 }
 
 @media (max-width: 575px) {
-
   #header .logo {
     font-size: 25px;
   }
@@ -179,7 +177,6 @@ h6 {
 }
 
 @media (max-width: 360px) {
-
   #header .logo {
     font-size: 25px;
   }
@@ -448,8 +445,7 @@ h6 {
   transition: 0.3s;
 }
 
-
-.nav-a i{
+.nav-a i {
   font-size: 10px;
   line-height: 0;
   margin-left: 5px;
@@ -482,8 +478,8 @@ h6 {
   position: relative;
   background: url("../img/hero/fachada_COF_hero_section1.webp") top center;
   background-size: cover;
+  background-attachment: fixed;
   transition: background-image 0.5s ease;
-  position: relative;
 }
 
 #hero:before {
@@ -621,11 +617,13 @@ h6 {
     margin-top: -45px;
     font-size: 40px;
     line-height: 60px;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -638,11 +636,13 @@ h6 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   .custom-margin {
@@ -650,26 +650,25 @@ h6 {
     text-align: center;
   }
 
-.word {
-  margin-bottom: 3px; 
-}
+  .word {
+    margin-bottom: 3px;
+  }
 
-#hero .btn-get-started {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 5px 20px !important; 
-  width: 118px !important;
-}
+  #hero .btn-get-started {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 20px !important;
+    width: 118px !important;
+  }
 
-.caja-container {
-  justify-content: center;
-}
+  .caja-container {
+    justify-content: center;
+  }
 
-.icon-box {
-  text-align: center;
-}
-
+  .icon-box {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -681,11 +680,13 @@ h6 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   .custom-margin {
@@ -693,27 +694,25 @@ h6 {
     text-align: center;
   }
 
-.word {
-  margin-bottom: 3px; 
-}
+  .word {
+    margin-bottom: 3px;
+  }
 
-#hero .btn-get-started {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 5px 20px ; 
-  width: 118px;
-}
+  #hero .btn-get-started {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 20px;
+    width: 118px;
+  }
 
-.caja-container {
-  justify-content: center;
+  .caja-container {
+    justify-content: center;
+  }
+  .icon-box {
+    text-align: center;
+  }
 }
-.icon-box {
-  text-align: center;
-}
-}
-
-
 
 @media (max-width: 360px) {
   #hero {
@@ -724,11 +723,15 @@ h6 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
+    filter: brightness(1.1);
+    mix-blend-mode: normal;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
   .custom-margin {
@@ -736,26 +739,24 @@ h6 {
     text-align: center;
   }
 
+  .word {
+    margin-bottom: 3px;
+  }
 
-.word {
-  margin-bottom: 3px;
-}
+  #hero .btn-get-started {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px 20px;
+    width: 118px;
+  }
 
-#hero .btn-get-started {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 5px 20px; 
-  width: 118px ;
-}
-
-.caja-container {
-  justify-content: center;
-}
-.icon-box {
-  text-align: center;
-}
-
+  .caja-container {
+    justify-content: center;
+  }
+  .icon-box {
+    text-align: center;
+  }
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -1012,6 +1013,19 @@ section {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+@media (max-width: 360px) {
+  .about-video {
+    margin-top: 50px;
+    background-color: #f8fbfe;
+  }
+  
+  .about-video .container {
+    margin-top: -55px;
+    margin-bottom: -45px;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -2023,5 +2037,3 @@ section {
   color: #fff;
   text-decoration: none;
 }
-
-

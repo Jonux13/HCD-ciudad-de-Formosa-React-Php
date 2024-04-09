@@ -10,7 +10,7 @@ const Comisiones = () => {
           <h2>Comisiones</h2>
           <p>Honorable Concejo Deliberante de la Ciudad de Formosa</p>
         </div>
-        <div className="row content">
+        <div className="row content sesiones-ordinarias">
           <div className="col-lg-6 pt-4 pt-lg-0">
             <ul className="custom-list-com">
               <li>

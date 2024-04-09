@@ -303,14 +303,13 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    // target="_blank"
-                    rel="noreferrer"
+                     <NavLink
+                    to="/legislativo/sesionesEnVivo"
+                    className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
-                    Sesiones en Vivo
-                  </a>
+                    Sesiones en vivo
+                  </NavLink>
                 </li>
               </ul>
             </li>

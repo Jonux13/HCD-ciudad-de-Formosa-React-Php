@@ -19,6 +19,7 @@ import BloquePro from "./pages/BloquePro";
 import SesionesOrdinarias from "./pages/SesionesOrdinarias";
 import Resoluciones from "./pages/Resoluciones";
 import Comisiones from "./pages/Comisiones";
+import SesionesVivo from "./pages/SesionesVivo";
 
 function AppRouter() {
   return (
@@ -64,6 +65,10 @@ function AppRouter() {
         <Route
           path="/legislativo/sesionesOrdinarias"
           element={<SesionesOrdinarias />}
+        />
+         <Route
+          path="/legislativo/sesionesEnVivo"
+          element={<SesionesVivo />}
         />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
