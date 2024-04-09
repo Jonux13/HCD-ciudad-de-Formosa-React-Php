@@ -32,7 +32,7 @@ export const BuscarOrdenanza = () => {
   return (
     <div>
       <div className="row search-container">
-        <div className="col-md-8 label-p">
+        <div className="col-md-8 label-p form-container">
           <label htmlFor="floatingEmptyPlaintextInput" className="form-label">
             *Ingrese palabra clave o el número de la ordenanza.
           </label>
@@ -54,7 +54,14 @@ export const BuscarOrdenanza = () => {
         </div>
       </div>
 
-      {buscando && <h2 className="buscando">Buscando...</h2>}
+      <div className="searching-container">
+          {buscando && (
+            <>
+              <h2>Buscando...</h2>
+              <div className="spinner" />
+            </>
+          )}
+        </div>
       {showFiles && !buscando && (
         <FileTable
           files={filteredFiles(isSearching, docus, docusSearch)}

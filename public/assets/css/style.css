@@ -617,13 +617,13 @@ h6 {
     margin-top: -45px;
     font-size: 40px;
     line-height: 60px;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
   }
 }
 
@@ -636,13 +636,13 @@ h6 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   .custom-margin {
@@ -680,13 +680,13 @@ h6 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   .custom-margin {
@@ -717,6 +717,7 @@ h6 {
 @media (max-width: 360px) {
   #hero {
     height: auto;
+    /* background: #61bdff; */
   }
 
   #hero h1 {
@@ -725,13 +726,13 @@ h6 {
     line-height: 36px;
     filter: brightness(1.1);
     mix-blend-mode: normal;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
   }
 
   .custom-margin {
@@ -757,6 +758,7 @@ h6 {
   .icon-box {
     text-align: center;
   }
+
 }
 /*--------------------------------------------------------------
 # Sections General
