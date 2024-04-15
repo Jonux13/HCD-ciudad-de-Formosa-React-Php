@@ -43,15 +43,15 @@ function AutoridadesActuales() {
               <div className="member">
                 <div className="member-img">
                   <img
-                    src="/assets/img/institucional/autoridades_actuales/foto2.webp"
+                    src="/assets/img/institucional/autoridades_actuales/foto3.webp"
                     className="img-fluid"
                     alt
                   />
                
                 </div>
                 <div className="member-info">
-                  <h4>Jose Recalde</h4>
-                  <span>Prosecretario Legislativo</span>
+                  <h4>Lic. Nestor Mario Barrios</h4>
+                  <span>Secretario Legislativo</span>
                 </div>
               </div>
             </div>
