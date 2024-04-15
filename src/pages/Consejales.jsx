@@ -42,6 +42,44 @@ function Consejales() {
               <div className="member">
                 <div className="member-img">
                   <img
+                    src="/assets/img/consejales/foto12.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>María Argarañaz</h4>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={300}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
+                    src="../assets/img/consejales/foto3.webp"
+                    className="img-fluid"
+                    alt
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>Patricio Guillermo Evans</h4>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
+              <div className="member">
+                <div className="member-img">
+                  <img
                     src="../assets/img/consejales/foto5.webp"
                     className="img-fluid"
                     alt
@@ -70,24 +108,7 @@ function Consejales() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="/assets/img/consejales/foto12.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                </div>
-                <div className="member-info">
-                  <h4>María Argarañaz</h4>
-                </div>
-              </div>
-            </div>
+          
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
               data-aos="fade-up"
@@ -198,24 +219,7 @@ function Consejales() {
               </div>
             </div>
 
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"
-              data-aos="fade-up"
-              data-aos-delay={300}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/consejales/foto3.webp"
-                    className="img-fluid"
-                    alt
-                  />
-                </div>
-                <div className="member-info">
-                  <h4>Patricio Guillermo Evans</h4>
-                </div>
-              </div>
-            </div>
+         
 
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-concejales"

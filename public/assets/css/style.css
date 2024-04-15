@@ -6,6 +6,21 @@ body {
   color: #444444;
 }
 
+body::-webkit-scrollbar {
+  width: 10px; 
+}
+#endregion
+body::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc; 
+  border-radius: 4px; 
+  height: 50px; 
+}
+
 a {
   color: #2487ce;
   text-decoration: none;
@@ -117,7 +132,7 @@ h6 {
   transition: all 0.5s;
   background: #fff;
   z-index: 997;
-  padding: 15px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #e6f2fb;
   display: flex;
   justify-content: space-between;
@@ -129,7 +144,7 @@ h6 {
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
-#header .logo {
+#header .logo-hcd {
   font-size: 27px;
   margin: 0;
   padding: 0;
@@ -139,56 +154,78 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .logo a {
+#header .logo-hcd a {
   color: #2487ce;
   margin-left: -190px;
 }
 
+
 #header .logo img {
-  margin-top: -15px;
-  margin-bottom: -15px;
+  /* margin-top: -15px;
+  margin-bottom: -15px; */
   width: 40px;
   height: auto;
   box-sizing: border-box;
 }
 
-@media (max-width: 992px) {
-  #header .logo {
+@media (max-width: 1124px) {
+  #header .logo-hcd {
     font-size: 28px;
+    margin: initial;
+    padding: initial;
+    margin-left: 175px;
+  }
+
+  
+}
+
+@media (max-width: 991px) {
+  #header .logo-hcd {
+    font-size: 28px;
+    margin: initial;
+    padding: initial;
+    margin-left: -210px;
+  }
+}
+
+@media (max-width: 767px) {
+  #header .logo-hcd {
+    font-size: 29px;
+    margin: initial;
+    padding: initial;
+    text-align: center;
+  }
+
+  #header .logo-hcd a {
+    margin-left: initial;
   }
 }
 
 @media (max-width: 575px) {
-  #header .logo {
-    font-size: 25px;
-  }
-
-  #header .logo a {
-    margin-left: 0;
+  #header .logo-hcd {
+    font-size: 27px;
   }
 
   #header .logo img {
-    margin-top: -15px;
-    margin-bottom: -15px;
-    width: 30px;
+
+    width: 37px;
     height: auto;
     box-sizing: border-box;
   }
 }
 
 @media (max-width: 360px) {
-  #header .logo {
+  #header .logo-hcd {
+    padding: 5px 0;
     font-size: 25px;
   }
 
-  #header .logo a {
+  #header .logo-hcd a {
     margin-left: 0;
   }
 
   #header .logo img {
-    margin-top: -15px;
-    margin-bottom: -15px;
-    width: 30px;
+    width: 33px;
     height: auto;
     box-sizing: border-box;
   }
@@ -203,6 +240,11 @@ h6 {
 .navbar {
   padding: 0;
   /* margin-right: 60px; */
+}
+
+/* Agregar sombra al navbar cuando hay scroll */
+.navbar-shadow {
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -477,6 +519,7 @@ h6 {
   height: 100vh;
   position: relative;
   background: url("../img/hero/fachada_COF_hero_section1.webp") top center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   transition: background-image 0.5s ease;
@@ -484,7 +527,6 @@ h6 {
 
 #hero:before {
   content: "";
-  /* background: rgba(255, 255, 255, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -596,9 +638,12 @@ h6 {
   color: #2487ce;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;  }
+  #header .logo a {
+    margin-left: 20px;
   }
 }
 
@@ -613,40 +658,52 @@ h6 {
     height: auto;
   }
 
+
+#header .logo a {
+  margin-left: 20px;
+}
+
   #hero h1 {
     margin-top: -45px;
     font-size: 40px;
     line-height: 60px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 }
 
 @media (max-width: 767px) {
+
+ 
   #hero {
+    background: url("../img/hero/honorable consejo deliberante fachada ampliada.webp") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: auto;
   }
 
   #hero h1 {
     margin-top: -45px;
-    font-size: 36px;
+    font-size: 42px;
     line-height: 36px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   #hero h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   .custom-margin {
-    margin-left: -6px;
+    justify-content: center;
+    margin-left: 0px;
     text-align: center;
   }
 
@@ -673,20 +730,25 @@ h6 {
 
 @media (max-width: 575px) {
   #hero {
+    background: url("../img/hero/honorable consejo deliberante fachada ampliada.webp") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: auto;
+    
   }
 
   #hero h1 {
     margin-top: -45px;
     font-size: 36px;
     line-height: 36px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   .custom-margin {
@@ -715,28 +777,34 @@ h6 {
 }
 
 @media (max-width: 360px) {
+
   #hero {
+    background: url("../img/hero/honorable consejo deliberante fachada ampliada.webp") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: auto;
-    /* background: #61bdff; */
   }
 
   #hero h1 {
     margin-top: -45px;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 33px;
     filter: brightness(1.1);
     mix-blend-mode: normal;
-    text-shadow: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
   }
 
   #hero h2 {
     font-size: 16px;
     line-height: 24px;
-    text-shadow: none;
+    margin-top: -1px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+
   }
 
   .custom-margin {
-    margin-left: -6px;
+    margin-left: 0px;
     text-align: center;
   }
 
@@ -757,6 +825,14 @@ h6 {
   }
   .icon-box {
     text-align: center;
+  }
+
+  .acerca-home {
+    margin-top: -70px;
+  }
+
+  .preguntas-frecuentes {
+    margin-top: -25px;
   }
 
 }
@@ -853,6 +929,12 @@ section {
   background: #2487ce;
   color: #fff;
   text-decoration: none;
+}
+
+@media(width < 768px) { 
+  .btn-learn-container {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------

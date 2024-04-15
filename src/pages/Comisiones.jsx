@@ -6,7 +6,7 @@ const Comisiones = () => {
   return (
     <section id="about" className="about about_section">
       <div className="container" data-aos="fade-up">
-        <div className="section-title acerca">
+        <div className="section-title acerca title-acerca">
           <h2>Comisiones</h2>
           <p>Honorable Concejo Deliberante de la Ciudad de Formosa</p>
         </div>

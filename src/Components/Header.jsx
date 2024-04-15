@@ -86,12 +86,13 @@ function Header() {
                     </NavLink>
 
                     <li>
-                      <a
-                        href="https://www.facebook.com/FormosaTuCiudad/videos/524025079814022"
-                        target="_blank"
-                      >
-                        Sesiones en vivo
-                      </a>
+                    <NavLink
+                    to="/legislativo/sesionesEnVivo"
+                    className="nav-link scrollto"
+                 
+                  >
+                    Sesiones en vivo
+                  </NavLink>
                     </li>
                   </div>
                 </div>

@@ -83,7 +83,12 @@ td a {
 }
 
 .searching-container h2 {
+  padding: 3px;
+  background: #2487ce;
+  color: #fff;
+  border-radius: 3px;
   font-size: 13px;
+  font-weight: 600;
   margin-top: -30px;
   margin-right: 10px;
   margin-left: 5px;

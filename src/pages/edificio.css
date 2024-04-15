@@ -5,6 +5,7 @@
 .image-container {
   height: 100%;
   overflow: hidden;
+
 }
 
 img {
@@ -31,6 +32,13 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width: 767px) {
+  .image-container {
+    text-align: center;
+  }
 }
 
 

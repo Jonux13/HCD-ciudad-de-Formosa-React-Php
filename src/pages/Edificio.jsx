@@ -34,7 +34,7 @@ function Edificio() {
           </div>
           <div className="row">
             
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
               <div className="image-container position-relative">
                 <img
                   src="../assets/img/edificio/foto8.webp"
@@ -42,11 +42,10 @@ function Edificio() {
                   className="imagen img-fluid mt-4"
                   data-overlay-text="Fachada edificio día"
                 />
-                <div className="overlay"></div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto9.webp"
@@ -57,7 +56,7 @@ function Edificio() {
                 </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto10.webp"
@@ -68,7 +67,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto3.webp"
@@ -79,7 +78,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto4.webp"
@@ -90,7 +89,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto2.webp"
@@ -101,7 +100,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto6.webp"
@@ -112,7 +111,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto7.webp"
@@ -123,7 +122,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto1.webp"
@@ -134,7 +133,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mx-auto">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch mx-auto">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto5.webp"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -10,6 +10,27 @@ function Navbar() {
     useState(false);
   const [dropdownOrdenanzasOpen, setDropdownOrdenanzasOpen] = useState(false);
   const [dropdownLegislativoOpen, setDropdownLegislativoOpen] = useState(false);
+
+  const [hasShadow, setHasShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
 
   const toggleMobileNav = () => {
     console.log("Toggling mobile nav");
@@ -47,14 +68,16 @@ function Navbar() {
   const toggleDropdownLegislativo = () => {
     setDropdownLegislativoOpen(!dropdownLegislativoOpen);
   };
-
+   
   const handleClickInicio = () => {
     console.log("Se hizo clic en el enlace de inicio");
   };
 
   return (
-    <header id="header" className="fixed-top">
-      <div className="container d-flex align-items-center justify-content-between">
+    <header
+    id="header"
+    className={`fixed-top ${hasShadow ? "navbar-shadow" : ""}`}
+  >      <div className="container d-flex align-items-center justify-content-between">
         <NavLink to="/" className="logo">
           <img
             src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
@@ -62,7 +85,7 @@ function Navbar() {
             className="img-fluid"
           />
         </NavLink>
-        <h1 className="logo">
+        <h1 className="logo-hcd">
           <a href="#">HCD</a>
         </h1>
         <nav
