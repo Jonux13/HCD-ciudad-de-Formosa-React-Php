@@ -254,6 +254,7 @@ function AutoridadesAnteriores() {
                 </div>
               </div>
             </div>
+            <div className="d-flex justify-content-center">
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-anteriores"
               data-aos="fade-up"
@@ -292,6 +293,8 @@ function AutoridadesAnteriores() {
                 </div>
               </div>
             </div>
+            </div>
+         
           </div>
         </div>
       </section>

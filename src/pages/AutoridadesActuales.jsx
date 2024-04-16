@@ -71,7 +71,7 @@ function AutoridadesActuales() {
            
                 </div>
                 <div className="member-info">
-                  <h4>Jose Recalde</h4>
+                  <h4>Dr. Jose Recalde</h4>
                   <span>Prosecretario Legislativo</span>
                 </div>
               </div>
