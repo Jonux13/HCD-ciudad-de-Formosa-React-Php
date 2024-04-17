@@ -66,10 +66,7 @@ function AppRouter() {
           path="/legislativo/sesionesOrdinarias"
           element={<SesionesOrdinarias />}
         />
-         <Route
-          path="/legislativo/sesionesEnVivo"
-          element={<SesionesVivo />}
-        />
+        <Route path="/legislativo/sesionesEnVivo" element={<SesionesVivo />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />

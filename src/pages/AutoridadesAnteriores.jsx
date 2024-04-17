@@ -8,9 +8,7 @@ function AutoridadesAnteriores() {
         <div className="container" data-aos="fade-up">
           <div className="section-title autoridades">
             <h2>Autoridades Anteriores</h2>
-            <p>
-              Salón de de las autoridades anteriores.
-            </p>
+            <p>Salón de de las autoridades anteriores.</p>
           </div>
           <div className="row">
             <div
@@ -44,7 +42,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-        
                 </div>
                 <div className="member-info">
                   <h4>Emilio Raul Jara Lunghi</h4>
@@ -64,7 +61,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-            
                 </div>
                 <div className="member-info">
                   <h4>Victor Hugo Cardozo</h4>
@@ -84,7 +80,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-              
                 </div>
                 <div className="member-info">
                   <h4>Juan Rodolfo Seró</h4>
@@ -108,7 +103,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-               
                 </div>
                 <div className="member-info">
                   <h4>Hugo Darío Leguizamon</h4>
@@ -128,7 +122,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-               
                 </div>
                 <div className="member-info">
                   <h4>Mercedes Torres de Kalafatich</h4>
@@ -148,7 +141,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-            
                 </div>
                 <div className="member-info">
                   <h4>Jorge Victor Molina</h4>
@@ -168,7 +160,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-             
                 </div>
                 <div className="member-info">
                   <h4>Santiago Kalafatich</h4>
@@ -188,7 +179,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-              
                 </div>
                 <div className="member-info">
                   <h4>Osvaldo Tarantini</h4>
@@ -208,7 +198,6 @@ function AutoridadesAnteriores() {
                     className="img-fluid"
                     alt
                   />
-             
                 </div>
                 <div className="member-info">
                   <h4>Ramón Perelli</h4>
@@ -227,7 +216,7 @@ function AutoridadesAnteriores() {
                     src="../assets/img/institucional/foto11.webp"
                     className="img-fluid"
                     alt
-                  />              
+                  />
                 </div>
                 <div className="member-info">
                   <h4>Fernando Antonio De Vido</h4>
@@ -246,7 +235,7 @@ function AutoridadesAnteriores() {
                     src="../assets/img/institucional/foto12.webp"
                     className="img-fluid"
                     alt
-                  />              
+                  />
                 </div>
                 <div className="member-info">
                   <h4>Antonio Taboada</h4>
@@ -255,46 +244,45 @@ function AutoridadesAnteriores() {
               </div>
             </div>
             <div className="d-flex justify-content-center">
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-anteriores"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/institucional/foto13.webp"
-                    className="img-fluid"
-                    alt
-                  />               
+              <div
+                className="col-lg-3 col-md-6 d-flex align-items-stretch container-anteriores"
+                data-aos="fade-up"
+                data-aos-delay={100}
+              >
+                <div className="member">
+                  <div className="member-img">
+                    <img
+                      src="../assets/img/institucional/foto13.webp"
+                      className="img-fluid"
+                      alt
+                    />
+                  </div>
+                  <div className="member-info">
+                    <h4>Hugo Orlando Garcia</h4>
+                    <span>11/12-2009 - 11/12/2015</span>
+                  </div>
                 </div>
-                <div className="member-info">
-                  <h4>Hugo Orlando Garcia</h4>
-                  <span>11/12-2009 - 11/12/2015</span>
+              </div>
+              <div
+                className="col-lg-3 col-md-6 d-flex align-items-stretch container-anteriores"
+                data-aos="fade-up"
+                data-aos-delay={100}
+              >
+                <div className="member">
+                  <div className="member-img">
+                    <img
+                      src="../assets/img/institucional/foto14.webp"
+                      className="img-fluid"
+                      alt
+                    />
+                  </div>
+                  <div className="member-info">
+                    <h4>Rube Dario Di Martino </h4>
+                    <span>11/12/2015</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              className="col-lg-3 col-md-6 d-flex align-items-stretch container-anteriores"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
-              <div className="member">
-                <div className="member-img">
-                  <img
-                    src="../assets/img/institucional/foto14.webp"
-                    className="img-fluid"
-                    alt
-                  />           
-                </div>
-                <div className="member-info">
-                  <h4>Rube Dario Di Martino </h4>
-                  <span>11/12/2015</span>
-                </div>
-              </div>
-            </div>
-            </div>
-         
           </div>
         </div>
       </section>
