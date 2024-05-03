@@ -70,6 +70,28 @@ function Edificio() {
             <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
+                src="../assets/img/edificio/foto11.webp"
+                alt="Descripción de la imagen"
+                className="img-fluid mt-4"
+                data-overlay-text="Perfil edificio noche"
+              />
+              </div> 
+            </div>
+
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
+            <div className="image-container position-relative">
+              <img
+                src="../assets/img/edificio/foto12.webp"
+                alt="Descripción de la imagen"
+                className="img-fluid mt-4"
+                data-overlay-text="Perfil edificio día"
+              />
+              </div> 
+            </div>
+
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
+            <div className="image-container position-relative">
+              <img
                 src="../assets/img/edificio/foto3.webp"
                 alt="Descripción de la imagen"
                 className="img-fluid mt-4"
@@ -133,7 +155,7 @@ function Edificio() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch mx-auto">
+            <div className="col-lg-4 col-md-6 d-flex justify-content-center align-items-stretch">
             <div className="image-container position-relative">
               <img
                 src="../assets/img/edificio/foto5.webp"
@@ -141,8 +163,9 @@ function Edificio() {
                 className="img-fluid mt-4"
                 data-overlay-text="Administración"
               />
-              </div>
+              </div> 
             </div>
+
           </div>
         </div>
       </section>

@@ -7,6 +7,9 @@ const getPdfUrls = async (fileName) => {
     const storageRef = storage.ref();
     const pdfFilesSnapshot = await storageRef.listAll();
 
+    console.log("Archivos encontrados:", pdfFilesSnapshot.items.map(item => item.name)); // Verifica qué archivos se listan
+
+
     const pdfUrls = await Promise.all(
       pdfFilesSnapshot.items.map(async (item) => {
         const url = await item.getDownloadURL();
@@ -14,6 +17,8 @@ const getPdfUrls = async (fileName) => {
         return { name: item.name, url, type: fileType };
       })
     );
+
+    console.log("URLs de PDF:", pdfUrls);
 
     // Filtrar por el nombre del archivo
     const filteredPdfUrls = pdfUrls.filter((pdf) => {
@@ -31,3 +36,4 @@ const getPdfUrls = async (fileName) => {
 };
 
 export { getPdfUrls };
+

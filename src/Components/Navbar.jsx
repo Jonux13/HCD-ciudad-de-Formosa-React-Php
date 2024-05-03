@@ -30,8 +30,6 @@ function Navbar() {
     };
   }, []);
 
-
-
   const toggleMobileNav = () => {
     console.log("Toggling mobile nav");
 
@@ -68,16 +66,18 @@ function Navbar() {
   const toggleDropdownLegislativo = () => {
     setDropdownLegislativoOpen(!dropdownLegislativoOpen);
   };
-   
+
   const handleClickInicio = () => {
     console.log("Se hizo clic en el enlace de inicio");
   };
 
   return (
     <header
-    id="header"
-    className={`fixed-top ${hasShadow ? "navbar-shadow" : ""}`}
-  >      <div className="container d-flex align-items-center justify-content-between">
+      id="header"
+      className={`fixed-top ${hasShadow ? "navbar-shadow" : ""}`}
+    >
+      {" "}
+      <div className="container d-flex align-items-center justify-content-between">
         <NavLink to="/" className="logo">
           <img
             src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
@@ -151,6 +151,15 @@ function Navbar() {
                     onClick={closeMobileNav}
                   >
                     Autoridades Anteriores
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/institucional/visitas"
+                    className="nav-link scrollto"
+                    onClick={closeMobileNav}
+                  >
+                    Visitas
                   </NavLink>
                 </li>
                 <li>
@@ -266,8 +275,16 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-
-            <li
+            <li>
+              <NavLink
+                to="/ordenanzas/ordenanzas"
+                className="nav-link scrollto"
+                onClick={closeMobileNav}
+              >
+                Ordenanzas
+              </NavLink>
+            </li>
+            {/* <li
               className={`dropdown ${dropdownOrdenanzasOpen ? "active" : ""}`}
             >
               <a
@@ -299,7 +316,7 @@ function Navbar() {
                   </NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             <li
               className={`dropdown ${dropdownLegislativoOpen ? "active" : ""}`}
@@ -326,7 +343,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li>
-                     <NavLink
+                  <NavLink
                     to="/legislativo/sesionesEnVivo"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}

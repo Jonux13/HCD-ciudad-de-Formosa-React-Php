@@ -20,6 +20,8 @@ import SesionesOrdinarias from "./pages/SesionesOrdinarias";
 import Resoluciones from "./pages/Resoluciones";
 import Comisiones from "./pages/Comisiones";
 import SesionesVivo from "./pages/SesionesVivo";
+import Visitas from "./pages/Visitas";
+import Visitas14Abril from "./pages/Visitas14Abril";
 
 function AppRouter() {
   return (
@@ -37,6 +39,8 @@ function AppRouter() {
           path="/institucional/autoridadesAnteriores"
           element={<AutoridadesAnteriores />}
         />
+        <Route path="/institucional/visitas" element={<Visitas />} />
+        <Route path="/institucional/visitas/visitas14Abril" element={<Visitas14Abril />} />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />
