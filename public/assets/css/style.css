@@ -1584,6 +1584,7 @@ color: rgba(var(--default-color-rgb), 0.6);
   margin-bottom: 0;
   font-size: 14px;
   color: #217bbc;
+  position: absolute;
 }
 
 .contact .info .email,

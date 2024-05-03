@@ -48,7 +48,7 @@ function Footer() {
 
                   <p>
                     San Martín 500 <br />
-                    Formosa, Formosa
+                    Ciudad de Formosa, Formosa
                     <br />
                     Argentina <br />
                     <br />

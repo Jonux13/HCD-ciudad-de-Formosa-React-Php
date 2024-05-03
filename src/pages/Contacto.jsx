@@ -1,7 +1,7 @@
 import React from "react";
-import GoogleMapsComponent from "../Components/GoogleMapsComponent"
 import Mapa from "../Components/Mapa"
 import "./contacto.css";
+// import "../Components/Mapa.css";
 
 function Contacto() {
   return (
@@ -20,7 +20,7 @@ function Contacto() {
               <div className="address">
                 <i className="bi bi-geo-alt" />
                 <h4>Dirección:</h4>
-                <p> San Martín 500, Formosa, Argentina</p>
+                <p> San Martín 500, Ciudad de Formosa, Argentina</p>
               </div>
               <div className="email">
                 <i className="bi bi-envelope" />
