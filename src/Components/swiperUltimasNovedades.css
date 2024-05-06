@@ -16,10 +16,21 @@
   color: #2487ce;
 }
 
-.swiper-image {
-  /* margin-top: 49px; */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffff; 
+  transition: transform 0.2s ease;
 }
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1); /* Escala al presionar */
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transform: scale(0.8); /* Escala al presionar */
+}
 
 /* Estilos para el contenido del slide */
 .slide-content {
@@ -27,7 +38,7 @@
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: #ffff;
   text-align: center;
   font-weight: 500;
   z-index: 10;
@@ -40,7 +51,7 @@
 .slide-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  background-color: rgba(70, 85, 97, 0.5); 
+  background-color: rgba(0, 0, 0, 0.3); 
   padding: 5px 5px !important; 
   border-radius: 5px; 
 }
@@ -49,7 +60,7 @@
 .slide-content p {
   display: inline-block;
   font-size: 16px;
-  background-color: rgba(70, 85, 97, 0.5); 
+  background-color: rgba(0, 0, 0, 0.3); 
   padding: 5px 5px !important; 
   border-radius: 5px; 
 }

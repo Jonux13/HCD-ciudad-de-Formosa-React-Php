@@ -26,6 +26,23 @@ function SwiperUltimasNovedades() {
   }, [swiperInstance]);
 
 
+   useEffect(() => {
+    if (window.AOS) {
+      window.AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+      });
+
+      // Reinicializar AOS cada vez que cambia el slide
+      if (swiperInstance) {
+        swiperInstance.on('slideChange', () => {
+          window.AOS.refresh(); // Refrescar AOS para reactivar animaciones
+        });
+      }
+    }
+  }, [swiperInstance]); // Se ejecuta cuando swiperInstance cambia
+
+
   return (
     <div className="swiper-container">
       <div className="section-title_swiper_novedades">
@@ -102,7 +119,7 @@ function SwiperUltimasNovedades() {
             <p>25 de abril de 2024</p>
           </div>
           <video
-            src="/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19-comp.mp4"
+            src="/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
             alt="Video Slide"
             className="swiper-video"
             autoPlay

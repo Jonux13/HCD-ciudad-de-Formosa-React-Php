@@ -159,7 +159,7 @@ function Navbar() {
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
-                    Visitas
+                    Visitas al Honorable Concejo Deliberante 
                   </NavLink>
                 </li>
                 <li>
