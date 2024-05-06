@@ -1278,6 +1278,8 @@ color: #2487ce;
 .service-details .services-img {
   margin-bottom: 20px;
   border-radius: 2px;
+  max-width: 100%;
+  height: auto;
 }
 
 
