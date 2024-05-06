@@ -9,7 +9,6 @@ lerna-debug.log*
 
 node_modules
 Db.js
-dist
 dist-ssr
 *.local
 
