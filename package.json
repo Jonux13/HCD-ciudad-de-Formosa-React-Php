@@ -1,9 +1,9 @@
 {
   "name": "consejo-de-deliberantes-formosa",
+  "homepage":"https://concejoformosa.org/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://concejoformosa.org/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
