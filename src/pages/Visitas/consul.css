@@ -1,0 +1,20 @@
+.section-visitas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-volver span {
+  font-size: 12px;
+  margin-left: -550px !important;
+}
+
+
+.link-size {
+  font-size: 12px !important;
+}
+
+.link-volver:hover {
+  color: #469fdf;
+}
