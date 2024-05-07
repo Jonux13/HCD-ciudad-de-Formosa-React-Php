@@ -49,6 +49,7 @@ function Consejales() {
                 </div>
                 <div className="member-info">
                   <h4>María Argarañaz</h4>
+                  <span>Vicepresidenta I </span>
                 </div>
               </div>
             </div>
@@ -68,6 +69,8 @@ function Consejales() {
                 </div>
                 <div className="member-info">
                   <h4>Patricio Guillermo Evans</h4>
+                  <span>Vicepresidente II </span>
+
                 </div>
               </div>
             </div>

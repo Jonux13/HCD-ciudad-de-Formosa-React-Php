@@ -1,19 +1,23 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../pages/Visitas/consul.css";
 
 const Consul = () => {
   return (
     <div>
-      <section id="service-details" className="service-details section section-visitas">
-      <NavLink to="/institucional/visitas" className="read-more link-volver">
+      <section
+        id="service-details"
+        className="service-details section section-visitas"
+      >
+        <NavLink to="/institucional/visitas" className="read-more link-volver">
+          <div data-aos="fade-up">
             <span className="read-more">
               <i className="fas fa-reply icon-with-margin" />
               Volver
             </span>
-          </NavLink>
+          </div>
+        </NavLink>
         <div className="container-all" data-aos="fade-up">
-   
           <div className="container-title-visita text-center">
             <h4>Visita de la Cónsul de la República del Paraguay</h4>
             <span>13/03/24</span>
@@ -73,14 +77,12 @@ const Consul = () => {
           />
         </div>
 
-        
-          <NavLink to="/institucional/visitas" className="read-more">
-            <span className="read-more link-size">
-              <i className="fas fa-reply icon-with-margin" />
-              Volver
-            </span>
-          </NavLink>
-      
+        <NavLink to="/institucional/visitas" className="read-more">
+          <span className="read-more link-size">
+            <i className="fas fa-reply icon-with-margin" />
+            Volver
+          </span>
+        </NavLink>
       </section>
     </div>
   );

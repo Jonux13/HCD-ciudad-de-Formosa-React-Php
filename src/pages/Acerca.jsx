@@ -21,7 +21,7 @@ function Acerca() {
               Constituido por representantes democráticamente elegidos, el
               Concejo Deliberante asume la vital tarea de formular y aprobar
               normativas que regulan diversos aspectos de la vida en nuestra
-              urbe. Desde la promulgación de ordenanzas municipales hasta la
+              urbe. Desde la sanción de ordenanzas municipales hasta la
               supervisión de las acciones del ejecutivo local, nuestro Concejo
               ejerce su función con la máxima integridad y un firme compromiso
               con el interés público. Además de su labor legislativa, el

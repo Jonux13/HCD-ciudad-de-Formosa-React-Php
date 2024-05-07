@@ -9,10 +9,12 @@ const AniversarioFormosa = () => {
       className="service-details section section-visitas"
     >
       <NavLink to="/institucional/visitas" className="read-more link-volver">
-        <span className="read-more">
-          <i className="fas fa-reply icon-with-margin" />
-          Volver
-        </span>
+        <div data-aos="fade-up">
+          <span className="read-more">
+            <i className="fas fa-reply icon-with-margin" />
+            Volver
+          </span>
+        </div>
       </NavLink>
       <div className="container-all" data-aos="fade-up">
         <div className="container-title-visita text-center">

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
@@ -25,6 +25,16 @@ function Footer() {
       document.removeEventListener("scroll", toggleBacktotop);
     };
   }, []); // Ejecuta el efecto solo una vez al renderizar
+
+  
+    const navigate = useNavigate(); // Hook para navegar a diferentes rutas
+  
+    const handleClick = () => {
+      // Desplaza la vista al principio de la página
+      window.scrollTo(0, 0);
+      // Navega a la ruta raíz
+      navigate('/');
+    };
 
   return (
     <>
@@ -87,7 +97,7 @@ function Footer() {
                   <ul>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/" className="nav-link scrollto">
+                      <NavLink to="/" className="nav-link scrollto" onClick={handleClick}>
                         Inicio
                       </NavLink>
                     </li>

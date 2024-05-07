@@ -2,26 +2,32 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../pages/Visitas/consul.css";
 
-
 function DiaDelAnimal() {
   return (
-    <section id="service-details" className="service-details section section-visitas">
-             <NavLink to="/institucional/visitas/" className="read-more link-volver">
+    <section
+      id="service-details"
+      className="service-details section section-visitas"
+    >
+      <NavLink to="/institucional/visitas/" className="read-more link-volver">
+        <div data-aos="fade-up">
           <span className="read-more">
             <i className="fas fa-reply icon-with-margin" />
             Volver
           </span>
-        </NavLink>
+        </div>
+      </NavLink>
       <div className="container-all" data-aos="fade-up">
- 
         <div className="container-title-visita text-center">
           <h4>DÍA DEL ANIMAL</h4>
           <span>29/03/24</span>
         </div>
       </div>
-   
 
-      <div className="col-lg-8 ps-lg-5 text-center" data-aos="fade-up" data-aos-delay={100}>
+      <div
+        className="col-lg-8 ps-lg-5 text-center"
+        data-aos="fade-up"
+        data-aos-delay={100}
+      >
         <img
           src="/assets/img/visitas/dia del animal/AnyConv.com__WhatsApp Image 2024-05-03 at 11.25.58 (1).webp"
           alt
@@ -109,13 +115,13 @@ function DiaDelAnimal() {
           className="img-fluid services-img"
         />
       </div>
-  
+
       <NavLink to="/institucional/visitas/" className="read-more">
-          <span className="read-more link-size">
-            <i className="fas fa-reply icon-with-margin" />
-            Volver
-          </span>
-        </NavLink>
+        <span className="read-more link-size">
+          <i className="fas fa-reply icon-with-margin" />
+          Volver
+        </span>
+      </NavLink>
     </section>
   );
 }

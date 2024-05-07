@@ -12,7 +12,7 @@ let iconUbicacion = new L.icon({
   iconShadow: iconShadow,
 });
 
-const position = [-26.178533, -58.164910];  
+const position = [-26.17834954085042, -58.16492206232086];  
 
 const Mapa = () => {
   return (
@@ -22,7 +22,7 @@ const Mapa = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position}>
+        <Marker position={position} icon={iconUbicacion}>
           <Popup className="popup">
           <h6>Honorable Concejo Deliberante</h6>
             <img src={imageSrc} alt="Descripción de la imagen"/>
