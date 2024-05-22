@@ -26,15 +26,14 @@ function Footer() {
     };
   }, []); // Ejecuta el efecto solo una vez al renderizar
 
-  
-    const navigate = useNavigate(); // Hook para navegar a diferentes rutas
-  
-    const handleClick = () => {
-      // Desplaza la vista al principio de la página
-      window.scrollTo(0, 0);
-      // Navega a la ruta raíz
-      navigate('/');
-    };
+  const navigate = useNavigate(); // Hook para navegar a diferentes rutas
+
+  const handleClick = () => {
+    // Desplaza la vista al principio de la página
+    window.scrollTo(0, 0);
+    // Navega a la ruta raíz
+    navigate("/");
+  };
 
   return (
     <>
@@ -45,15 +44,18 @@ function Footer() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-4 col-md-6 footer-contact ">
-                  <div class="footer-container">
-                    <a href="#" class="logo-footer">
+                  <div className="footer-container">
+                    <NavLink to="/" className="logo">
                       <img
                         src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
                         alt="Logo"
                         className="img-logo img-fluid"
+                        onClick={handleClick}
                       />
-                    </a>
-                    <h3>HCD</h3>
+                    </NavLink>
+                    <NavLink to="/" className="logo" onClick={handleClick}>
+                      <h3>HCD</h3>
+                    </NavLink>
                   </div>
 
                   <p>
@@ -82,10 +84,10 @@ function Footer() {
                     <div className="social-links text-md-right pt-3 pt-md-0 social-instagram">
                       <a
                         href="https://www.instagram.com/formosahcd/"
-                        class="instagram"
+                        className="instagram"
                         target="blank"
                       >
-                        <i class="bx bxl-instagram"></i>
+                        <i className="bx bxl-instagram"></i>
                       </a>
                       <span>Instagram</span>
                     </div>
@@ -97,7 +99,11 @@ function Footer() {
                   <ul>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/" className="nav-link scrollto" onClick={handleClick}>
+                      <NavLink
+                        to="/"
+                        className="nav-link scrollto"
+                        onClick={handleClick}
+                      >
                         Inicio
                       </NavLink>
                     </li>
@@ -113,13 +119,18 @@ function Footer() {
                       <a
                         href="https://www.formosatuciudad.gob.ar/"
                         target="blank"
+                        className="nav-link scrollto"
                       >
                         Municipalidad
                       </a>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <a href="https://www.formosa.gob.ar/" target="blank">
+                      <a
+                        href="https://www.formosa.gob.ar/"
+                        target="blank"
+                        className="nav-link scrollto"
+                      >
                         Gobierno de Formosa
                       </a>
                     </li>
@@ -130,20 +141,28 @@ function Footer() {
                   <ul>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/ordenanzas/ordenanzas">Ordenanzas</NavLink>
+                      <NavLink to="/ordenanzas/ordenanzas" className="nav-link scrollto">
+                        Ordenanzas
+                      </NavLink>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/concejales/concejales">Concejales</NavLink>
+                      <NavLink to="/concejales/concejales" className="nav-link scrollto">
+                        Concejales
+                      </NavLink>
                     </li>
 
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/contacto">Contacto</NavLink>
+                      <NavLink to="/contacto" className="nav-link scrollto">
+                        Contacto
+                      </NavLink>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="#">Política de Privacidad</NavLink>
+                      <NavLink to="#" className="nav-link scrollto">
+                        Política de Privacidad
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -152,21 +171,26 @@ function Footer() {
           </div>
           <div className="container container-t  d-md-flex py-4">
             <div className="me-md-auto text-center text-md-start d-flex container-powered">
-              <div className="copyright me-2">
+              {/* <div className="copyright me-2">
                 © Copyright{" "}
                 <strong>
                   <span></span>
                 </strong>
                 . Todos los derechos reservados
-              </div>
-              <div className="credits ms-2">
-                Powered by <a href=""></a>
+              </div> */}
+              <div className="logo-container ms-2">
+                <div className=" credits ms-2">Powered by</div>
+
+                <img
+                  src="assets/img/logoConcept/NEW Logo Concept 03.png"
+                  alt="imagen logo concept"
+                />
+                <div className="credits-2">Soluciones Tecnológicas</div>
               </div>
             </div>
           </div>
         </footer>
         {/* End Footer */}
-        {/* <div id="preloader"></div> */}
         <a href="#" className="back-to-top" ref={backtotopRef}>
           <i className="bi bi-arrow-up-short"></i>
         </a>

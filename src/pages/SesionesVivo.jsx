@@ -9,7 +9,6 @@ function SesionesVivo() {
       <div className="container" data-aos="fade-up">
         <div className="row">
         <VideoEnVivo  />
-
           <div
             className="col-lg-6 pt-3 pt-lg-0 content"
             data-aos="fade-left"

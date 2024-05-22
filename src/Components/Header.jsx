@@ -18,9 +18,9 @@ function Header() {
             <div className="row justify-content-left custom-margin">
               <div className="col-xl-7 col-lg-9 text-left custom-margin">
                 <h1>
-                  <p class="word">Honorable</p>
-                  <p class="word">Concejo</p>
-                  <p class="word">Deliberante</p>
+                  <p className="word">Honorable</p>
+                  <p className="word">Concejo</p>
+                  <p className="word">Deliberante</p>
                 </h1>
                 <h2>Ciudad de Formosa</h2>
               </div>
@@ -39,7 +39,7 @@ function Header() {
                     <i className="fas fa-university" />
                   </div>
                   <h4 className="title">
-                    <a href>Institucional</a>
+                    <a href="#">Institucional</a>
                   </h4>
                   <div className="description decription-box">
                     <NavLink
@@ -56,12 +56,22 @@ function Header() {
                       Autoridades Anteriores
                     </NavLink>
 
-                    <NavLink
+                    {/* <NavLink
                       to="/institucional/edificio"
                       className="nav-link scrollto"
                     >
                       Edificio
-                    </NavLink>
+                    </NavLink> */}
+
+                 
+                  <NavLink
+                    to="/institucional/visitas"
+                    className="nav-link scrollto"
+                 
+                  >
+                    Visitas al HCD
+                  </NavLink>
+             
                   </div>
                 </div>
               </div>
@@ -75,7 +85,7 @@ function Header() {
                     <i className="fas fa-feather-alt" />
                   </div>
                   <h4 className="title">
-                    <a href>Legislativo</a>
+                    <a href="#">Legislativo</a>
                   </h4>
                   <div className="description decription-box">
                     <NavLink
@@ -107,7 +117,7 @@ function Header() {
                     <i className="fas fa-users" />
                   </div>
                   <h4 className="title">
-                    <a href>Concejales</a>
+                    <a href="#">Concejales</a>
                   </h4>
                   <div className="description decription-box">
                     <NavLink
@@ -135,7 +145,7 @@ function Header() {
                     <i className="fas fa-file-alt" />
                   </div>
                   <h4 className="title">
-                    <a href>Ordenanzas</a>
+                    <a href="#">Ordenanzas</a>
                   </h4>
                   <div className="description decription-box">
                     <NavLink
@@ -144,12 +154,12 @@ function Header() {
                     >
                       Ordenanzas
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                       to="/ordenanzas/resoluciones"
                       className="nav-link scrollto"
                     >
                       Resoluciones
-                    </NavLink>
+                    </NavLink> */}
                   </div>
                 </div>
               </div>

@@ -86,7 +86,7 @@ function Navbar() {
           />
         </NavLink>
         <h1 className="logo-hcd">
-          <a href="#">HCD</a>
+          <NavLink to="/">HCD</NavLink>
         </h1>
         <nav
           id="navbar"
@@ -159,7 +159,7 @@ function Navbar() {
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
-                    Visitas al Honorable Concejo Deliberante 
+                    Visitas al HCD
                   </NavLink>
                 </li>
                 <li>

@@ -105,7 +105,7 @@ function SwiperUltimasNovedades() {
             <p>25 de febrero de 2024</p>
           </div>
           <img
-            src="/assets/img/swiper_novedades/intendente.jpg"
+            src="/assets/img/swiper_novedades/foto-concejo-novedades.jpg"
             alt="Slide 3"
             className="swiper-image"
           />

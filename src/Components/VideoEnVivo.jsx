@@ -1,4 +1,5 @@
 import React from "react";
+import "./videoEnVivo.css";
 
 function VideoEnVivo() {
   return (
@@ -13,15 +14,19 @@ function VideoEnVivo() {
         alt=""
       />
       <a
-        href="#"
+        href="https://www.facebook.com/search/top?q=formosa%20hcd"
         className="glightbox play-btn mb-4"
         data-vbtype="video"
         data-autoplay="true"
         target="_blank"
         rel="noreferrer"
-        onClick={(e) => e.preventDefault()}
+        // onClick={(e) => e.preventDefault()}
       />
       <a />
+      {/* <div class="en-vivo">
+        <div class="bolita"></div>
+        <span>En Vivo</span>
+      </div> */}
     </div>
   );
 }
