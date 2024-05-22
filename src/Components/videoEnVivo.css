@@ -1,0 +1,49 @@
+/* @keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes crecer {
+  0% {
+    transform: scale(0.5); /* Empieza pequeño */
+  }
+  100% {
+    transform: scale(1.5); /* Aumenta al máximo */
+  }
+}
+
+/* Aplicamos la animación al texto */
+.titilante {
+  color: #2487ce; /* Puedes cambiar el color según tus preferencias */
+  font-size: 24px; /* Cambia el tamaño de la fuente según tus necesidades */
+  font-weight: bold; /* Hacemos el texto en negrita para mayor impacto */
+  animation: parpadeo 1s infinite; /* Configuramos la animación para que sea infinita y dure 1 segundo por ciclo */
+}
+
+.en-vivo {
+  font-size: 23px; /* Tamaño del texto */
+  font-weight: bold; /* Para negrita */
+  display: flex; /* Uso de flex para alinear el círculo y el texto */
+  align-items: center; /* Para alinear verticalmente */
+  color: #2487ce;
+}
+
+/* Estilo para el círculo */
+.bolita {
+  width: 10px; /* Tamaño del círculo */
+  height: 10px; /* Tamaño del círculo */
+  background-color: #2487ce; /* Color del círculo */
+  border-radius: 50%; /* Hace que sea circular */
+  margin-right: 10px; /* Espacio entre el círculo y el texto */
+  animation: parpadeo 1s infinite, crecer 1s infinite; /* Configuramos la animación para que sea infinita y dure 1 segundo por ciclo */
+}
+
+
+
