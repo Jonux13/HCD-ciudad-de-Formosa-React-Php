@@ -85,7 +85,7 @@ function SesionesOrdinarias() {
                 ORDINARIA” DEL DÍA <span>17-04-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
                   <PdfList fileName="6° Sesion Ordinaria 16.04.24.pdf" />
-                  <PdfList fileName="Efemerides-17-04-24.pdf" />
+                  <PdfList fileName="Efemerides desdel 17 hasta el 23 de Abril 15.04.24.pdf" />
                   <PdfList fileName="AnyConv.com__15bac5e1-ed73-4b23-92c6-64358a5a7b3e.webp" />
                   <PdfList fileName="AnyConv.com__1daf78f5-b5f8-4881-815e-afc367a43a59.webp" />
                   <PdfList fileName="AnyConv.com__3135fb0a-d759-4ff4-8310-aac44c521bf1.webp" />
@@ -132,6 +132,15 @@ function SesionesOrdinarias() {
                   <PdfList fileName="442471597_416004994656416_6487986019275907571_n.jpg" />
                   <PdfList fileName="442472498_416005001323082_3229342471628303779_n.jpg" />
                   <PdfList fileName="442505851_416005024656413_7095523942642472598_n.jpg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>22-05-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="10° Sesion Ordinaria 21.05.24.pdf" />
                 </div>
               </li>
             </ul>

@@ -25,6 +25,7 @@ import DiaDelAnimal from "./pages/Visitas/DiaDelAnimal";
 import Consul from "./pages/Visitas/Consul";
 import AniversarioFormosa from "./pages/Visitas/AniversarioFormosa";
 import Escuela445 from "./pages/Visitas/Escuela445";
+import Aniversario25deMayo from "./pages/Visitas/Aniversario25deMayo";
 
 function AppRouter() {
   return (
@@ -47,6 +48,7 @@ function AppRouter() {
         <Route path="/institucional/visitas/DiaDelAnimal" element={<DiaDelAnimal />} />
         <Route path="/institucional/visitas/aniversarioFormosa" element={<AniversarioFormosa />} />
         <Route path="/institucional/visitas/escuela445" element={<Escuela445 />} />
+        <Route path="/institucional/visitas/Aniversario25deMayo" element={<Aniversario25deMayo />} />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />

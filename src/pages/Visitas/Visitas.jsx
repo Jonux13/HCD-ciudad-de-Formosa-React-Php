@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../../pages/Visitas/visitas.css";
 
 function Visitas() {
   return (
@@ -13,11 +14,7 @@ function Visitas() {
         {/* End Section Title */}
         <div className="container">
           <div className="row g-5">
-            <div
-              className="col-lg-6"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink to="/institucional/visitas/consul" className="read-more">
                 <div className="service-item item-cyan position-relative">
                   <img
@@ -35,7 +32,8 @@ function Visitas() {
                       de la ciudad de Formosa.
                     </p>
                     <span className="read-more link-visitas">
-                      Ver más <i className="bi bi-arrow-right" />
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
                     </span>
                   </div>
                 </div>
@@ -65,7 +63,8 @@ function Visitas() {
                     </p>
 
                     <span className="read-more link-visitas">
-                      Ver más <i className="bi bi-arrow-right" />
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
                     </span>
                   </div>
                 </div>
@@ -96,7 +95,8 @@ function Visitas() {
                       Deliberante...
                     </p>
                     <span className="read-more link-visitas">
-                      Ver más <i className="bi bi-arrow-right" />
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
                     </span>
                   </div>
                 </div>
@@ -127,7 +127,40 @@ function Visitas() {
                       L. Maradona" del Barrio Liborsi.
                     </p>
                     <span className="read-more link-visitas">
-                      Ver más <i className="bi bi-arrow-right" />
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/Aniversario25deMayo"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/25 de mayo/foto-2-2024-05-28.webp"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                      Festejando el aniversario 214° de la Revolucion de Mayo{" "}
+                    </h3>
+                    <span className="centered-span">25/05/24</span>
+                    <p>
+                      En el "espacio cultural" del Honorable Concejo Deliberante,
+                      junto al presidente Dario Di Martino y concejales, 
+                      estuvimos festejando el aniversario 214° de la Revolución
+                      de Mayo.
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
                     </span>
                   </div>
                 </div>

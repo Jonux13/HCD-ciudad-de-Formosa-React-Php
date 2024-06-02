@@ -72,7 +72,7 @@ function Footer() {
                   <div className="social-links text-md-right pt-3 pt-md-0 social-facebook">
                     <div>
                       <a
-                        href="https://www.facebook.com/profile.php?id=61557813812573"
+                        href="https://www.facebook.com/profile.php?id=61560073619264"
                         className="facebook"
                         target="blank"
                       >
@@ -170,16 +170,10 @@ function Footer() {
             </div>
           </div>
           <div className="container container-t  d-md-flex py-4">
-            <div className="me-md-auto text-center text-md-start d-flex container-powered">
-              {/* <div className="copyright me-2">
-                © Copyright{" "}
-                <strong>
-                  <span></span>
-                </strong>
-                . Todos los derechos reservados
-              </div> */}
+            <div className="me-md-auto text-center text-md-start d-flexcontainer-powered ">
+        
               <div className="logo-container ms-2">
-                <div className=" credits ms-2">Powered by</div>
+                <div className="">Powered by</div>
 
                 <img
                   src="assets/img/logoConcept/NEW Logo Concept 03.png"
