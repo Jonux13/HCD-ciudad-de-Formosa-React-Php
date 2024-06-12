@@ -141,6 +141,38 @@ function SesionesOrdinarias() {
                 ORDINARIA” DEL DÍA <span>22-05-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
                   <PdfList fileName="10° Sesion Ordinaria 21.05.24.pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-06-11 at 09.11.13 (3).jpeg" />
+                  <PdfList fileName="WhatsApp Image 2024-06-11 at 09.11.13 (2).jpeg" />
+                  <PdfList fileName="WhatsApp Image 2024-06-11 at 09.11.13 (1).jpeg" />
+                  <PdfList fileName="WhatsApp Image 2024-06-11 at 09.11.13.jpeg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>29-05-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="11° Sesion Ordinaria 29.05.24..pdf" />
+                  <PdfList fileName="Efemerides desde el 29 hasta el 04 de Junio 27.05.24.pdf" />
+                  <PdfList fileName="446809805_122102970656335787_6442147474991899656_n.jpg" />
+                  <PdfList fileName="445351076_122102913536335787_6381141868588807012_n.jpg" />
+                  <PdfList fileName="445228029_122102913578335787_2960401162731038050_n.jpg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>05-06-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="12° Sesion ORdinaria 05.06.24.pdf" />
+                  <PdfList fileName="" />
+                  <PdfList fileName="447786793_122108431358335787_5264168521458364380_n.jpg" />
+                  <PdfList fileName="447794186_122108431430335787_8564581847222914018_n.jpg" />
+                  <PdfList fileName="447801775_122108431370335787_8962628567381497151_n.jpg" />
+                  <PdfList fileName="447883480_122108431274335787_896530396621914219_n.jpg" />
+                  <PdfList fileName="447893370_122108431316335787_7354385147882753165_n.jpg" />
                 </div>
               </li>
             </ul>

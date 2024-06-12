@@ -167,6 +167,64 @@ function Visitas() {
               </NavLink>
             </div>
             {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/lactancia"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/lactancia/AnyConv.com__446651424_122101999274335787_7533347121489445389_n.webp"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    Inuguración del espacio amigo de la lactancia{" "}
+                    </h3>
+                    <span className="centered-span">05/06/24</span>
+                    <p>
+                    En el Día de la Acción por la Salud de las Mujeres, habilitaron el "Espacio Amigo de Lactancia" en el Concejo Deliberante.
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/campeon"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/campeón/AnyConv.com__WhatsApp Image 2024-06-11 at 12.27.47 (1).webp"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    ¡Exitos Campeón!{" "}
+                    </h3>
+                    <span className="centered-span">11/06/24</span>
+                    <p>
+                    Hoy con mucho entusiasmo y alegría recibí a Joaquín un joven con muchísimo talento que con tan solo 19 años ya es campeón con 4 coronas .
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
           </div>
         </div>
       </section>
