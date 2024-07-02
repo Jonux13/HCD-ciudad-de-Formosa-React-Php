@@ -275,7 +275,7 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/ordenanzas/ordenanzas"
                 className="nav-link scrollto"
@@ -283,8 +283,8 @@ function Navbar() {
               >
                 Ordenanzas
               </NavLink>
-            </li>
-            {/* <li
+            </li> */}
+            <li
               className={`dropdown ${dropdownOrdenanzasOpen ? "active" : ""}`}
             >
               <a
@@ -306,7 +306,7 @@ function Navbar() {
                     Ordenanzas
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/ordenanzas/resoluciones"
                     className="nav-link scrollto"
@@ -314,9 +314,18 @@ function Navbar() {
                   >
                     Resoluciones
                   </NavLink>
+                </li> */}
+                      <li>
+                  <NavLink
+                    to="/ordenanzas/ultimasOrdenazas"
+                    className="nav-link scrollto"
+                    onClick={closeMobileNav}
+                  >
+                    Últimas Ordenanzas
+                  </NavLink>
                 </li>
               </ul>
-            </li> */}
+            </li>
 
             <li
               className={`dropdown ${dropdownLegislativoOpen ? "active" : ""}`}

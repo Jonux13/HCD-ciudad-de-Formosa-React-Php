@@ -28,6 +28,8 @@ import Escuela445 from "./pages/Visitas/Escuela445";
 import Aniversario25deMayo from "./pages/Visitas/Aniversario25deMayo";
 import Lactancia from "./pages/Visitas/Lactancia";
 import Campeon from "./pages/Visitas/Campeon";
+import VeinteDeJunio from "./pages/Visitas/VeinteDeJunio";
+import UltimasOrdenanzas from "./pages/UltimasOrdenanzas";
 
 function AppRouter() {
   return (
@@ -53,6 +55,7 @@ function AppRouter() {
         <Route path="/institucional/visitas/Aniversario25deMayo" element={<Aniversario25deMayo />} />
         <Route path="/institucional/visitas/lactancia" element={<Lactancia />} />
         <Route path="/institucional/visitas/campeon" element={<Campeon />} />
+        <Route path="/institucional/visitas/veinteDeJunio" element={<VeinteDeJunio />} />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />
@@ -77,7 +80,7 @@ function AppRouter() {
           element={<BloquePro />}
         />
         <Route path="/ordenanzas/ordenanzas" element={<Ordenanzas />} />
-        <Route path="/ordenanzas/resoluciones" element={<Resoluciones />} />
+        <Route path="/ordenanzas/ultimasOrdenazas" element={<UltimasOrdenanzas />} />
         <Route
           path="/legislativo/sesionesOrdinarias"
           element={<SesionesOrdinarias />}

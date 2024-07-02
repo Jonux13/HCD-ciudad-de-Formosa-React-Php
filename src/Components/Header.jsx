@@ -154,6 +154,12 @@ function Header() {
                     >
                       Ordenanzas
                     </NavLink>
+                    <NavLink
+                      to="/ordenanzas/ultimasOrdenazas"
+                      className="nav-link scrollto"
+                    >
+                      Últimas Ordenanzas
+                    </NavLink>
                     {/* <NavLink
                       to="/ordenanzas/resoluciones"
                       className="nav-link scrollto"

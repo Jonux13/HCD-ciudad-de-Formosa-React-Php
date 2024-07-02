@@ -225,6 +225,35 @@ function Visitas() {
               </NavLink>
             </div>
             {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/veinteDeJunio"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/20 de junio/AnyConv.com__448827349_122112906050335787_7371799334959944045_n_1_11zon.webp"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    20 de junio día de la bandera{" "}
+                    </h3>
+                    <span className="centered-span">20/06/24</span>
+                    <p>
+                    Hoy en conmemoración al Gral. Manuel Belgrano celebramos el día de la bandera.
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
           </div>
         </div>
       </section>

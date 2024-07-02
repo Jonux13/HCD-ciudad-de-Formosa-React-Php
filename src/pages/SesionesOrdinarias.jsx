@@ -175,6 +175,49 @@ function SesionesOrdinarias() {
                   <PdfList fileName="447893370_122108431316335787_7354385147882753165_n.jpg" />
                 </div>
               </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>12-06-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="13° Sesion Ordinaria 12.06.24.pdf" />
+                  <PdfList fileName="448270884_122110811204335787_5814400633683577327_n.jpg" />
+                  <PdfList fileName="448270963_122110807934335787_1085266229143798190_n.jpg" />
+                  <PdfList fileName="448326337_122110808048335787_5561734467703514984_n.jpg" />
+                  <PdfList fileName="448330109_122110807916335787_342337075652712337_n.jpg" />
+                  <PdfList fileName="448338328_122110811594335787_8290370044018115303_n.jpg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>19-06-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="14° Sesion Ordinaria 18.06.24.pdf" />
+                  <PdfList fileName="Efemerides desde el 18 hasta el 25 de Junio 18.06.24.pdf" />
+                  <PdfList fileName="448630725_122112663938335787_8777236716478595678_n.jpg" />
+                  <PdfList fileName="448617990_122112663776335787_8719920645387334437_n.jpg" />
+                  <PdfList fileName="448782929_122112663842335787_6947451918778327716_n.jpg" />
+                  <PdfList fileName="448737311_122112663896335787_6167766857202065864_n.jpg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>26-06-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="15° Sesion Ordinaria 26.06.24.pdf" />
+                  <PdfList fileName="efemerides desde el 24 hasta el 02 de julio 24.06.24.pdf" />
+                  <PdfList fileName="444488721_122114518646335787_5472555025911104135_n.jpg" />
+                  <PdfList fileName="449066005_122114518892335787_1135189547431378928_n.jpg" />
+                  <PdfList fileName="449040826_122114518772335787_753758988544628955_n.jpg" />
+                  <PdfList fileName="449042401_122114518592335787_7922241621444522642_n.jpg" />
+                  <PdfList fileName="449046514_122114518934335787_4280924802731144724_n.jpg" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>
