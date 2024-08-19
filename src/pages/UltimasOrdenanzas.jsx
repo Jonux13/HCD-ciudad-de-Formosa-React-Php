@@ -13,6 +13,14 @@ function UltimasOrdenanzas() {
       <div className="row content sesiones-ordinarias">
         <div className="col-lg-6 pt-4 pt-lg-0">
           <ul className="custom-list">
+          <li>
+              <i className="ri-circle-fill" />
+            N° 8026 -  VISTO BUENO ADOLFO DIAZ. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8026 VISTO BUENO ADOLFO DIAZ 14.06.24.pdf" />
+              </div>
+            </li>
+
             <li>
               <i className="ri-circle-fill" />
             N° 8030 - VISTO BUENO JUAN DE LOS SANTOS Y EGIDIO. 
@@ -66,6 +74,95 @@ function UltimasOrdenanzas() {
             N° 8036 - RATIFICACIÓN CONTRATO SUSCRIPTO TTE URBANO DE PASAJEROS. 
               <div className="d-flex container-list">
                 <PdfList fileName="8036 RATIFI CONTRATO SUSCRIPTO TTE URBANO DE PASAJEROS 27.06.24.pdf" />
+              </div>
+            </li>
+
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8037 - POLINOMICA FORMULA TTE URB.PASAJEROS. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8037 POLINOMICA FORMULA TTE URB.PASAJEROS 27.06.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8038 - Visto Bueno Sabina Escalada. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8038 Visto Bueno Sabina Escalada 03.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8039 - Visto Bueno Silveria Garcia. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8039 Visto Bueno Silveria Garcia 03.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8040 - EXCEPCION MYS PROYECTOS. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8040 EXCEPCION MYS PROYECTOS SAS 11.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8041 - COND Y EXENCION MUDOFOR. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8041 COND Y EXENCION MUDOFOR 10.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8042 -  ANEXO MINISTERIO DE ECONOMIA ANEXO I. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8042 ANEXO MINISTERIO DE ECONOMIA ANEXO I 11.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8043 - DECLARACION DE INTERES CPCEF. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8043 DECLARACION DE INTERES CPCEF 31.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8044 - COND Y EXENCION FRANCISCO VARGAS. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8044 COND Y EXENCION FRANCISCO VARGAS 31.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8045 - EXENCION SAHAGUN QUIÑONEZ. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8045 EXENCION SAHAGUN QUIÑONEZ 31.07.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8046 - MODIF ESTRUCTURA ORGANICA Y FUNCIONAL DEM. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8046 Modif Estructura Organica y Funcional DEM 08.08.24.pdf" />
+              </div>
+            </li>
+
+            <li>
+              <i className="ri-circle-fill" />
+            N° 8047 - VISTO BUENO MARCELA LOPEZ Y OTRA. 
+              <div className="d-flex container-list">
+                <PdfList fileName="8047 Visto Bueno Marcela Lopez y Otra 08.08.24.pdf" />
               </div>
             </li>
           </ul>

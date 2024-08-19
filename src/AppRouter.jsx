@@ -30,6 +30,10 @@ import Lactancia from "./pages/Visitas/Lactancia";
 import Campeon from "./pages/Visitas/Campeon";
 import VeinteDeJunio from "./pages/Visitas/VeinteDeJunio";
 import UltimasOrdenanzas from "./pages/UltimasOrdenanzas";
+import ColegioMaradona from "./pages/Visitas/ColegioMaradona";
+import JorgeAlvarenga from "./pages/Visitas/JorgeAlvarenga";
+import Irala from "./pages/Visitas/Irala";
+import Turistas from "./pages/Visitas/Turistas";
 
 function AppRouter() {
   return (
@@ -56,6 +60,10 @@ function AppRouter() {
         <Route path="/institucional/visitas/lactancia" element={<Lactancia />} />
         <Route path="/institucional/visitas/campeon" element={<Campeon />} />
         <Route path="/institucional/visitas/veinteDeJunio" element={<VeinteDeJunio />} />
+        <Route path="/institucional/visitas/colegioMaradona" element={<ColegioMaradona />} />
+        <Route path="/institucional/visitas/JorgeAlvarenga" element={<JorgeAlvarenga />} />
+        <Route path="/institucional/visitas/Irala" element={<Irala />} />
+        <Route path="/institucional/visitas/turistas" element={<Turistas />} />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />

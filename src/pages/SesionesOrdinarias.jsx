@@ -218,6 +218,65 @@ function SesionesOrdinarias() {
                   <PdfList fileName="449046514_122114518934335787_4280924802731144724_n.jpg" />
                 </div>
               </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>03-07-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="449790866_122116222682335787_3365382092034852015_n.pdf" />
+                  <PdfList fileName="449609026_122116222478335787_1767319106673076313_n_1_11zon.jpg" />
+                  <PdfList fileName="449703451_122116222292335787_4911615233538161818_n_2_11zon.jpg" />
+                  <PdfList fileName="449822551_122116222646335787_8541793907184439193_n_3_11zon.jpg" />
+                  <PdfList fileName="449954796_122116222304335787_2951200060215873379_n_4_11zon.jpg" />
+                  <PdfList fileName="449958593_122116222346335787_7744799056779923918_n_5_11zon.jpg" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>10-07-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="450612730_122117693432335787_8143752060003609660_n.pdf" />
+                  <PdfList fileName="450510989_122117693570335787_4826548183076309457_n.pdf" />
+                  <PdfList fileName="450382032_122117693384335787_9120005356739260308_n_1_11zon.jpg" />
+                  <PdfList fileName="450509756_122117693534335787_440308428016562838_n_2_11zon.jpg" />
+                  <PdfList fileName="450612683_122117693492335787_780708322940317143_n_3_11zon.jpg" />
+                  <PdfList fileName="450614339_122117693546335787_8211048419700623838_n_4_11zon.jpg" />
+                  <PdfList fileName="450655767_122117693510335787_3619643368234264175_n_5_11zon.jpg" />
+                  <PdfList fileName="450671509_122117693582335787_6705648827386572219_n_6_11zon.jpg" />
+
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>31-07-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.44.02.pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.44.03.pdf" />             
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03.webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (1).webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (2).webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (3).webp" />    
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>07-08-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.24.pdf" />
+                <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.23.pdf" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24.webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (1).webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (2).webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (3).webp" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>

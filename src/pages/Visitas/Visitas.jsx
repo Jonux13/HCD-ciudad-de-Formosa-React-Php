@@ -254,6 +254,124 @@ function Visitas() {
               </NavLink>
             </div>
             {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/JorgeAlvarenga"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/Jorge Octavio Alvarenga/450307242_122117232362335787_5862900273079745651_n.jpg"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    Visita de Jorge Octavio Alvarenga {" "}
+                    </h3>
+                    <span className="centered-span">28/06/24</span>
+                    <p>
+                    Con su sencillez y seguridad, cautivó a todos al recitar una poesía el pasado 28 de junio.
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/colegioMaradona"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    Visita de alumnos del Colegio Privado Dr. Esteban Laureano {" "}
+                    </h3>
+                    <span className="centered-span">01/07/24</span>
+                    <p>
+                    Chicos de 6° del Colegio Privado Dr. Esteban Laureano .
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
+
+          
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/irala"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/Irala/450229492_122117240402335787_4504032577374047395_n_11zon.jpg"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    El presidente del HCD Dario Di Martino recibió al Director Jose Luis Irala {" "}
+                    </h3>
+                    <span className="centered-span">08/07/24</span>
+                    <p>
+                    Reconocimiento de parte del coro "Kanta Conmigo".
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/turistas"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/turistas comodoro rivadavia/451693983_122119062884335787_7698212394212258536_n_2_11zon.jpg"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    Visita de turistas de Comodoro Rivadavia {" "}
+                    </h3>
+                    <span className="centered-span">17/07/24</span>
+                    <p>
+                    Esta mañana, turistas de Comodoro Rivadavia, acompañadas por el operador local Fernando Gaona, realizaron el tradicional City Tour por la ciudad de Formosa..
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
           </div>
         </div>
       </section>
