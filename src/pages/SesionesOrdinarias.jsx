@@ -15,8 +15,8 @@ function SesionesOrdinarias() {
             <ul className="custom-list">
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
-                <span>06-03-24</span> A LAS 19:00 Hs.{" "}
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>06-03-24</span> A LAS 19:00 Hs.{" "}
                 <div className="d-flex container-list">
                   <PdfList fileName="1° Sesion Ordinaria 06.03.24.pdf" />
                   <PdfList fileName="Efemerides-06-03-24.pdf" />
@@ -28,8 +28,8 @@ function SesionesOrdinarias() {
 
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
-                <span>13-03-24</span> A LAS 19:00 Hs.
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>13-03-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
                   <PdfList fileName="2° Sesion Ordinaria 11.03.24.pdf" />
                   <PdfList fileName="Efemerides-13-03-24.pdf" />
@@ -40,8 +40,8 @@ function SesionesOrdinarias() {
               </li>
               <li>
                 <i className="ri-circle-fill" />
-                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN ORDINARIA” DEL DÍA{" "}
-                <span>20-03-24</span> A LAS 19:00 Hs.
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>20-03-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
                   <PdfList fileName="3° Sesion ORdinaria 18.03.24.pdf" />
                   <PdfList fileName="Efemerides- 20-03-2024.pdf" />
@@ -246,7 +246,6 @@ function SesionesOrdinarias() {
                   <PdfList fileName="450614339_122117693546335787_8211048419700623838_n_4_11zon.jpg" />
                   <PdfList fileName="450655767_122117693510335787_3619643368234264175_n_5_11zon.jpg" />
                   <PdfList fileName="450671509_122117693582335787_6705648827386572219_n_6_11zon.jpg" />
-
                 </div>
               </li>
 
@@ -256,11 +255,11 @@ function SesionesOrdinarias() {
                 ORDINARIA” DEL DÍA <span>31-07-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
                   <PdfList fileName="WhatsApp Image 2024-08-12 at 09.44.02.pdf" />
-                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.44.03.pdf" />             
+                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.44.03.pdf" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03.webp" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (1).webp" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (2).webp" />
-                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (3).webp" />    
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.44.03 (3).webp" />
                 </div>
               </li>
 
@@ -269,12 +268,26 @@ function SesionesOrdinarias() {
                 SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
                 ORDINARIA” DEL DÍA <span>07-08-24</span> A LAS 19:00 Hs.
                 <div className="d-flex container-list">
-                <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.24.pdf" />
-                <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.23.pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.24.pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-08-12 at 09.48.23.pdf" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24.webp" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (1).webp" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (2).webp" />
                   <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-12 at 09.48.24 (3).webp" />
+                </div>
+              </li>
+
+              <li>
+                <i className="ri-circle-fill" />
+                SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
+                ORDINARIA” DEL DÍA <span>14-08-24</span> A LAS 19:00 Hs.
+                <div className="d-flex container-list">
+                  <PdfList fileName="WhatsApp Image 2024-08-21 at 09.44.13 (1).pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-08-21 at 09.44.14 (2).pdf" />
+                  <PdfList fileName="WhatsApp Image 2024-08-21 at 09.44.13 (2).pdf" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-21 at 09.44.14 (1).webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-21 at 09.44.14_2_11zon.webp" />
+                  <PdfList fileName="AnyConv.com__WhatsApp Image 2024-08-21 at 09.44.13_1_11zon.webp" />
                 </div>
               </li>
             </ul>

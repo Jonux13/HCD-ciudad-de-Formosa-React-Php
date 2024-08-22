@@ -372,6 +372,35 @@ function Visitas() {
               </NavLink>
             </div>
             {/* End Service Item */}
+
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+              <NavLink
+                to="/institucional/visitas/expoFest"
+                className="read-more"
+              >
+                <div className="service-item item-cyan position-relative">
+                  <img
+                    src="/assets/img/visitas/expoFest/AnyConv.com__WhatsApp Image 2024-08-21 at 09.47.18 (1)_6_11zon.webp"
+                    alt=""
+                    className="icon"
+                  />
+                  <div className="visit-info">
+                    <h3>
+                    Expo Fest {" "}
+                    </h3>
+                    <span className="centered-span">17/08/24</span>
+                    <p>
+                    Hoy estuvimos compartiendo junto al presidente del HCD Dario Di Martino , concejales de la ciudad , vecinos y también estudiantes de distintos colegios.
+                    </p>
+                    <span className="read-more link-visitas">
+                      <span className="text">Ver más</span>{" "}
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            {/* End Service Item */}
           </div>
         </div>
       </section>

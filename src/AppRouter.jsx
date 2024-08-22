@@ -34,6 +34,7 @@ import ColegioMaradona from "./pages/Visitas/ColegioMaradona";
 import JorgeAlvarenga from "./pages/Visitas/JorgeAlvarenga";
 import Irala from "./pages/Visitas/Irala";
 import Turistas from "./pages/Visitas/Turistas";
+import ExpoFest from "./pages/Visitas/ExpoFest";
 
 function AppRouter() {
   return (
@@ -64,6 +65,7 @@ function AppRouter() {
         <Route path="/institucional/visitas/JorgeAlvarenga" element={<JorgeAlvarenga />} />
         <Route path="/institucional/visitas/Irala" element={<Irala />} />
         <Route path="/institucional/visitas/turistas" element={<Turistas />} />
+        <Route path="/institucional/visitas/expoFest" element={<ExpoFest />} />
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />
