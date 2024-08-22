@@ -80,7 +80,7 @@ function Navbar() {
       <div className="container d-flex align-items-center justify-content-between">
         <NavLink to="/" className="logo">
           <img
-            src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
+            src="/assets/img/logo/COAFormosaMunicipalidad_monocromatico.png"
             alt="Logo"
             className="img-fluid"
           />

@@ -47,7 +47,7 @@ function Footer() {
                   <div className="footer-container">
                     <NavLink to="/" className="logo">
                       <img
-                        src="/assets/img/logo/COAFormosaMunicipalidad monocromatico.png"
+                        src="/assets/img/logo/COAFormosaMunicipalidad_monocromatico.png"
                         alt="Logo"
                         className="img-logo img-fluid"
                         onClick={handleClick}
