@@ -8,7 +8,7 @@ function Visitas() {
       <section id="services" className="services section">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
-          <h2>Visitas al Hcd</h2>
+          <h2 className="title">Visitas al Hcd</h2>
           <p>Visitas realizadas al Honorable Concejo Deliberante</p>
         </div>
         {/* End Section Title */}
@@ -153,10 +153,10 @@ function Visitas() {
                     </h3>
                     <span className="centered-span">25/05/24</span>
                     <p>
-                      En el "espacio cultural" del Honorable Concejo Deliberante,
-                      junto al presidente Dario Di Martino y concejales, 
-                      estuvimos festejando el aniversario 214° de la Revolución
-                      de Mayo.
+                      En el "espacio cultural" del Honorable Concejo
+                      Deliberante, junto al presidente Dario Di Martino y
+                      concejales, estuvimos festejando el aniversario 214° de la
+                      Revolución de Mayo.
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -180,12 +180,12 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    Inuguración del espacio amigo de la lactancia{" "}
-                    </h3>
+                    <h3>Inuguración del espacio amigo de la lactancia </h3>
                     <span className="centered-span">05/06/24</span>
                     <p>
-                    En el Día de la Acción por la Salud de las Mujeres, habilitaron el "Espacio Amigo de Lactancia" en el Concejo Deliberante.
+                      En el Día de la Acción por la Salud de las Mujeres,
+                      habilitaron el "Espacio Amigo de Lactancia" en el Concejo
+                      Deliberante.
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -209,12 +209,12 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    ¡Exitos Campeón!{" "}
-                    </h3>
+                    <h3>¡Exitos Campeón! </h3>
                     <span className="centered-span">11/06/24</span>
                     <p>
-                    Hoy con mucho entusiasmo y alegría recibí a Joaquín un joven con muchísimo talento que con tan solo 19 años ya es campeón con 4 coronas .
+                      Hoy con mucho entusiasmo y alegría recibí a Joaquín un
+                      joven con muchísimo talento que con tan solo 19 años ya es
+                      campeón con 4 coronas .
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -238,12 +238,11 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    20 de junio día de la bandera{" "}
-                    </h3>
+                    <h3>20 de junio día de la bandera </h3>
                     <span className="centered-span">20/06/24</span>
                     <p>
-                    Hoy en conmemoración al Gral. Manuel Belgrano celebramos el día de la bandera.
+                      Hoy en conmemoración al Gral. Manuel Belgrano celebramos
+                      el día de la bandera.
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -267,12 +266,11 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    Visita de Jorge Octavio Alvarenga {" "}
-                    </h3>
+                    <h3>Visita de Jorge Octavio Alvarenga </h3>
                     <span className="centered-span">28/06/24</span>
                     <p>
-                    Con su sencillez y seguridad, cautivó a todos al recitar una poesía el pasado 28 de junio.
+                      Con su sencillez y seguridad, cautivó a todos al recitar
+                      una poesía el pasado 28 de junio.
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -297,11 +295,11 @@ function Visitas() {
                   />
                   <div className="visit-info">
                     <h3>
-                    Visita de alumnos del Colegio Privado Dr. Esteban Laureano {" "}
+                      Visita de alumnos del Colegio Privado Dr. Esteban Laureano{" "}
                     </h3>
                     <span className="centered-span">01/07/24</span>
                     <p>
-                    Chicos de 6° del Colegio Privado Dr. Esteban Laureano .
+                      Chicos de 6° del Colegio Privado Dr. Esteban Laureano .
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -313,13 +311,8 @@ function Visitas() {
             </div>
             {/* End Service Item */}
 
-          
-
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-              <NavLink
-                to="/institucional/visitas/irala"
-                className="read-more"
-              >
+              <NavLink to="/institucional/visitas/irala" className="read-more">
                 <div className="service-item item-cyan position-relative">
                   <img
                     src="/assets/img/visitas/Irala/450229492_122117240402335787_4504032577374047395_n_11zon.jpg"
@@ -328,12 +321,11 @@ function Visitas() {
                   />
                   <div className="visit-info">
                     <h3>
-                    El presidente del HCD Dario Di Martino recibió al Director Jose Luis Irala {" "}
+                      El presidente del HCD Dario Di Martino recibió al Director
+                      Jose Luis Irala{" "}
                     </h3>
                     <span className="centered-span">08/07/24</span>
-                    <p>
-                    Reconocimiento de parte del coro "Kanta Conmigo".
-                    </p>
+                    <p>Reconocimiento de parte del coro "Kanta Conmigo".</p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
                       <i className="bi bi-arrow-right"></i>
@@ -356,12 +348,12 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    Visita de turistas de Comodoro Rivadavia {" "}
-                    </h3>
+                    <h3>Visita de turistas de Comodoro Rivadavia </h3>
                     <span className="centered-span">17/07/24</span>
                     <p>
-                    Esta mañana, turistas de Comodoro Rivadavia, acompañadas por el operador local Fernando Gaona, realizaron el tradicional City Tour por la ciudad de Formosa..
+                      Esta mañana, turistas de Comodoro Rivadavia, acompañadas
+                      por el operador local Fernando Gaona, realizaron el
+                      tradicional City Tour por la ciudad de Formosa..
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}
@@ -385,12 +377,12 @@ function Visitas() {
                     className="icon"
                   />
                   <div className="visit-info">
-                    <h3>
-                    Expo Fest {" "}
-                    </h3>
+                    <h3>Expo Fest </h3>
                     <span className="centered-span">17/08/24</span>
                     <p>
-                    Hoy estuvimos compartiendo junto al presidente del HCD Dario Di Martino , concejales de la ciudad , vecinos y también estudiantes de distintos colegios.
+                      Hoy estuvimos compartiendo junto al presidente del HCD
+                      Dario Di Martino , concejales de la ciudad , vecinos y
+                      también estudiantes de distintos colegios.
                     </p>
                     <span className="read-more link-visitas">
                       <span className="text">Ver más</span>{" "}

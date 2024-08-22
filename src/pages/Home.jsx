@@ -44,7 +44,7 @@ function Home() {
                 <p>
                   Comprometido con los principios de transparencia,
                   representatividad y participación ciudadana, el Concejo
-                  Deliberante de Formosa trabaja persistentemente para promover
+                  Deliberante de la Ciudad de Formosa trabaja persistentemente para promover
                   el bienestar y el progreso de todos los habitantes de nuestra
                   ciudad.
                 </p>

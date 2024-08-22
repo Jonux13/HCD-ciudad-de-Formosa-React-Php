@@ -69,32 +69,14 @@ function AppRouter() {
         <Route path="/institucional/edificio" element={<Edificio />} />
         <Route path="/concejales/concejales" element={<Consejales />} />
         <Route path="/concejales/comisiones" element={<Comisiones />} />
-        <Route
-          path="/concejales/bloqueDeConcejales/pj"
-          element={<BloquePj />}
-        />
-        <Route
-          path="/concejales/bloqueDeConcejales/ucr"
-          element={<BloqueUcr />}
-        />
-        <Route
-          path="/concejales/bloqueDeConcejales/nuevoPais"
-          element={<BloqueNuevoPais />}
-        />
-        <Route
-          path="/concejales/bloqueDeConcejales/5DeMarzo"
-          element={<Bloque5DeMarzo />}
-        />
-        <Route
-          path="/concejales/bloqueDeConcejales/pro"
-          element={<BloquePro />}
-        />
+        <Route path="/concejales/bloqueDeConcejales/pj" element={<BloquePj />} />
+        <Route path="/concejales/bloqueDeConcejales/ucr" element={<BloqueUcr />} />
+        <Route path="/concejales/bloqueDeConcejales/nuevoPais" element={<BloqueNuevoPais />} />
+        <Route path="/concejales/bloqueDeConcejales/5DeMarzo" element={<Bloque5DeMarzo />} />
+        <Route path="/concejales/bloqueDeConcejales/pro" element={<BloquePro />} />
         <Route path="/ordenanzas/ordenanzas" element={<Ordenanzas />} />
         <Route path="/ordenanzas/ultimasOrdenazas" element={<UltimasOrdenanzas />} />
-        <Route
-          path="/legislativo/sesionesOrdinarias"
-          element={<SesionesOrdinarias />}
-        />
+        <Route path="/legislativo/sesionesOrdinarias" element={<SesionesOrdinarias />} />
         <Route path="/legislativo/sesionesEnVivo" element={<SesionesVivo />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>

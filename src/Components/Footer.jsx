@@ -141,13 +141,19 @@ function Footer() {
                   <ul>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/ordenanzas/ordenanzas" className="nav-link scrollto">
+                      <NavLink
+                        to="/ordenanzas/ordenanzas"
+                        className="nav-link scrollto"
+                      >
                         Ordenanzas
                       </NavLink>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
-                      <NavLink to="/concejales/concejales" className="nav-link scrollto">
+                      <NavLink
+                        to="/concejales/concejales"
+                        className="nav-link scrollto"
+                      >
                         Concejales
                       </NavLink>
                     </li>
@@ -171,9 +177,8 @@ function Footer() {
           </div>
           <div className="container container-t  d-md-flex py-4">
             <div className="me-md-auto text-center text-md-start d-flexcontainer-powered ">
-        
               <div className="logo-container ms-2">
-                <div className="">Powered by</div>
+                <div className="">Desarrollado por</div>
 
                 <img
                   src="assets/img/logoConcept/NEW Logo Concept 03.png"
