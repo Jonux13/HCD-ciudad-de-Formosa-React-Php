@@ -11,7 +11,7 @@ const incrementarContador = async () => {
     await contadorRef.set({
       valor: firebase.firestore.FieldValue.increment(1)
     }, { merge: true });
-    console.log('Contador incrementado exitosamente');
+    // console.log('Contador incrementado exitosamente');
   } catch (error) {
     console.error('Error al incrementar el contador:', error);
   }

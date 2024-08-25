@@ -11,7 +11,7 @@ const PdfList = ({ fileName }) => {
   const [pdfUrls, setPdfUrls] = useState([]);
 
   useEffect(() => {
-    console.log("fileName:", fileName);
+    // console.log("fileName:", fileName);
     const fetchPdfUrls = async () => {
       const urls = await getPdfUrls(fileName);
       setPdfUrls(urls);

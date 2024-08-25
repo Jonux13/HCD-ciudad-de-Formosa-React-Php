@@ -7,7 +7,7 @@ const Irala = () => {
       id="service-details"
       className="service-details section section-visitas"
     >
-      <NavLink to="/institucional/visitas/" className="read-more link-volver">
+      <NavLink to="/visitas/" className="read-more link-volver">
         <div data-aos="fade-up">
           <span className="read-more">
             <i className="fas fa-reply icon-with-margin" />
@@ -49,7 +49,7 @@ const Irala = () => {
         />
       </div>
 
-      <NavLink to="/institucional/visitas" className="read-more">
+      <NavLink to="/visitas" className="read-more">
         <span className="read-more link-size">
           <i className="fas fa-reply icon-with-margin" />
           Volver

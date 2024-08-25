@@ -137,7 +137,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/institucional/autoridadesActuales"
+                    to="/autoridadesActuales"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -146,7 +146,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/institucional/autoridadesAnteriores"
+                    to="/autoridadesAnteriores"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -155,7 +155,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/institucional/visitas"
+                    to="/visitas"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -164,7 +164,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/institucional/edificio"
+                    to="/edificio"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -191,7 +191,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/concejales/concejales"
+                    to="/concejales"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -200,7 +200,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/concejales/comisiones"
+                    to="/comisiones"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -228,7 +228,7 @@ function Navbar() {
                   >
                     <li>
                       <NavLink
-                        to="/concejales/bloqueDeConcejales/pj"
+                        to="/pj"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -237,7 +237,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/concejales/bloqueDeConcejales/ucr"
+                        to="/ucr"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -246,7 +246,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/concejales/bloqueDeConcejales/nuevoPais"
+                        to="/nuevoPais"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -255,7 +255,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/concejales/bloqueDeConcejales/5DeMarzo"
+                        to="/5DeMarzo"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -264,7 +264,7 @@ function Navbar() {
                     </li>
                     <li>
                       <NavLink
-                        to="/concejales/bloqueDeConcejales/pro"
+                        to="/pro"
                         className="nav-link scrollto"
                         onClick={closeMobileNav}
                       >
@@ -299,7 +299,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/ordenanzas/ordenanzas"
+                    to="/ordenanzas"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -317,7 +317,7 @@ function Navbar() {
                 </li> */}
                       <li>
                   <NavLink
-                    to="/ordenanzas/ultimasOrdenazas"
+                    to="/ultimasOrdenazas"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -344,7 +344,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/legislativo/sesionesOrdinarias"
+                    to="/sesionesOrdinarias"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
@@ -353,7 +353,7 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/legislativo/sesionesEnVivo"
+                    to="/sesionesEnVivo"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >

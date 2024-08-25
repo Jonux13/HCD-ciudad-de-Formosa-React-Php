@@ -45,39 +45,39 @@ function AppRouter() {
         <Route path="/" element={<Home />} />
         <Route path="/acerca" element={<Acerca />} />
         <Route
-          path="/institucional/autoridadesActuales"
+          path="/autoridadesActuales"
           element={<AutoridadesActuales />}
         />
         <Route
-          path="/institucional/autoridadesAnteriores"
+          path="/autoridadesAnteriores"
           element={<AutoridadesAnteriores />}
         />
-        <Route path="/institucional/visitas" element={<Visitas />} />
-        <Route path="/institucional/visitas/consul" element={<Consul />} />
-        <Route path="/institucional/visitas/DiaDelAnimal" element={<DiaDelAnimal />} />
-        <Route path="/institucional/visitas/aniversarioFormosa" element={<AniversarioFormosa />} />
-        <Route path="/institucional/visitas/escuela445" element={<Escuela445 />} />
-        <Route path="/institucional/visitas/Aniversario25deMayo" element={<Aniversario25deMayo />} />
-        <Route path="/institucional/visitas/lactancia" element={<Lactancia />} />
-        <Route path="/institucional/visitas/campeon" element={<Campeon />} />
-        <Route path="/institucional/visitas/veinteDeJunio" element={<VeinteDeJunio />} />
-        <Route path="/institucional/visitas/colegioMaradona" element={<ColegioMaradona />} />
-        <Route path="/institucional/visitas/JorgeAlvarenga" element={<JorgeAlvarenga />} />
-        <Route path="/institucional/visitas/Irala" element={<Irala />} />
-        <Route path="/institucional/visitas/turistas" element={<Turistas />} />
-        <Route path="/institucional/visitas/expoFest" element={<ExpoFest />} />
-        <Route path="/institucional/edificio" element={<Edificio />} />
-        <Route path="/concejales/concejales" element={<Consejales />} />
-        <Route path="/concejales/comisiones" element={<Comisiones />} />
-        <Route path="/concejales/bloqueDeConcejales/pj" element={<BloquePj />} />
-        <Route path="/concejales/bloqueDeConcejales/ucr" element={<BloqueUcr />} />
-        <Route path="/concejales/bloqueDeConcejales/nuevoPais" element={<BloqueNuevoPais />} />
-        <Route path="/concejales/bloqueDeConcejales/5DeMarzo" element={<Bloque5DeMarzo />} />
-        <Route path="/concejales/bloqueDeConcejales/pro" element={<BloquePro />} />
-        <Route path="/ordenanzas/ordenanzas" element={<Ordenanzas />} />
-        <Route path="/ordenanzas/ultimasOrdenazas" element={<UltimasOrdenanzas />} />
-        <Route path="/legislativo/sesionesOrdinarias" element={<SesionesOrdinarias />} />
-        <Route path="/legislativo/sesionesEnVivo" element={<SesionesVivo />} />
+        <Route path="/visitas" element={<Visitas />} />
+        <Route path="/consul" element={<Consul />} />
+        <Route path="/DiaDelAnimal" element={<DiaDelAnimal />} />
+        <Route path="/aniversarioFormosa" element={<AniversarioFormosa />} />
+        <Route path="/escuela445" element={<Escuela445 />} />
+        <Route path="/Aniversario25deMayo" element={<Aniversario25deMayo />} />
+        <Route path="/lactancia" element={<Lactancia />} />
+        <Route path="/campeon" element={<Campeon />} />
+        <Route path="/veinteDeJunio" element={<VeinteDeJunio />} />
+        <Route path="/colegioMaradona" element={<ColegioMaradona />} />
+        <Route path="/JorgeAlvarenga" element={<JorgeAlvarenga />} />
+        <Route path="/Irala" element={<Irala />} />
+        <Route path="/turistas" element={<Turistas />} />
+        <Route path="/expoFest" element={<ExpoFest />} />
+        <Route path="/edificio" element={<Edificio />} />
+        <Route path="/concejales" element={<Consejales />} />
+        <Route path="/comisiones" element={<Comisiones />} />
+        <Route path="/pj" element={<BloquePj />} />
+        <Route path="/ucr" element={<BloqueUcr />} />
+        <Route path="/nuevoPais" element={<BloqueNuevoPais />} />
+        <Route path="/5DeMarzo" element={<Bloque5DeMarzo />} />
+        <Route path="/pro" element={<BloquePro />} />
+        <Route path="/ordenanzas" element={<Ordenanzas />} />
+        <Route path="/ultimasOrdenazas" element={<UltimasOrdenanzas />} />
+        <Route path="/sesionesOrdinarias" element={<SesionesOrdinarias />} />
+        <Route path="/sesionesEnVivo" element={<SesionesVivo />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />

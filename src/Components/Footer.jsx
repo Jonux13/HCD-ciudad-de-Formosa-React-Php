@@ -176,8 +176,8 @@ function Footer() {
             </div>
           </div>
           <div className="container container-t  d-md-flex py-4">
-            <div className="me-md-auto text-center text-md-start d-flexcontainer-powered ">
-              <div className="logo-container ms-2">
+            <div className="me-md-auto text-center text-md-start d-flex container-powered ">
+              <div className="logo-container">
                 <div className="">Desarrollado por</div>
 
                 <img

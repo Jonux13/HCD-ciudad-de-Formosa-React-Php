@@ -56,17 +56,19 @@
 
 .container-t {
   margin-right: 123px;
-}
-
-.logo-container {
-  right: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
 .logo-container img {
-  width: 46px;
+  width: 44px;
   height: auto;
   margin-left: 5px;
 }

@@ -15,7 +15,7 @@ function Visitas() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-              <NavLink to="/institucional/visitas/consul" className="read-more">
+              <NavLink to="/consul" className="read-more">
                 <div className="service-item item-cyan position-relative">
                   <img
                     src="/assets/img/visitas/visita consul/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (1).webp"
@@ -43,7 +43,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/DiaDelAnimal"
+                to="/DiaDelAnimal"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -74,7 +74,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/aniversarioFormosa"
+                to="/aniversarioFormosa"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -106,7 +106,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/escuela445"
+                to="/escuela445"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -138,7 +138,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/Aniversario25deMayo"
+                to="/Aniversario25deMayo"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -170,7 +170,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/lactancia"
+                to="/lactancia"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -199,7 +199,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/campeon"
+                to="/campeon"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -228,7 +228,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/veinteDeJunio"
+                to="/veinteDeJunio"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -256,7 +256,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/JorgeAlvarenga"
+                to="/JorgeAlvarenga"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -284,7 +284,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/colegioMaradona"
+                to="/colegioMaradona"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -312,7 +312,7 @@ function Visitas() {
             {/* End Service Item */}
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-              <NavLink to="/institucional/visitas/irala" className="read-more">
+              <NavLink to="/irala" className="read-more">
                 <div className="service-item item-cyan position-relative">
                   <img
                     src="/assets/img/visitas/Irala/450229492_122117240402335787_4504032577374047395_n_11zon.jpg"
@@ -338,7 +338,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/turistas"
+                to="/turistas"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
@@ -367,7 +367,7 @@ function Visitas() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
               <NavLink
-                to="/institucional/visitas/expoFest"
+                to="/expoFest"
                 className="read-more"
               >
                 <div className="service-item item-cyan position-relative">
