@@ -142,7 +142,7 @@ function Footer() {
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
                       <NavLink
-                        to="/ordenanzas/ordenanzas"
+                        to="/ordenanzas"
                         className="nav-link scrollto"
                       >
                         Ordenanzas
@@ -151,7 +151,7 @@ function Footer() {
                     <li>
                       <i className="bx bx-chevron-right" />{" "}
                       <NavLink
-                        to="/concejales/concejales"
+                        to="concejales"
                         className="nav-link scrollto"
                       >
                         Concejales

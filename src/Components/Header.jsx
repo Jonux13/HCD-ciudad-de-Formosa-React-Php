@@ -43,14 +43,14 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/institucional/autoridadesActuales"
+                      to="autoridadesActuales"
                       className="nav-link scrollto"
                     >
                       Autoridades Actuales
                     </NavLink>
 
                     <NavLink
-                      to="/institucional/autoridadesAnteriores"
+                      to="autoridadesAnteriores"
                       className="nav-link scrollto"
                     >
                       Autoridades Anteriores
@@ -65,7 +65,7 @@ function Header() {
 
                  
                   <NavLink
-                    to="/institucional/visitas"
+                    to="visitas"
                     className="nav-link scrollto"
                  
                   >
@@ -89,7 +89,7 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/legislativo/sesionesOrdinarias"
+                      to="sesionesOrdinarias"
                       className="nav-link scrollto"
                     >
                       Sesiones Ordinarias
@@ -97,7 +97,7 @@ function Header() {
 
                     <li>
                     <NavLink
-                    to="/legislativo/sesionesEnVivo"
+                    to="/sesionesEnVivo"
                     className="nav-link scrollto"
                  
                   >
@@ -121,13 +121,13 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/concejales/concejales"
+                      to="/concejales"
                       className="nav-link scrollto"
                     >
                       Concejales
                     </NavLink>
                     <NavLink
-                      to="/concejales/comisiones"
+                      to="/comisiones"
                       className="nav-link scrollto"
                     >
                       Comisiones
@@ -149,13 +149,13 @@ function Header() {
                   </h4>
                   <div className="description decription-box">
                     <NavLink
-                      to="/ordenanzas/ordenanzas"
+                      to="/ordenanzas"
                       className="nav-link scrollto"
                     >
                       Ordenanzas
                     </NavLink>
                     <NavLink
-                      to="/ordenanzas/ultimasOrdenazas"
+                      to="/ultimasOrdenazas"
                       className="nav-link scrollto"
                     >
                       Últimas Ordenanzas
