@@ -28,7 +28,7 @@ const ColegioMaradona = () => {
         data-aos-delay={100}
       >
         <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"
           alt
           className="img-fluid services-img"
         />
@@ -45,47 +45,47 @@ const ColegioMaradona = () => {
         </div>
 
         <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449344071_122115689048335787_1423004109228031159_n_1_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449344071_122115689048335787_1423004109228031159_n_1_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
         <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449471415_122115688286335787_6564644257455208725_n_2_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449471415_122115688286335787_6564644257455208725_n_2_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
         <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449599164_122115688688335787_5725404106147142331_n_3_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449599164_122115688688335787_5725404106147142331_n_3_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449600901_122115688712335787_1262978628456421266_n_4_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449600901_122115688712335787_1262978628456421266_n_4_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449601498_122115689096335787_1165928040242231985_n_5_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449601498_122115689096335787_1165928040242231985_n_5_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449609574_122115689012335787_1845834272097648050_n_6_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449609574_122115689012335787_1845834272097648050_n_6_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449643394_122115688196335787_2445559221351027396_n_7_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449643394_122115688196335787_2445559221351027396_n_7_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449705063_122115688994335787_1686115844240882375_n_9_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449705063_122115688994335787_1686115844240882375_n_9_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />
           <img
-          src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449730638_122115688616335787_6190679944837423415_n_11_11zon.jpg"
+          src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449730638_122115688616335787_6190679944837423415_n_11_11zon.jpg"
           alt
           className="img-fluid services-img text-center"
         />

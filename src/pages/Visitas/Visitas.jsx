@@ -289,8 +289,8 @@ function Visitas() {
               >
                 <div className="service-item item-cyan position-relative">
                   <img
-                    src="/assets/img/visitas/chicos de 6° del Colegio Privado Dr. Esteban Laureano /449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"
-                    alt=""
+                    src="/assets/img/visitas/chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"
+                    alt="foto de alumnos"
                     className="icon"
                   />
                   <div className="visit-info">
