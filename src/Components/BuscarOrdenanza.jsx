@@ -1,7 +1,4 @@
-// En BuscarOrdenanza.jsx
-import React from "react";
-import { useState } from "react";
-//import FileList from "./FileList";
+import React, { useState } from "react";
 import { obtenerDocumentos } from "../Hooks/ObtenerDocumentosHook";
 import { filteredFiles } from "../Hooks/FilteredFilesHook";
 import FileTable from "./FileTable";
@@ -17,9 +14,10 @@ export const BuscarOrdenanza = () => {
   // Manejar la búsqueda cuando se aprieta el botón buscar
   const submitHandler = async (e) => {
     e.preventDefault();
+    // console.log("docusSearch:", docusSearch); // Verifica el valor de docusSearch
     setIsSearching(true);
     setBuscando(true); // Indicar que se está realizando una búsqueda
-    await obtenerDocumentos(setDocus, setBuscando); // Obtener documentos y finalizar búsqueda
+    await obtenerDocumentos(docusSearch, setDocus, setBuscando); // Obtener documentos y finalizar búsqueda
     setShowFiles(true); // Mostrar archivos después de la búsqueda
   };
 
@@ -45,9 +43,9 @@ export const BuscarOrdenanza = () => {
                 setDocusSearch(e.target.value);
                 setShowFiles(false);
               }}
-              required="required"
+              required
             />
-            <button type="submit" className=" btn-ordenanza">
+            <button type="submit" className="btn-ordenanza">
               Buscar
             </button>
           </form>
@@ -55,13 +53,13 @@ export const BuscarOrdenanza = () => {
       </div>
 
       <div className="searching-container">
-          {buscando && (
-            <>
-              <h2>Buscando...</h2>
-              <div className="spinner" />
-            </>
-          )}
-        </div>
+        {buscando && (
+          <>
+            <h2>Buscando...</h2>
+            <div className="spinner" />
+          </>
+        )}
+      </div>
       {showFiles && !buscando && (
         <FileTable
           files={filteredFiles(isSearching, docus, docusSearch)}

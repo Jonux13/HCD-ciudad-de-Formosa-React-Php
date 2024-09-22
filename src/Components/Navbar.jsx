@@ -31,30 +31,30 @@ function Navbar() {
   }, []);
 
   const toggleMobileNav = () => {
-    console.log("Toggling mobile nav");
+    // console.log("Toggling mobile nav");
 
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
   const closeMobileNav = () => {
-    console.log("Closing mobile nav");
+    // console.log("Closing mobile nav");
     setIsMobileNavOpen(false);
   };
 
   const toggleDropdownInstitucional = () => {
-    console.log("Toggle dropdown Institucional");
+    // console.log("Toggle dropdown Institucional");
 
     setDropdownInstitucionalOpen(!dropdownInstitucionalOpen);
   };
 
   const toggleDropdownConcejales = (e) => {
-    console.log("Toggle dropdown Concejales");
+    // console.log("Toggle dropdown Concejales");
     e.preventDefault();
     setDropdownConcejalesOpen(!dropdownConcejalesOpen);
   };
 
   const toggleDropdownBloqueConcejales = (e) => {
-    console.log("BloqueConcejales");
+    // console.log("BloqueConcejales");
     e.preventDefault();
     setDropdownBloqueConcejalesOpen(!dropdownBloqueConcejalesOpen);
   };
@@ -68,7 +68,7 @@ function Navbar() {
   };
 
   const handleClickInicio = () => {
-    console.log("Se hizo clic en el enlace de inicio");
+    // console.log("Se hizo clic en el enlace de inicio");
   };
 
   return (

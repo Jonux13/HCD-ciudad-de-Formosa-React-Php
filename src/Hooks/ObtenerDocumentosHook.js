@@ -1,14 +1,30 @@
-import { app } from "../../Db";
-  
-  
-  // Función para obtener la lista de documentos
- export const obtenerDocumentos = async (setDocus, setBuscando) => {
+export const obtenerDocumentos = async (docusSearch, setDocus, setBuscando) => {
     try {
-        const docusList = await app.firestore().collection("archivos").get();
-        setDocus(docusList.docs.map((doc) => doc.data())); // Actualizar la lista de documentos
-        setBuscando(false); 
+      const response = await fetch(`https://concejoformosa.org//api/pdf?search=${encodeURIComponent(docusSearch)}`);
+      if (!response.ok) {
+        throw new Error('Error al obtener los documentos');
+      }
+      const data = await response.json();
+      
+      // Imprimir datos recibidos para inspeccionar su estructura
+      // console.log('Datos recibidos:', data);
+  
+      // Convertir datos en array si es necesario
+      const dataArray = Array.isArray(data) ? data : Object.values(data);
+  
+      // Verificar la conversión
+      // console.log('Datos procesados como array:', dataArray);
+  
+      // Actualizar el estado con el array de documentos
+      setDocus(dataArray);
     } catch (error) {
-        console.error("Error al obtener los documentos:", error.message);
-        // Aquí podrías agregar lógica adicional para mostrar un mensaje de error al usuario
+      console.error('Error al obtener los documentos:', error.message);
+      setDocus([]); // Manejar la ausencia de documentos
+    } finally {
+      setBuscando(false); // Terminar el estado de "buscando"
     }
-}
+  };
+  
+
+
+

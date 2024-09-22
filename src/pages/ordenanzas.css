@@ -73,7 +73,29 @@ td a {
 }
 
 .icono-rojo {
-  color: red;
+  color: #ed3e3f;
+  margin-right: 3px;
+}
+
+.icono-pdf {
+  color: #ed3e3f; 
+}
+
+.icono-word {
+  color: #2487ce; 
+}
+
+.icono-default {
+  color: #6c757d; 
+}
+
+
+a:hover .icono-pdf {
+  color: #ff0000; 
+}
+
+a:hover .icono-word {
+  color: #00f; 
 }
 
 
