@@ -5,34 +5,50 @@ import FileTable from "./FileTable";
 import "../pages/ordenanzas.css";
 
 export const BuscarOrdenanza = () => {
-  const [docusSearch, setDocusSearch] = useState(""); // Estado para almacenar el término de búsqueda
-  const [docus, setDocus] = useState([]); // Estado para almacenar la lista de archivos
-  const [isSearching, setIsSearching] = useState(false); // Estado para controlar si se está realizando una búsqueda
-  const [showFiles, setShowFiles] = useState(false); // Estado para controlar si se deben mostrar los archivos
-  const [buscando, setBuscando] = useState(false); // Estado para controlar "Buscando..."
+  const [docusSearch, setDocusSearch] = useState(""); // Término de búsqueda
+  const [docus, setDocus] = useState([]); // Lista de archivos
+  const [buscando, setBuscando] = useState(false); // Estado de carga
+  const [showFiles, setShowFiles] = useState(false); // Controla la visibilidad de archivos
+
+  // Verifica si la entrada es "Año XXXX" (donde XXXX es un número de 4 dígitos)
+  const isYearSearch = (input) => /^año\s\d{4}$/.test(input);
 
   // Manejar la búsqueda cuando se aprieta el botón buscar
   const submitHandler = async (e) => {
     e.preventDefault();
-    // console.log("docusSearch:", docusSearch); // Verifica el valor de docusSearch
-    setIsSearching(true);
     setBuscando(true); // Indicar que se está realizando una búsqueda
-    await obtenerDocumentos(docusSearch, setDocus, setBuscando); // Obtener documentos y finalizar búsqueda
-    setShowFiles(true); // Mostrar archivos después de la búsqueda
+
+    console.log("Término de búsqueda:", docusSearch);
+
+    // Si es una búsqueda por año (formato "Año XXXX")
+    if (isYearSearch(docusSearch)) {
+      console.log("Búsqueda por año:", docusSearch);
+      // Aquí podrías ajustar el query si tu API lo requiere para búsquedas por año
+    } else {
+      console.log("Búsqueda normal por palabra clave o número de ordenanza");
+    }
+
+    try {
+      await obtenerDocumentos(docusSearch, setDocus, setBuscando); // Obtener documentos
+      setShowFiles(true); // Mostrar archivos después de la búsqueda
+    } catch (error) {
+      console.error("Error al obtener documentos:", error);
+    } finally {
+      setBuscando(false); // Terminar estado de búsqueda
+    }
   };
 
   // Manejador para abrir el archivo cuando se hace clic
   const handleFileClick = (url) => {
     window.open(url, "_blank");
-    setShowFiles(false);
   };
 
   return (
     <div>
       <div className="row search-container">
         <div className="col-md-8 label-p form-container">
-          <label htmlFor="floatingEmptyPlaintextInput" className="form-label">
-            *Ingrese palabra clave o el número de la ordenanza.
+          <label htmlFor="floatingEmptyPlaintextInput" className="form-label form-text">
+            *Ingrese palabra clave, número de la ordenanza, <br /> <div className="form-label-año">o "año XXXX" para buscar por año.</div> 
           </label>
           <form onSubmit={submitHandler} className="d-flex form">
             <input
@@ -43,6 +59,7 @@ export const BuscarOrdenanza = () => {
                 setDocusSearch(e.target.value);
                 setShowFiles(false);
               }}
+              placeholder='Ej: año 1983'
               required
             />
             <button type="submit" className="btn-ordenanza">
@@ -60,9 +77,10 @@ export const BuscarOrdenanza = () => {
           </>
         )}
       </div>
+
       {showFiles && !buscando && (
         <FileTable
-          files={filteredFiles(isSearching, docus, docusSearch)}
+          files={filteredFiles(false, docus, docusSearch)} // Cambié isSearching a false
           handleFileClick={handleFileClick}
         />
       )}

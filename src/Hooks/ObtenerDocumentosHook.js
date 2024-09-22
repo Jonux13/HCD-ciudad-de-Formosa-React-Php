@@ -1,6 +1,6 @@
 export const obtenerDocumentos = async (docusSearch, setDocus, setBuscando) => {
     try {
-      const response = await fetch(`https://concejoformosa.org//api/pdf?search=${encodeURIComponent(docusSearch)}`);
+      const response = await fetch(`https://concejoformosa.org/api/pdf?search=${encodeURIComponent(docusSearch)}`);
       if (!response.ok) {
         throw new Error('Error al obtener los documentos');
       }
