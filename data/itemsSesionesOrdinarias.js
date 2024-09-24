@@ -119,13 +119,12 @@ export const itemsSesionesOrdinarias = [
   {
     date: "05-06-24",
     files: [
-      "12° Sesion Ordinaria 05.06.24.pdf",
+      "12° Sesion ORdinaria 05.06.24.pdf",
       "447786793_122108431358335787_5264168521458364380_n.jpg",
       "447794186_122108431430335787_8564581847222914018_n.jpg",
       "447801775_122108431370335787_8962628567381497151_n.jpg",
       "447883480_122108431274335787_8965303967718807287_n.jpg",
       "447888369_122108431326335787_2931147153565276736_n.jpg",
-      "447914219_n.jpg",
       "447893370_122108431316335787_7354385147882753165_n.jpg"
     ]
   },
@@ -247,5 +246,17 @@ export const itemsSesionesOrdinarias = [
     "AnyConv.com__WhatsApp Image 2024-09-02 at 10.15.44.webp",
     "AnyConv.com__WhatsApp Image 2024-09-02 at 10.15.44 (2).webp"
     ]
-  }
+  },
+  {
+    date: "11-09-24",
+    files: [
+     "WhatsApp Image 2024-09-17 at 09.41.12 (3).pdf",
+     "WhatsApp Image 2024-09-17 at 09.41.12.pdf",
+     "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (4).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (1).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (2).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (5).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (6).webp"
+    ]
+  },
 ]
