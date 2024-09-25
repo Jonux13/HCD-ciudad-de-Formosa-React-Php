@@ -17,7 +17,6 @@ import BloqueNuevoPais from "./pages/BloqueNuevoPais";
 import Bloque5DeMarzo from "./pages/Bloque5DeMarzo";
 import BloquePro from "./pages/BloquePro";
 import SesionesOrdinarias from "./pages/SesionesOrdinarias";
-import Resoluciones from "./pages/Resoluciones";
 import Comisiones from "./pages/Comisiones";
 import SesionesVivo from "./pages/SesionesVivo";
 import Visitas from "./pages/Visitas/Visitas";

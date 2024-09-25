@@ -18,12 +18,9 @@ export const BuscarOrdenanza = () => {
     e.preventDefault();
     setBuscando(true); // Indicar que se está realizando una búsqueda
 
-
     // Si es una búsqueda por año (formato "Año XXXX")
     if (isYearSearch(docusSearch)) {
       // Aquí podrías ajustar el query si tu API lo requiere para búsquedas por año
-    } else {
-      console.log("Búsqueda normal por palabra clave o número de ordenanza");
     }
 
     try {
@@ -85,3 +82,4 @@ export const BuscarOrdenanza = () => {
     </div>
   );
 };
+

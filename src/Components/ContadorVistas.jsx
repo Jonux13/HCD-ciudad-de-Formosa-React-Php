@@ -1,12 +1,22 @@
-import React, { useEffect } from "react";
-import useContador from "../Hooks/UseContador";
-import incrementarContador from "../Hooks/IncrementarContador";
+import React, { useEffect, useState } from "react";
 import "./ContadorVistas.css";
 
 function ContadorVistas() {
-  const contador = useContador();
+  const [contador, setContador] = useState(0);
+
   useEffect(() => {
-    incrementarContador();
+    // Llamada a contador.php para obtener el valor del contador
+    const fetchContador = async () => {
+      try {
+        const response = await fetch('https://concejoformosa.org/contador.php');
+        const data = await response.json();
+        setContador(data.contador);
+      } catch (error) {
+        console.error('Error al obtener el contador:', error);
+      }
+    };
+
+    fetchContador();
   }, []);
 
   return (
@@ -22,3 +32,4 @@ function ContadorVistas() {
 }
 
 export default ContadorVistas;
+

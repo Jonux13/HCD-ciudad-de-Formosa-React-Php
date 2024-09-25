@@ -1,5 +1,5 @@
 {
-  "name": "consejo-de-deliberantes-formosa",
+  "name": "concejo-deliberantes-formosa",
   "homepage": "https://concejoformosa.org/",
   "private": true,
   "version": "1.1.0",
@@ -17,7 +17,6 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.16.7",
     "@vitejs/plugin-react": "^4.3.1",
-    "firebase": "^10.9.0",
     "fortawesome": "^0.0.1-security",
     "leaflet": "^1.9.4",
     "pdfjs-dist": "^4.6.82",
