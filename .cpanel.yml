@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOY_PATH=/home/concejofsa/public_html
-    - /bin/cp -R * $DEPLOY_PATH
+    - /bin/cp -R dist/* $DEPLOY_PATH
