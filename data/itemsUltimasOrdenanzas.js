@@ -86,6 +86,10 @@ export const itemsData = [
   { id: 8065, text: "N° 8065 - COND Y EXENCION CLUB SAN MARTIN 11.09.24", filePath: "8065 COND Y EXENCION CLUB SAN MARTIN 11.09.24.pdf" },
   { id: 8066, text: "N° 8066 - COND Y EXENCION TIRO FEDERAL FORMOSA .", filePath: "8066 COND Y EXENCION TIRO FEDERAL FORMOSA 11.09.24.pdf" },
   { id: 8067, text: "N° 8067 - ADHESION LEY PCIAL.N°1734", filePath: "8067 ADHESION LEY PCIAL.N°1734 11.09.24.pdf" },
+  { id: 8068, text: "N° 8068 - Excencionase del pago al ministerio de la comunindad.", filePath: "8068 Excencionase del pago al ministerio de la comunindad.PDF" },
+  { id: 8069, text: "N° 8069 - condonase la deuda del obispado de formosa.", filePath: "8069 condonase la deuda del obispado de formosa.PDF" },
+  { id: 8070, text: "N° 8070 - prohibese la fabricacion, comercializacion, exhibicion, difusion, almacenamiento de artifio pitotecnico.", filePath: "8070 prohibese la fabricacion, comercializacion, exhibicion, difusion, almacenamiento de artifio pitotecnico..PDF" },
+
 
 
 ];

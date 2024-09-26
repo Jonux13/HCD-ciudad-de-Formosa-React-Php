@@ -259,4 +259,30 @@ export const itemsSesionesOrdinarias = [
      "AnyConv.com__WhatsApp Image 2024-09-17 at 09.41.12 (6).webp"
     ]
   },
+  {
+    date: "18-09-24",
+    files: [
+     "WhatsApp Image 2024-09-25 at 18.24.06.pdf",
+     "WhatsApp Image 2024-09-25 at 18.24.06 (1).pdf",
+     "WhatsApp Image 2024-09-25 at 18.24.06 (2).pdf",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (3).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (4).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (5).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (6).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (7).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (8).webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 18.24.06 (9).webp",
+    ]
+  },
+  {
+    date: "25-09-24",
+    files: [
+     "WhatsApp Image 2024-09-25 at 21.10.27.pdf",
+     "WhatsApp Image 2024-09-25 at 21.10.53.pdf",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 21.08.33.webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 21.09.00.webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 21.09.23.webp",
+     "AnyConv.com__WhatsApp Image 2024-09-25 at 21.10.02.webp",
+    ]
+  },
 ]
