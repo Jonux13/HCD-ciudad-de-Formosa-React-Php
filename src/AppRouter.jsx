@@ -19,21 +19,10 @@ import BloquePro from "./pages/BloquePro";
 import SesionesOrdinarias from "./pages/SesionesOrdinarias";
 import Comisiones from "./pages/Comisiones";
 import SesionesVivo from "./pages/SesionesVivo";
-import Visitas from "./pages/Visitas/Visitas";
-import DiaDelAnimal from "./pages/Visitas/DiaDelAnimal";
-import Consul from "./pages/Visitas/Consul";
-import AniversarioFormosa from "./pages/Visitas/AniversarioFormosa";
-import Escuela445 from "./pages/Visitas/Escuela445";
-import Aniversario25deMayo from "./pages/Visitas/Aniversario25deMayo";
-import Lactancia from "./pages/Visitas/Lactancia";
-import Campeon from "./pages/Visitas/Campeon";
-import VeinteDeJunio from "./pages/Visitas/VeinteDeJunio";
+import Visitas from "./Components/Visitas";
 import UltimasOrdenanzas from "./pages/UltimasOrdenanzas";
-import ColegioMaradona from "./pages/Visitas/ColegioMaradona";
-import JorgeAlvarenga from "./pages/Visitas/JorgeAlvarenga";
-import Irala from "./pages/Visitas/Irala";
-import Turistas from "./pages/Visitas/Turistas";
-import ExpoFest from "./pages/Visitas/ExpoFest";
+import VisitaDetalle from './Components/VisitaDetalle';
+
 
 function AppRouter() {
   return (
@@ -43,28 +32,10 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acerca" element={<Acerca />} />
-        <Route
-          path="/autoridadesActuales"
-          element={<AutoridadesActuales />}
-        />
-        <Route
-          path="/autoridadesAnteriores"
-          element={<AutoridadesAnteriores />}
-        />
+        <Route path="/autoridadesActuales" element={<AutoridadesActuales />} />
+        <Route path="/autoridadesAnteriores" element={<AutoridadesAnteriores />} />
         <Route path="/visitas" element={<Visitas />} />
-        <Route path="/consul" element={<Consul />} />
-        <Route path="/DiaDelAnimal" element={<DiaDelAnimal />} />
-        <Route path="/aniversarioFormosa" element={<AniversarioFormosa />} />
-        <Route path="/escuela445" element={<Escuela445 />} />
-        <Route path="/Aniversario25deMayo" element={<Aniversario25deMayo />} />
-        <Route path="/lactancia" element={<Lactancia />} />
-        <Route path="/campeon" element={<Campeon />} />
-        <Route path="/veinteDeJunio" element={<VeinteDeJunio />} />
-        <Route path="/colegioMaradona" element={<ColegioMaradona />} />
-        <Route path="/JorgeAlvarenga" element={<JorgeAlvarenga />} />
-        <Route path="/Irala" element={<Irala />} />
-        <Route path="/turistas" element={<Turistas />} />
-        <Route path="/expoFest" element={<ExpoFest />} />
+        <Route path="/visita/:id" element={<VisitaDetalle />} />
         <Route path="/edificio" element={<Edificio />} />
         <Route path="/concejales" element={<Consejales />} />
         <Route path="/comisiones" element={<Comisiones />} />
