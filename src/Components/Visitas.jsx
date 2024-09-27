@@ -4,7 +4,7 @@ import { visitasData } from "../../data/visitasData"; // Importa los datos desde
 import { Box, Pagination } from "@mui/material"; // Importa Pagination de Material-UI
 
 function Visitas() {
-  const ITEMS_PER_PAGE = 2;
+  const ITEMS_PER_PAGE = 6;
   const [page, setPage] = useState(() => {
     // Recupera la página guardada desde localStorage o establece 1 si no existe
     const savedPage = localStorage.getItem("currentPage");
