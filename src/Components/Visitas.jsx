@@ -41,7 +41,7 @@ function Visitas() {
               <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                 <NavLink to={`/visita/${visita.id}`} className="read-more">
                   <div className="service-item item-cyan position-relative">
-                    <img src={visita.image} alt={visita.title} className="icon" loading="lazy" />
+                    <img src={visita.image} alt={visita.title} className="icon" />
                     <div className="visit-info">
                       <h3>{visita.title}</h3>
                       <span className="centered-span">{visita.date}</span>
