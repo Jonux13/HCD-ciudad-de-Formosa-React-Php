@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { visitasData } from "../../data/visitasData"; // Importa los datos desde el archivo .js
 import { Box, Pagination } from "@mui/material"; // Importa Pagination de Material-UI
 
 function Visitas() {
   const ITEMS_PER_PAGE = 6;
+  const location = useLocation(); // Obtiene la ubicación actual
   const [page, setPage] = useState(() => {
     // Recupera la página guardada desde localStorage o establece 1 si no existe
     const savedPage = localStorage.getItem("currentPage");
@@ -16,6 +17,22 @@ function Visitas() {
     localStorage.setItem("currentPage", page);
   }, [page]);
 
+  // Efecto para limpiar el localStorage cuando se salga de la sección "Visitas"
+  useEffect(() => {
+    const handleLocationChange = () => {
+      if (!location.pathname.startsWith("/visita/:id")) {
+        // Elimina la página guardada si la ubicación no es parte de "Visitas"
+        localStorage.removeItem("currentPage");
+      }
+    };
+
+    handleLocationChange(); // Verifica la ubicación al cargar
+
+    return () => {
+      handleLocationChange(); // Verifica la ubicación al desmontar
+    };
+  }, [location]);
+
   // Calcula el índice del último y primer elemento en la página actual
   const indexOfLastItem = page * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
@@ -24,7 +41,7 @@ function Visitas() {
   // Función para manejar el cambio de página
   const handleChange = (event, value) => {
     setPage(value);
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // Lleva el scroll a la parte superior
   };
 
   return (
@@ -57,7 +74,7 @@ function Visitas() {
           </div>
 
           {/* Componente de paginación */}
-          <Box mt={6} >
+          <Box mt={6}>
             <Pagination
               count={Math.ceil(visitasData.length / ITEMS_PER_PAGE)} // Número total de páginas
               page={page} // Página actual
@@ -67,12 +84,12 @@ function Visitas() {
               shape="rounded"
               sx={{
                 "& .MuiPaginationItem-root": {
-                  fontSize: "0.8rem",   
-                  height: "25px",    
-                  minWidth: "15px",  
+                  fontSize: "0.8rem",
+                  height: "25px",
+                  minWidth: "15px",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",   
+                  justifyContent: "center",
                 },
                 "& .MuiPaginationItem-rounded.Mui-selected": {
                   bgcolor: "#2487ce",
@@ -87,3 +104,4 @@ function Visitas() {
 }
 
 export default Visitas;
+
