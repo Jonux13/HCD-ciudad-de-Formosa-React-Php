@@ -39,25 +39,25 @@ function UltimasOrdenanzas() {
             </ul>
 
             <Box mt={2}>
-  <Pagination
-    className="page"
-    count={Math.ceil(itemsData.length / ITEMS_PER_PAGE)}
-    page={page}
-    onChange={handleChange}
-    color="primary"
-    size="small"
-    shape="rounded"
-    sx={{
-      "& .MuiPaginationItem-root": {
-        fontSize: "0.8rem",       
-        height: "25px",
-      },
-      "& .MuiPaginationItem-rounded.Mui-selected": {
-        bgcolor: "#2487ce",
-      },
-    }}
-  />
-</Box>
+                <Pagination
+                  className="page"
+                  count={Math.ceil(itemsData.length / ITEMS_PER_PAGE)}
+                  page={page}
+                  onChange={handleChange}
+                  color="primary"
+                  size="small"
+                  shape="rounded"
+                  sx={{
+                    "& .MuiPaginationItem-root": {
+                      fontSize: "0.8rem",       
+                      height: "25px",
+                    },
+                    "& .MuiPaginationItem-rounded.Mui-selected": {
+                      bgcolor: "#2487ce",
+                    },
+                  }}
+                />
+            </Box>
 
           </div>
         </div>

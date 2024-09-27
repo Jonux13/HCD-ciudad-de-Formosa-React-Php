@@ -1,40 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { visitasData } from "../../data/visitasData"; // Importa los datos desde el archivo .js
+import { Box, Pagination } from "@mui/material"; // Importa Pagination de Material-UI
 
 function Visitas() {
-  const [visitas, setVisitas] = useState([]);
-  const [error, setError] = useState(null);
+  const ITEMS_PER_PAGE = 2;
+  const [page, setPage] = useState(() => {
+    // Recupera la página guardada desde localStorage o establece 1 si no existe
+    const savedPage = localStorage.getItem("currentPage");
+    return savedPage ? Number(savedPage) : 1;
+  });
 
   useEffect(() => {
-    const controller = new AbortController();
-    const signal = controller.signal;
+    // Almacena la página actual en localStorage
+    localStorage.setItem("currentPage", page);
+  }, [page]);
 
-    // Carga los datos desde el archivo JSON
-    fetch('/visitasData.json', { signal })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error: ${response.statusText}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setVisitas(data);
-      })
-      .catch((err) => {
-        if (err.name !== 'AbortError') {
-          setError('No se pudieron cargar los datos de visitas.');
-        }
-      });
+  // Calcula el índice del último y primer elemento en la página actual
+  const indexOfLastItem = page * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentVisitas = visitasData.slice(indexOfFirstItem, indexOfLastItem); // Elementos que se mostrarán en la página actual
 
-    // Cleanup function to abort fetch if component unmounts
-    return () => {
-      controller.abort();
-    };
-  }, []);
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+  // Función para manejar el cambio de página
+  const handleChange = (event, value) => {
+    setPage(value);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div>
@@ -46,11 +37,11 @@ function Visitas() {
 
         <div className="container">
           <div className="row g-5">
-            {visitas.map((visita) => (
+            {currentVisitas.map((visita) => (
               <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-              <NavLink to={`/visita/${visita.id}`} className="read-more">
+                <NavLink to={`/visita/${visita.id}`} className="read-more">
                   <div className="service-item item-cyan position-relative">
-                    <img src={visita.image} alt={visita.title} className="icon" />
+                    <img src={visita.image} alt={visita.title} className="icon" loading="lazy" />
                     <div className="visit-info">
                       <h3>{visita.title}</h3>
                       <span className="centered-span">{visita.date}</span>
@@ -64,6 +55,31 @@ function Visitas() {
               </div>
             ))}
           </div>
+
+          {/* Componente de paginación */}
+          <Box mt={6} >
+            <Pagination
+              count={Math.ceil(visitasData.length / ITEMS_PER_PAGE)} // Número total de páginas
+              page={page} // Página actual
+              onChange={handleChange} // Maneja el cambio de página
+              color="primary"
+              size="large"
+              shape="rounded"
+              sx={{
+                "& .MuiPaginationItem-root": {
+                  fontSize: "0.8rem",   
+                  height: "25px",    
+                  minWidth: "15px",  
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",   
+                },
+                "& .MuiPaginationItem-rounded.Mui-selected": {
+                  bgcolor: "#2487ce",
+                },
+              }}
+            />
+          </Box>
         </div>
       </section>
     </div>

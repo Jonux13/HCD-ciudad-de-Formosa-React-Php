@@ -1,4 +1,4 @@
-[
+export const visitasDetalle = [
   {
     "id": 1,
     "title": "Visita de la Cónsul de la República del Paraguay",
