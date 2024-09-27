@@ -12,7 +12,7 @@ function VisitaDetalle() {
     const signal = controller.signal;
 
     // Carga los datos desde el archivo JSON
-    fetch('/data/visitasDetalle.json', { signal })
+    fetch('/visitasDetalle.json', { signal })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
