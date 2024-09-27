@@ -20,7 +20,7 @@ function Visitas() {
   // Efecto para limpiar el localStorage cuando se salga de la sección "Visitas"
   useEffect(() => {
     const handleLocationChange = () => {
-      if (!location.pathname.startsWith("/visita/:id")) {
+      if (!location.pathname.startsWith("/visitas")) {
         // Elimina la página guardada si la ubicación no es parte de "Visitas"
         localStorage.removeItem("currentPage");
       }
