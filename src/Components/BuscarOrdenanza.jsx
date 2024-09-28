@@ -42,8 +42,23 @@ export const BuscarOrdenanza = () => {
     <div>
       <div className="row search-container">
         <div className="col-md-8 label-p form-container">
-          <label htmlFor="floatingEmptyPlaintextInput" className="form-label form-text">
-            *Ingrese palabra clave, número de la ordenanza, <br /> <div className="form-label-año">o "año XXXX" para buscar por año.</div> 
+          <label
+            htmlFor="floatingEmptyPlaintextInput"
+            className="form-label form-text"
+          >
+            <div className="title-ord-search">
+              Para buscar o descargar ordenanzas, usted puede:
+            </div>
+        
+            <ol className="ol-ord-search">
+              <li>Ingresar con una palabra clave, ejemplo: <b>predio</b> <span className="single-word-1">(Ingrese una sola palabra)</span></li>
+              <li>Ingresar N° de Ordenanza, ejemplo: <b>4454</b></li>
+              <li className="ano-ord">Ingresar el año de la Ordenanza, ejemplo: <b>año 1998</b><br/><span className="single-word-2">(Colocar la palabra año, espacio, y luego el año en números.)</span></li>
+            </ol>
+
+            
+
+            {/* *Ingrese palabra clave, número de la ordenanza, <br /> <div className="form-label-año">o la palabra año, espacio y el número del año, <br />para buscar por año.'Ej: año 1983'</div>  */}
           </label>
           <form onSubmit={submitHandler} className="d-flex form">
             <input
@@ -54,7 +69,7 @@ export const BuscarOrdenanza = () => {
                 setDocusSearch(e.target.value);
                 setShowFiles(false);
               }}
-              placeholder='Ej: año 1983'
+              // placeholder='Ej: año 1983'
               required
             />
             <button type="submit" className="btn-ordenanza">
@@ -82,4 +97,3 @@ export const BuscarOrdenanza = () => {
     </div>
   );
 };
-
