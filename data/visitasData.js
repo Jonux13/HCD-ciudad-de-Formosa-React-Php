@@ -1,6 +1,6 @@
 export const visitasData = [
   {
-    "id": 1,
+    "id": 17,
     "title": "Visita de la Cónsul de la República del Paraguay",
     "date": "13/03/24",
     "description": "El pasado 13 de marzo, la Cónsul de la República del Paraguay, María Noelia López Sanguinetti, realizó una visita de cortesía al Presidente del Concejo Deliberante de la ciudad de Formosa.",
@@ -8,7 +8,7 @@ export const visitasData = [
     "link": "/consul"
   },
   {
-    "id": 2,
+    "id": 16,
     "title": "Día del Animal",
     "date": "29/03/24",
     "description": "Hoy con mucha alegría, en el 'Honorable Concejo Deliberante', recibimos a niños del Jardín Infantes 'Mickey Mouse', de la Escuela N°3 y del Colegio 'Don Bosco', en el marco del 'Día del Animal'.",
@@ -16,7 +16,7 @@ export const visitasData = [
     "link": "/DiaDelAnimal"
   },
   {
-    "id": 3,
+    "id": 15,
     "title": "145º Aniversario de la Fundación de la Ciudad de Formosa",
     "date": "08/04/24",
     "description": "En el marco de los festejos por el 145º Aniversario de la Fundación de la Ciudad de Formosa, tuvo lugar en el espacio cultural del nuevo edificio del Concejo Deliberante.",
@@ -24,7 +24,7 @@ export const visitasData = [
     "link": "/aniversarioFormosa"
   },
   {
-    "id": 4,
+    "id": 14,
     "title": "Visita de directivos de la Escuela N°445 'Dr. Esteban L. Maradona'",
     "date": "10/04/24",
     "description": "Recibimos al Sr. Director Williams Iván Karpiel y a su colega en representación de la Escuela N°445 'Dr. Esteban L. Maradona' del Barrio Liborsi.",
@@ -32,7 +32,7 @@ export const visitasData = [
     "link": "/escuela445"
   },
   {
-    "id": 5,
+    "id": 13,
     "title": "Festejando el Aniversario 214° de la Revolución de Mayo",
     "date": "25/05/24",
     "description": "En el 'espacio cultural' del Honorable Concejo Deliberante, junto al presidente Dario Di Martino y concejales, estuvimos festejando el aniversario 214° de la Revolución de Mayo.",
@@ -40,7 +40,7 @@ export const visitasData = [
     "link": "/Aniversario25deMayo"
   },
   {
-    "id": 6,
+    "id": 12,
     "title": "Inauguración del Espacio Amigo de la Lactancia",
     "date": "05/06/24",
     "description": "En el Día de la Acción por la Salud de las Mujeres, habilitaron el 'Espacio Amigo de Lactancia' en el Concejo Deliberante.",
@@ -48,7 +48,7 @@ export const visitasData = [
     "link": "/lactancia"
   },
   {
-    "id": 7,
+    "id": 11,
     "title": "¡Éxitos Campeón!",
     "date": "11/06/24",
     "description": "Hoy con mucho entusiasmo y alegría recibí a Joaquín, un joven con muchísimo talento que con tan solo 19 años ya es campeón con 4 coronas.",
@@ -56,7 +56,7 @@ export const visitasData = [
     "link": "/campeon"
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "20 de Junio: Día de la Bandera",
     "date": "20/06/24",
     "description": "Hoy en conmemoración al Gral. Manuel Belgrano celebramos el día de la bandera.",
@@ -72,7 +72,7 @@ export const visitasData = [
     "link": "/JorgeAlvarenga"
   },
   {
-    "id": 10,
+    "id": 8,
     "title": "Visita de alumnos del Colegio Privado Dr. Esteban Laureano.",
     "date": "30/06/24",
     "description": "Hoy con mucha alegría recibimos a los chicos de 6° grado del Colegio Privado Dr. Esteban Laureano.",
@@ -80,7 +80,7 @@ export const visitasData = [
     "link": "/colegioMaradona"
   },
   {
-    "id": 11,
+    "id": 7,
     "title": "El presidente del HCD Dario Di Martino recibió al Director Jose Luis Irala.",
     "date": "08/07/24",
     "description": "Reconocimiento de parte del coro “Kanta Conmigo”.",
@@ -88,7 +88,7 @@ export const visitasData = [
     "link": "/irala"
   },
   {
-    "id": 12,
+    "id": 6,
     "title": "Visita de turistas de Comodoro Rivadavia",
     "date": "17/07/24",
     "description": "Esta mañana, turistas de Comodoro Rivadavia, acompañadas por el operador local Fernando Gaona, realizaron eltradicional City Tour por la ciudad de Formosa.",
@@ -96,7 +96,7 @@ export const visitasData = [
     "link": "/turistas"
   },
   {
-    "id": 13,
+    "id": 5,
     "title": "Expo Fest",
     "date": "17/08/24",
     "description": "Hoy estuvimos compartiendo junto al presidente del HCD Dario Di Martino, concejales de la ciudad, vecinos y también estudiantes de distintos colegios.",
@@ -104,7 +104,7 @@ export const visitasData = [
     "link": "/expoFest"
   },
   {
-    "id": 14,
+    "id": 4,
     "title": "Pirotecnia Cero",
     "date": "17/09/24",
     "description": "Pirotecnia Cero: En reunión interdisciplinaria, evaluaron estrategias para su implementación. El encuentro, se desarrolló en la sede del Concejo Deliberante capitalino",
@@ -112,7 +112,7 @@ export const visitasData = [
     "link": "/pirotecnia"
   },
   {
-    "id": 15,
+    "id": 3,
     "title": "Expo Arquitectas",
     "date": "17/09/24",
     "description": "El Concejo Deliberante fue el escenario para el lanzamiento de la muestra “Expo Arquitectas”, organizada por la Comisión de Equidad, Género y Diversidad del Colegio Público de Arquitectos de la provincia.",
@@ -120,7 +120,7 @@ export const visitasData = [
     "link": "/expoArquitectas"
   },
   {
-    "id": 16,
+    "id": 2,
     "title": "Recibimos la Primavera en el Concejo Deliberante",
     "date": "21/09/24",
     "description": "Ya tenés cita con nosotros para este sábado 21 de Septiembre a las 18:00 HS. Veni con tu familia y amigos a compartir una linda tarde.",
@@ -128,7 +128,7 @@ export const visitasData = [
     "link": "/primavera_1"
   },
   {
-    "id": 17,
+    "id": 1,
     "title": "Recibimos la Primavera a Puro Color y Sonrisas",
     "date": "21/09/24",
     "description": "Hoy tuvimos una linda tarde junto a los vecinos donde tuvimos la presencia del Presidente del HCD Dario Di Martino como también estuvieron feriantes, artistas, y el coro “Kanta Conmigo”. ",
