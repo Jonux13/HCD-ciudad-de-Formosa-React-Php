@@ -21,7 +21,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}      # Contraseña del FTP
         protocol: ftps                         # Usar FTPS explícito
         port: 21                               # Puerto 21 para FTP/FTPS
-        local-dir: ./dist/                     # Sube solo lo que está dentro de dist/
+        local-dir: ./dist/
+        server-dir: /public_html/              # Sube solo lo que está dentro de dist/
         method: ftps                           # Usar FTPS para mayor seguridad
 
 
