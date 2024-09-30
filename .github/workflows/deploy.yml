@@ -20,5 +20,6 @@ jobs:
 
       - name: Deploy to cPanel
         run: |
-          ssh -o StrictHostKeyChecking=no concejofsa@concejoformosa.org "cd /home/concejofsa/public_html && git pull origin main"
+          ssh -o StrictHostKeyChecking=no concejofsa@concejoformosa.org "cd 
+/home/concejofsa/repositories/HCD-ciudad-de-Formosa-React-Php  && git pull origin main"
 
