@@ -1,33 +1,27 @@
-name: Publish Website to CPanel
+name: FTP Deploy
+
 on:
   push:
     branches:
-      - main
+      - main  # Cambia "main" por la rama de tu proyecto
+
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2 
-    - name: Build assets
-      run: npm install && npm run build
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Install PHP and Composer
-      uses: shivammathur/setup-php@v2
+    - name: Upload via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-          php-version: '8.2' # Adjust to match the PHP version used by your Laravel project
-          tools: 'composer'
+        ftp-server: ${{ secrets.SERVER }}
+        ftp-username: ${{ secrets.USERNAME }}
+        ftp-password: ${{ secrets.PASSWORD }}
+        local-dir: ./ # El directorio local a subir, puedes especificar otro si lo prefieres
+        server-dir: /public_html # Directorio remoto en tu servidor cPanel
+        method: ftp
 
-    - name: Install PHP dependencies
-      run: composer install --no-dev --optimize-autoloader
-        
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: ${{ secrets.SERVER }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
 
 
