@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}      # Contraseña del FTP
         protocol: ftps                         # Cambiado a "ftps" para usar FTPS explícito
         port: 21                               # Puerto 21 para FTP/FTPS
-        local-dir: ./                          # Directorio local a subir
+        local-dir: ./dist/                          # Directorio local a subir
         server-dir: /public_html/              # Directorio remoto, asegúrate de que termine con '/'
          # Directorio remoto en tu servidor cPanel
 
