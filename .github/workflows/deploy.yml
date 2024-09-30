@@ -16,12 +16,14 @@ jobs:
     - name: Upload via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.SERVER }}        # Aquí va el servidor FTP
-        username: ${{ secrets.USERNAME }}    # Usuario FTP
-        password: ${{ secrets.PASSWORD }}    # Contraseña FTP
-        protocol: ftp                        # Método de transferencia, puede ser "ftp", "ftps", o "sftp"
-        local-dir: ./                        # Directorio local a subir, puedes especificar otro si lo prefieres
-        server-dir: /public_html/             # Directorio remoto en tu servidor cPanel
+        server: ${{ secrets.SERVER }}          # ftp.concejoformosa.org
+        username: ${{ secrets.USERNAME }}      # concejofsaftp@concejoformosa.org
+        password: ${{ secrets.PASSWORD }}      # Contraseña del FTP
+        protocol: ftps                         # Cambiado a "ftps" para usar FTPS explícito
+        port: 21                               # Puerto 21 para FTP/FTPS
+        local-dir: ./                          # Directorio local a subir
+        server-dir: /public_html/              # Directorio remoto, asegúrate de que termine con '/'
+         # Directorio remoto en tu servidor cPanel
 
 
 
