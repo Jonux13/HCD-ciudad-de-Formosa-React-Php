@@ -1,0 +1,27 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main  # O la rama que prefieras
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build project
+      run: npm install && npm run build
+
+    - name: Upload via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        ftp-server: ${{ secrets.SERVER }}  # Asegúrate de que los nombres coincidan con los secretos creados
+        ftp-username: ${{ secrets.USERNAME }}
+        ftp-password: ${{ secrets.PASSWORD }}
+        local-dir: ./dist/  # El directorio de salida después de ejecutar `npm run build`
+        server-dir: /public_html/  # El directorio remoto donde quieres subir los archivos
+        method: ftps
