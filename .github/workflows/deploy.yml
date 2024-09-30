@@ -3,7 +3,7 @@ name: FTP Deploy
 on:
   push:
     branches:
-      - main  # Cambia "main" por la rama que estás usando
+      - main  # O la rama que estés usando
 
 jobs:
   deploy:
@@ -19,11 +19,17 @@ jobs:
         server: ${{ secrets.SERVER }}          # ftp.concejoformosa.org
         username: ${{ secrets.USERNAME }}      # concejofsaftp@concejoformosa.org
         password: ${{ secrets.PASSWORD }}      # Contraseña del FTP
-        protocol: ftps                         # Cambiado a "ftps" para usar FTPS explícito
+        protocol: ftps                         # Usar FTPS explícito
         port: 21                               # Puerto 21 para FTP/FTPS
-        local-dir: ./dist/                          # Directorio local a subir
-        server-dir: /public_html/              # Directorio remoto, asegúrate de que termine con '/'
-         # Directorio remoto en tu servidor cPanel
+        local-dir: ./dist/                     # Sube solo lo que está dentro de dist/
+        server-dir: /public_html/              # Asegúrate de que estos archivos vayan a /public_html/
+        include: |
+          assets/**
+          index.html
+        exclude: |
+          **/*
+        method: ftps                           # Usar FTPS para mayor seguridad
+
 
 
 
