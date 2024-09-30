@@ -7,14 +7,14 @@ export const visitasData = [
   //   "image": "/assets/img/visitas/visita consul/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (1).webp",
   //   "link": "/consul"
   // },
-  {
-    "id": 2,
-    "title": "Día del Animal",
-    "date": "29/03/24",
-    "description": "Hoy con mucha alegría, en el 'Honorable Concejo Deliberante', recibimos a niños del Jardín Infantes 'Mickey Mouse', de la Escuela N°3 y del Colegio 'Don Bosco', en el marco del 'Día del Animal'.",
-    "image": "/assets/img/visitas/dia del animal/AnyConv.com__WhatsApp Image 2024-05-03 at 11.25.58 (1).webp",
-    "link": "/DiaDelAnimal"
-  },
+  // {
+  //   "id": 2,
+  //   "title": "Día del Animal",
+  //   "date": "29/03/24",
+  //   "description": "Hoy con mucha alegría, en el 'Honorable Concejo Deliberante', recibimos a niños del Jardín Infantes 'Mickey Mouse', de la Escuela N°3 y del Colegio 'Don Bosco', en el marco del 'Día del Animal'.",
+  //   "image": "/assets/img/visitas/dia del animal/AnyConv.com__WhatsApp Image 2024-05-03 at 11.25.58 (1).webp",
+  //   "link": "/DiaDelAnimal"
+  // },
   {
     "id": 3,
     "title": "145º Aniversario de la Fundación de la Ciudad de Formosa",
