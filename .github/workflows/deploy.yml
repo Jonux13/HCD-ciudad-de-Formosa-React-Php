@@ -22,12 +22,6 @@ jobs:
         protocol: ftps                         # Usar FTPS explícito
         port: 21                               # Puerto 21 para FTP/FTPS
         local-dir: ./dist/                     # Sube solo lo que está dentro de dist/
-        server-dir: /home/concejofsa/public_html/             # Asegúrate de que estos archivos vayan a /public_html/
-        include: |
-          assets/**
-          index.html
-        exclude: |
-          **/*
         method: ftps                           # Usar FTPS para mayor seguridad
 
 
