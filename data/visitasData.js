@@ -1,12 +1,12 @@
 export const visitasData = [
-  {
-    "id": 1,
-    "title": "Visita de la Cónsul de la República del Paraguay",
-    "date": "13/03/24",
-    "description": "El pasado 13 de marzo, la Cónsul de la República del Paraguay, María Noelia López Sanguinetti, realizó una visita de cortesía al Presidente del Concejo Deliberante de la ciudad de Formosa.",
-    "image": "/assets/img/visitas/visita consul/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (1).webp",
-    "link": "/consul"
-  },
+  // {
+  //   "id": 1,
+  //   "title": "Visita de la Cónsul de la República del Paraguay",
+  //   "date": "13/03/24",
+  //   "description": "El pasado 13 de marzo, la Cónsul de la República del Paraguay, María Noelia López Sanguinetti, realizó una visita de cortesía al Presidente del Concejo Deliberante de la ciudad de Formosa.",
+  //   "image": "/assets/img/visitas/visita consul/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (1).webp",
+  //   "link": "/consul"
+  // },
   {
     "id": 2,
     "title": "Día del Animal",
