@@ -19,9 +19,10 @@ jobs:
     - name: Upload via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        ftp-server: ${{ secrets.SERVER }}  # Asegúrate de que los nombres coincidan con los secretos creados
-        ftp-username: ${{ secrets.USERNAME }}
-        ftp-password: ${{ secrets.PASSWORD }}
+        server: ${{ secrets.SERVER }}  # La URL del servidor FTP
+        username: ${{ secrets.USERNAME }}  # Tu nombre de usuario FTP
+        password: ${{ secrets.PASSWORD }}  # Tu contraseña FTP
         local-dir: ./dist/  # El directorio de salida después de ejecutar `npm run build`
-        server-dir: /public_html/  # El directorio remoto donde quieres subir los archivos
-        method: ftps
+        server-dir: /public_html/  # El directorio remoto donde subir los archivos
+        protocol: ftps  # Cambia a 'ftp' si solo tienes FTP
+
