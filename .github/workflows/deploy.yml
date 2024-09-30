@@ -3,7 +3,7 @@ name: FTP Deploy
 on:
   push:
     branches:
-      - main  # Cambia "main" por la rama de tu proyecto
+      - main  # Cambia "main" por la rama que estás usando
 
 jobs:
   deploy:
@@ -16,12 +16,13 @@ jobs:
     - name: Upload via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        ftp-server: ${{ secrets.SERVER }}
-        ftp-username: ${{ secrets.USERNAME }}
-        ftp-password: ${{ secrets.PASSWORD }}
-        local-dir: ./ # El directorio local a subir, puedes especificar otro si lo prefieres
-        server-dir: /public_html # Directorio remoto en tu servidor cPanel
-        method: ftp
+        server: ${{ secrets.SERVER }}        # Aquí va el servidor FTP
+        username: ${{ secrets.USERNAME }}    # Usuario FTP
+        password: ${{ secrets.PASSWORD }}    # Contraseña FTP
+        protocol: ftp                        # Método de transferencia, puede ser "ftp", "ftps", o "sftp"
+        local-dir: ./                        # Directorio local a subir, puedes especificar otro si lo prefieres
+        server-dir: /public_html             # Directorio remoto en tu servidor cPanel
+
 
 
 
