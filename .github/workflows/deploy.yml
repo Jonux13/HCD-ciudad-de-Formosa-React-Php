@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}    # Contraseña FTP
         protocol: ftp                        # Método de transferencia, puede ser "ftp", "ftps", o "sftp"
         local-dir: ./                        # Directorio local a subir, puedes especificar otro si lo prefieres
-        server-dir: /public_html             # Directorio remoto en tu servidor cPanel
+        server-dir: /public_html/             # Directorio remoto en tu servidor cPanel
 
 
 
