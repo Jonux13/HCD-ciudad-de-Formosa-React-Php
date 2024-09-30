@@ -22,8 +22,7 @@ jobs:
         server: ${{ secrets.SERVER }}  # Asegúrate de que los nombres coincidan con los secretos creados
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        local-dir: ./dist/  # El directorio de salida después de ejecutar `npm run build`
-        server-dir: /public_html/  # El directorio remoto donde quieres subir los archivos
+        local-dir: ./dist/  # El directorio de salida después de ejecutar `npm run build`      
         exclude: |  # Archivos y carpetas a excluir
           **/.git**
           **/.git*/**
