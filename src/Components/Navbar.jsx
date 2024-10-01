@@ -226,7 +226,21 @@ function Navbar() {
                         : ""
                     }`}
                   >
-                    <li>
+                      <a
+                    href="#"
+                    className="nav-link scrollto"
+                    onClick={toggleDropdownBloqueConcejales}
+                  >
+                    Bloque PJ <i className="bi bi-chevron-right" />
+                  </a>
+                  <ul
+                    className={`dropdown ${
+                      dropdownConcejalesOpen && dropdownBloqueConcejalesOpen
+                        ? "dropdown-active"
+                        : ""
+                    }`}
+                  >
+                      <li>
                       <NavLink
                         to="/pj"
                         className="nav-link scrollto"
@@ -235,6 +249,17 @@ function Navbar() {
                         Bloque PJ
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink
+                        to="/actividades"
+                        className="nav-link scrollto"
+                        onClick={closeMobileNav}
+                      >
+                        Actividades
+                      </NavLink>
+                    </li>
+                  </ul>
+                  
                     <li>
                       <NavLink
                         to="/ucr"

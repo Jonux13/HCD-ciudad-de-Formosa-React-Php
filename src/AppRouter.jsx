@@ -22,6 +22,8 @@ import SesionesVivo from "./pages/SesionesVivo";
 import Visitas from "./Components/Visitas";
 import UltimasOrdenanzas from "./pages/UltimasOrdenanzas";
 import VisitaDetalle from './Components/VisitaDetalle';
+import ActividadesBloquePj from "./Components/ActividadesBloquePj";
+import ActividadesBloquePjDetalle from "./Components/ActividadesBloquePjDetalle";
 
 
 function AppRouter() {
@@ -40,6 +42,8 @@ function AppRouter() {
         <Route path="/concejales" element={<Consejales />} />
         <Route path="/comisiones" element={<Comisiones />} />
         <Route path="/pj" element={<BloquePj />} />
+        <Route path="/actividades" element={<ActividadesBloquePj />} />
+        <Route path="/actividad/:id" element={<ActividadesBloquePjDetalle />} />
         <Route path="/ucr" element={<BloqueUcr />} />
         <Route path="/nuevoPais" element={<BloqueNuevoPais />} />
         <Route path="/5DeMarzo" element={<Bloque5DeMarzo />} />
