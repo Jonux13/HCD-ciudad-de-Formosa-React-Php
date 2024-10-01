@@ -23,7 +23,9 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
 
       try {
         // Aquí cambiamos la ruta para apuntar a la carpeta "sesiones" en lugar de "pdfs"
-        const response = await fetch(`/storage/pdfs.php?file=${fileName}`);
+        const response = await fetch(
+          `https://concejoformosa.org/api/pdf?search=${encodeURIComponent(fileName)}`
+        );
         const data = await response.json(); // Se espera que el backend PHP devuelva un JSON con las URLs de los archivos
         cache[fileName] = data; // Almacenar los resultados en el caché
         setCurrentFiles(data);
