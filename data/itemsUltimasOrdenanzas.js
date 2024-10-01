@@ -1,7 +1,7 @@
 export const itemsData = [
-  { "id": 8070, "text": "N° 8070 - prohibese la fabricacion, comercializacion, exhibicion, difusion, almacenamiento de artifio pitotecnico.", "filePath": "8070 prohibese la fabricacion, comercializacion, exhibicion, difusion, almacenamiento de artifio pitotecnico..pdf" },
-  { "id": 8069, "text": "N° 8069 - condonase la deuda del obispado de formosa.", "filePath": "8069 condonase la deuda del obispado de formosa.pdf" },
-  { "id": 8068, "text": "N° 8068 - Excencionase del pago al ministerio de la comunindad.", "filePath": "8068 Excencionase del pago al ministerio de la comunindad.pdf" },
-  { "id": 8067, "text": "N° 8067 - ADHESION LEY PCIAL.N°1734", "filePath": "8067 ADHESION LEY PCIAL.N°1734 11.09.24.pdf" }
+  { "id": 8077, "text": "N° 8077 - prohibese la plantacion de la especie spathodea campanulata.", "filePath": "8077 - prohibese la plantacion de la especio}e spathodea campanulata.PDF" },
+  { "id": 8076, "text": "N° 8076 - incorporase el art 3 a la orenanza 8062-24.", "filePath": "8076 - incorporase el art 3 a la orenanza 8062-24.PDF" },
+  { "id": 8075, "text": "N° 8075 - declarase de interes municipal la bicicleteada em homenaje al padre sergio castro.", "filePath": "8075 - declarase de interes municipal la bicicleteada em homenaje al padre sergio castro.PDF" },
+  { "id": 8074, "text": "N° 8074 - condonase la deuda que mantiene la fundacion racimo.", "filePath": "8074 - condonase la deuda que mantiene la fundacion racimo.PDF" }
 ];
 
