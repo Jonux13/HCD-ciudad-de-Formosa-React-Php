@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import UltimasOrdenanzas from "../Hooks/UltimasOrdenanzas";
+import UltimasOrdenanzasHook from "../Hooks/UltimasOrdenanzasHook";
 import { itemsData } from "../../data/itemsUltimasOrdenanzas";
 import "./sesionesOrdinarias.css";
 import { Box, Pagination } from "@mui/material";
@@ -32,7 +32,7 @@ function UltimasOrdenanzas() {
                   <i className="ri-circle-fill" />
                   {item.text}
                   <div className="d-flex container-list">
-                    <UltimasOrdenanzas fileName={item.filePath} />
+                    <UltimasOrdenanzasHook fileName={item.filePath} />
                   </div>
                 </li>
               ))}
