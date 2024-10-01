@@ -22,15 +22,28 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
       }
 
       try {
-        // Aquí cambiamos la ruta para apuntar a la carpeta "sesiones" en lugar de "pdfs"
+        // Aquí apuntamos a la API 
         const response = await fetch(
           `https://concejoformosa.org/api/pdf?search=${encodeURIComponent(fileName)}`
         );
-        const data = await response.json(); // Se espera que el backend PHP devuelva un JSON con las URLs de los archivos
-        cache[fileName] = data; // Almacenar los resultados en el caché
-        setCurrentFiles(data);
+        if (!response.ok) {
+          throw new Error('Error al obtener los documentos');
+        }
+
+        const data = await response.json();
+        
+        // Validar y convertir los datos a un array si es necesario
+        const dataArray = Array.isArray(data) ? data : Object.values(data);
+
+        // Guardar los resultados en caché
+        cache[fileName] = dataArray;
+
+        // Actualizar estado con los archivos
+        setCurrentFiles(dataArray);
+
       } catch (error) {
-        console.error("Error fetching file URLs:", error);
+        console.error("Error fetching file URLs:", error.message);
+        setCurrentFiles([]); // Manejar error
       } finally {
         setIsLoading(false);
       }
