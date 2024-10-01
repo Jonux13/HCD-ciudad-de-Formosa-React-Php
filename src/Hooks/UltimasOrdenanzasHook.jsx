@@ -6,7 +6,7 @@ import { Skeleton } from "@mui/material";
 // Crear un objeto global de caché para almacenar las URLs cargadas por archivo y página
 const cache = {};
 
-const PdfList = memo(({ fileName }) => {
+const ObtenerDocumentosHook = memo(({ fileName }) => {
   const [currentFiles, setCurrentFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -60,4 +60,4 @@ const PdfList = memo(({ fileName }) => {
   );
 });
 
-export default PdfList;
+export default ObtenerDocumentosHook;
