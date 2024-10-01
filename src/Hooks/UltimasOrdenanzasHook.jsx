@@ -22,7 +22,7 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
       }
 
       try {
-        // Aquí apuntamos a la API 
+        // Aquí apuntamos a la API
         const response = await fetch(
           `https://concejoformosa.org/api/pdf?search=${encodeURIComponent(fileName)}`
         );
@@ -56,6 +56,15 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
     window.open(url, "_blank");
   };
 
+  const getFileTypeIcon = (fileUrl) => {
+    // Verificar si la URL del archivo contiene ".pdf" o alguna otra extensión
+    if (fileUrl.toLowerCase().endsWith(".pdf")) {
+      return <FontAwesomeIcon icon={faFilePdf} className="icono-pdf" />;
+    } else {
+      return <FontAwesomeIcon icon={faFileImage} className="icono-imagen" />;
+    }
+  };
+
   return (
     <div>
       {isLoading && currentFiles.length === 0 ? (
@@ -63,11 +72,7 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
       ) : (
         currentFiles.map((file, index) => (
           <div key={index} className="pdf-item mx-1" onClick={() => handleFileClick(file.url)}>
-            {file.type === "pdf" ? (
-              <FontAwesomeIcon icon={faFilePdf} className="icono-pdf" />
-            ) : (
-              <FontAwesomeIcon icon={faFileImage} className="icono-imagen" />
-            )}
+            {getFileTypeIcon(file.url)} {/* Usar función que verifica la extensión */}
           </div>
         ))
       )}
@@ -76,3 +81,4 @@ const ObtenerDocumentosHook = memo(({ fileName }) => {
 });
 
 export default ObtenerDocumentosHook;
+
