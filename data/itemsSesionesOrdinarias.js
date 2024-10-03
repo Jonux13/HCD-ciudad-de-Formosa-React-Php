@@ -2,8 +2,8 @@ export const itemsSesionesOrdinarias = [
   {
     date: "02-10-24",
     files: [
-      "WhatsApp Image 2024-10-02 at 21.06.06.jpeg",
-      "WhatsApp Image 2024-10-02 at 21.06.06 (1).jpeg",
+      "WhatsApp Image 2024-10-02 at 21.06.06.pdf",
+      "WhatsApp Image 2024-10-02 at 21.06.06 (1).pdf",
       "AnyConv.com__WhatsApp Image 2024-10-02 at 21.06.02.webp",
       "AnyConv.com__WhatsApp Image 2024-10-02 at 21.06.03.webp",
       "AnyConv.com__WhatsApp Image 2024-10-02 at 21.06.03 (1).webp",
