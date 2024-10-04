@@ -134,5 +134,13 @@ export const visitasData = [
     "description": "Hoy tuvimos una linda tarde junto a los vecinos donde tuvimos la presencia del Presidente del HCD Dario Di Martino como también estuvieron feriantes, artistas, y el coro “Kanta Conmigo”. ",
     "image": "/assets/img/primavera_2/AnyConv.com__WhatsApp Image 2024-09-25 at 18.30.12.webp",
     "link": "/primavera_2"
+  },
+  {
+    "id": 18,
+    "title": "Recibimos a la Promoción 79 de la Esc. de Comercio de Embarcación Salta.",
+    "date": "04/10/24",
+    "description": "Hoy, en el Honorable Concejo Deliberante de la ciudad de Formosa recibimos a la Promoción 79 de la Esc de Comercio de Embarcación Salta”. ",
+    "image": "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.52.webp",
+    "link": "/promocion_79"
   }
 ]

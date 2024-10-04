@@ -262,5 +262,30 @@ export const visitasDetalle = [
         "/assets/img/primavera_2/AnyConv.com__WhatsApp Image 2024-09-25 at 18.30.15 (9).webp"
 
     ]
-  }
+  },
+  {
+    "id": 18,
+    "title": "Recibimos a la Promoción 79 de la Esc. de Comercio de Embarcación Salta",
+    "titles":"Hoy, en el Honorable Concejo Deliberante de la ciudad de Formosa recibimos a la Promoción 79 de la Esc de Comercio de Embarcación Salta.",
+    "description": "Hoy, en el Honorable Concejo Deliberante de la ciudad de Formosa recibimos a la Promoción 79 de la Esc de Comercio de Embarcación Salta, fue un reencuentro de habitantes de diferentes provincias de Argentina, pertenecientes a esta promoción. Agradecemos a la Asociación Española por su participación. ¡GRACIAS POR SU VISITA!",
+    "date": "04/10/24",
+    "image": "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.52.webp",
+    "images": [
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.53.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.55.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.56.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.56 (1).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.57.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.57 (1).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.59.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.59 (1).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.59 (2).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.00.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.02.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.02 (1).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.03.webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.03 (1).webp",
+        "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.04.webp",
+    ]
+  },
 ]
