@@ -6,6 +6,9 @@ import "./sesionesOrdinarias.css";
 
 function SesionesOrdinarias() {
   const [page, setPage] = useState(1);
+  const [sortedItems, setSortedItems] = useState([]);
+
+
   const ITEMS_PER_PAGE = 4;
   const indexOfLastItem = page * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
@@ -22,10 +25,14 @@ const parseDate = (dateString) => {
   return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
 };
 
-// Ordenar el arreglo SesionesOrdinarias por fecha
-const sortedSesionesOrdinarias = itemsSesionesOrdinarias.sort((a, b) => {
-  return parseDate(b.date) - parseDate(a.date);
-});
+  // Ordenar el arreglo SesionesOrdinarias por fecha
+  useEffect(() => {
+    const sortedSesionesOrdinarias = itemsSesionesOrdinarias.sort((a, b) => {
+      return parseDate(b.date) - parseDate(a.date);
+    });
+    setSortedItems(sortedSesionesOrdinarias); // Guardar el arreglo ordenado en el estado
+  }, []); // Solo se ejecuta una vez cuando el componente se monta
+
   
   return (
     <section id="about" className="about about_section">
