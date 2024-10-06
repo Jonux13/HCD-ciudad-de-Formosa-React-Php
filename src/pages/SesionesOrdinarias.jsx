@@ -14,6 +14,18 @@ function SesionesOrdinarias() {
   const handleChange = (event, value) => {
     setPage(value);
   };
+
+   // Función para convertir el formato "DD/MM/YY" a un objeto Date
+const parseDate = (dateString) => {
+  const [day, month, year] = dateString.split('-');
+  // Asumiendo que 'year' es de dos dígitos y perteneciente al siglo 21
+  return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
+};
+
+// Ordenar el arreglo SesionesOrdinarias por fecha
+const sortedSesionesOrdinarias = itemsSesionesOrdinarias.sort((a, b) => {
+  return parseDate(b.date) - parseDate(a.date);
+});
   
   return (
     <section id="about" className="about about_section">
