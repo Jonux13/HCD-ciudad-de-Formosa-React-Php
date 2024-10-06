@@ -6,39 +6,39 @@
 }
 
 .link-volver span {
-  font-size: 12px;
-  margin-left: -550px !important;
+  font-size: 0.75rem;
+  margin-left: -34.375rem !important;
 }
 
 .link-size {
-  font-size: 12px !important;
+  font-size: 0.75rem !important;
 }
 
 .link-volver:hover {
   color: #469fdf;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 61.9375rem) {
   .section {
-    padding: 10px;
-    margin-bottom: 20px; /* Reduce el padding para pantallas pequeñas */
+    padding: 0.625rem;
+    margin-bottom: 1.25rem; /* Reduce el padding para pantallas pequeñas */
   }
 
   .link-volver {
-    font-size: 12px;
-    margin-right: -800px !important;
+    font-size: 0.75rem;
+    margin-right: -50rem !important;
   }
 
   .container-title-visita {
-    margin-top: 60px;
+    margin-top: 3.75rem;
   }
 
   .link-size span {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
-@media (max-width: 491px) {
+@media (max-width: 30.6875rem) {
   .services .service-item {
     flex-direction: column;
     align-items: center;
@@ -65,14 +65,14 @@
   }
 
   .services .service-item .icon {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     position: relative;
-    margin-right: 0px;
-    margin-bottom: 15px;
+    margin-right: 0rem;
+    margin-bottom: 0.9375rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 16.875rem;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     object-fit: cover;
@@ -80,26 +80,26 @@
   }
 
   .service-details h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem;
   }
 
   .service-details p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 22.5rem) {
   .section-title {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
 
   .services {
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
   }
 
 .section-visitas {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
   .services .service-item {
@@ -128,14 +128,14 @@
   }
 
   .services .service-item .icon {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     position: relative;
-    margin-right: 0px;
-    margin-bottom: 15px;
+    margin-right: 0rem;
+    margin-bottom: 0.9375rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 16.875rem;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     object-fit: cover;

@@ -1,5 +1,5 @@
 .container-list {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .custom-list span{
   font-weight: 600;
@@ -7,13 +7,13 @@
 
 .icono-pdf {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ec3f3f;
 }
 
 .icono-imagen {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #2487ce;
 }
 
@@ -31,32 +31,32 @@
 
 .custom-list li {
   position: relative;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .custom-list li::before {
   content: "";
   position: absolute;
-  bottom: -1px; /* Ajusta según el grosor de tu línea */
-  left: 20px; /* Ajusta según cuánto quieras que se recorte en el lado izquierdo */
-  right: -2px; /* Ajusta según cuánto quieras que se recorte en el lado derecho */
-  height: 1px; /* Grosor de la línea */
-  background-image: linear-gradient(to right, transparent 5px, #ccc 5px, #ccc calc(100% - 5px), transparent calc(100% - 5px)); /* Gradiente lineal con color de fondo */
+  bottom: -0.0625rem; /* Ajusta según el grosor de tu línea */
+  left: 1.25rem; /* Ajusta según cuánto quieras que se recorte en el lado izquierdo */
+  right: -0.125rem; /* Ajusta según cuánto quieras que se recorte en el lado derecho */
+  height: 0.0625rem; /* Grosor de la línea */
+  background-image: linear-gradient(to right, transparent 0.3125rem, #ccc 0.3125rem, #ccc calc(100% - 0.3125rem), transparent calc(100% - 0.3125rem)); /* Gradiente lineal con color de fondo */
 }
 
 /* .page {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
 } */
 
-@media (max-width: 360px) {
+@media (max-width: 22.5rem) {
  
   
   .sesiones-ordinarias {
-    margin-top: -70px;
-    margin-bottom: -35px;
+    margin-top: -4.375rem;
+    margin-bottom: -2.1875rem;
   }
   
 }

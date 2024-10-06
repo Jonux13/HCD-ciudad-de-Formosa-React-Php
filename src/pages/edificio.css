@@ -1,5 +1,5 @@
 .edificio {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .image-container {
@@ -22,8 +22,8 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  font-size: 13px;
-  height: 25px;
+  font-size: 0.8125rem;
+  height: 1.5625rem;
   opacity: 0;
   transition: ease-in-out 0.3s;
   text-align: center;
@@ -35,15 +35,15 @@ img {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .image-container {
     text-align: center;
   }
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 22.5rem) {
   .image-container {
-    margin-top: -25px;
+    margin-top: -1.5625rem;
   }
 }

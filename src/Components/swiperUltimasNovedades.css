@@ -1,16 +1,16 @@
 .swiper-container {
   width: 83%; /* Ancho del 80% */
   margin: 0 auto; /* Centrar el contenedor horizontalmente */
-  padding-bottom: 30px;
-  padding-top: 10px;
+  padding-bottom: 1.875rem;
+  padding-top: 0.625rem;
 }
 
 /* Estilos para el contenedor de título */
 .section-title_swiper_novedades h2{
-  margin-top: 40px;
+  margin-top: 2.5rem;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #2487ce;
@@ -49,20 +49,20 @@
 
 /* Estilos para el título dentro del slide */
 .slide-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
   background-color: rgba(0, 0, 0, 0.3); 
-  padding: 5px 5px !important; 
-  border-radius: 5px; 
+  padding: 0.3125rem 0.3125rem !important; 
+  border-radius: 0.3125rem; 
 }
 
 /* Estilos para la descripción dentro del slide */
 .slide-content p {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.3); 
-  padding: 5px 5px !important; 
-  border-radius: 5px; 
+  padding: 0.3125rem 0.3125rem !important; 
+  border-radius: 0.3125rem; 
 }
 
 /* Estilos para el Swiper */

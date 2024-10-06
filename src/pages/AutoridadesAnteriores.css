@@ -1,8 +1,8 @@
 .autoridades h2 {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 22.5rem) {
   .container-anteriores {
     display: flex;
     /* flex-wrap: wrap; */
