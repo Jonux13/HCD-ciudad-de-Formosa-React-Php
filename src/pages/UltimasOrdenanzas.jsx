@@ -38,7 +38,7 @@ function UltimasOrdenanzas() {
               ))}
             </ul>
 
-            <Box mt={2}>
+            {/* <Box mt={2}>
                 <Pagination
                   className="page"
                   count={Math.ceil(itemsData.length / ITEMS_PER_PAGE)}
@@ -57,7 +57,7 @@ function UltimasOrdenanzas() {
                     },
                   }}
                 />
-            </Box>
+            </Box> */}
 
           </div>
         </div>
