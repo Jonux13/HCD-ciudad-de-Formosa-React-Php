@@ -1,7 +1,7 @@
 export const itemsData = [
-  { "id": 8077, "text": "N° 8077 - prohibese la plantacion de la especie spathodea campanulata.", "filePath": "8077 - prohibese la plantacion de la especio}e spathodea campanulata.PDF" },
-  { "id": 8076, "text": "N° 8076 - incorporase el art 3 a la orenanza 8062-24.", "filePath": "8076 - incorporase el art 3 a la orenanza 8062-24.PDF" },
-  { "id": 8075, "text": "N° 8075 - declarase de interes municipal la bicicleteada em homenaje al padre sergio castro.", "filePath": "8075 - declarase de interes municipal la bicicleteada em homenaje al padre sergio castro.PDF" },
-  { "id": 8074, "text": "N° 8074 - condonase la deuda que mantiene la fundacion racimo.", "filePath": "8074 - condonase la deuda que mantiene la fundacion racimo.PDF" }
+  { "id": 8082, "text": "N° 8082 - declarase de interes municipal la mesa de trabajo interseccional para el abordaje de  la problematica del suicidio.", "filePath": "8082 - declarase de interes municipal la mesa de trabajo interseccional para el abordaje de  la problematica del suicidio.PDF" },
+  { "id": 8081, "text": "N° 8081 - condonase la deuda que mantiene con el municipio la sociedad protectora de la educacion carlos  cleto castañeda.", "filePath": "8081 -condonase la deuda que mantiene con el municipio la sociedad protectora de la educacion carlos  cleto castañeda.PDF" },
+  { "id": 8080, "text": "N° 8080 - autorizase al señor intendente a extender la escritura translativa de la señora elida villalba.", "filePath": "8080 - autorizase al señor intendente a extender la escritura translativa de la señora elida villalba.PDF" },
+  { "id": 8079, "text": "N° 8079 - autorizase al señor intendente a extender la escritura translativa de la señora agueda beatriz caceres.", "filePath": "8079 -  - autorizase al señor intendente a extender la escritura translativa de la señora agueda beatriz caceres.PDF" }
 ];
 
