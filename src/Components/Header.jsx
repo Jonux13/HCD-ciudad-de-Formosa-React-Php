@@ -16,15 +16,14 @@ function Header() {
             data-aos-delay={100}
           >
             <div className="row justify-content-left custom-margin">
-              <div className="col-xl-7 col-lg-9 text-left custom-margin">
-                <h1>
-                  <p className="word">Honorable</p>
-                  <p className="word">Concejo</p>
-                  <p className="word">Deliberante</p>
-                </h1>
-                <h2>Ciudad de Formosa</h2>
-              </div>
+                <div className="col-xl-7 col-lg-9 text-left custom-margin">
+                    <h1 className="word">Honorable</h1>
+                    <h1 className="word">Concejo</h1>
+                    <h1 className="word">Deliberante</h1>
+                    <h2>Ciudad de Formosa</h2>
+                </div>
             </div>
+
 
             <ContadorVistas />
 

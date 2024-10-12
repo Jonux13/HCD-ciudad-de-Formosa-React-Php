@@ -603,7 +603,8 @@ h6 {
 }
 
 .word {
-  margin-bottom: -18px; /* Ajusta el valor según lo necesites */
+  margin-bottom: 0; 
+  line-height: 1.2; 
 }
 
 #hero .btn-get-started {
