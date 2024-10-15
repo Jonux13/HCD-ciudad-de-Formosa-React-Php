@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import PdfList from "../Hooks/PdfList";
 import { visitasData } from "../../data/visitasData";
 import { Box, Pagination } from "@mui/material";
 
@@ -47,11 +46,7 @@ const sortedVisitas = visitasData.sort((a, b) => {
                 <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                   <NavLink to={`/visita/${visita.id}`} className="read-more">
                     <div className="service-item item-cyan position-relative">
-                    {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => (
-                      <PdfList key={fileIndex} fileName={fileName} />
-                    ))}
-
-                      {/* <img src={visita.image} alt={visita.title} className="icon" /> */}
+                      <img src={visita.image} alt={visita.title} className="icon" />
                       <div className="visit-info">
                         <h3>{visita.title}</h3>
                         <span className="centered-span">{visita.date}</span>

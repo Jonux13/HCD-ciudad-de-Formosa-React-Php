@@ -148,7 +148,7 @@ export const visitasData = [
     "title": "Mitos y Realidades sobre el Cáncer de Mama.",
     "date": "15/10/24",
     "description": "Este Martes 15 de Octubre te invitamos a participar de una charla sobre prevención, para conocer más sobre la enfermedad y las herramientas que tenemos para cuidarnos.”. ",
-     files:["AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp"],
+    "image":"/assets/img/visitas/octubre_rosa/AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
     "link": "/octubre_rosa"
   }
 
