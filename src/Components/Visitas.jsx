@@ -1,36 +1,33 @@
 import React, { useState, useEffect, useContext } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import PdfList from "../Hooks/PdfList";
-import { visitasData } from "../../data/visitasData";
+import { NavLink } from "react-router-dom";
 import { Box, Pagination } from "@mui/material";
+import { visitasData } from "../../data/visitasData";
+import useImageList from "../Hooks/useImageList"; // Importar el hook para obtener las imágenes
 
 const PageContext = React.createContext(null);
 
 function Visitas() {
   const ITEMS_PER_PAGE = 6;
-
-  const [page, setPage] = useState(1); 
- 
+  const [page, setPage] = useState(1);
 
   const handleChange = (event, value) => {
     setPage(value);
   };
 
- // Función para convertir el formato "DD/MM/YY" a un objeto Date
-const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('/');
-  // Asumiendo que 'year' es de dos dígitos y perteneciente al siglo 21
-  return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
-};
+  // Función para convertir el formato "DD/MM/YY" a un objeto Date
+  const parseDate = (dateString) => {
+    const [day, month, year] = dateString.split('/');
+    return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
+  };
 
-// Ordenar el arreglo visitasData por fecha
-const sortedVisitas = visitasData.sort((a, b) => {
-  return parseDate(b.date) - parseDate(a.date);
-});
-  
-   const indexOfLastItem = page * ITEMS_PER_PAGE;
-   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-   const currentVisitas = sortedVisitas.slice(indexOfFirstItem, indexOfLastItem);
+  // Ordenar el arreglo visitasData por fecha
+  const sortedVisitas = visitasData.sort((a, b) => {
+    return parseDate(b.date) - parseDate(a.date);
+  });
+
+  const indexOfLastItem = page * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentVisitas = sortedVisitas.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <PageContext.Provider value={{ page }}>
@@ -47,11 +44,26 @@ const sortedVisitas = visitasData.sort((a, b) => {
                 <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                   <NavLink to={`/visita/${visita.id}`} className="read-more">
                     <div className="service-item item-cyan position-relative">
-                    {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => (
-                      <PdfList key={fileIndex} fileName={fileName} />
-                    ))}
+                      {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => {
+                        const { imageUrls, isLoading } = useImageList(fileName); // Usar el hook para obtener las imágenes
+                        return (
+                          <div key={fileIndex}>
+                            {isLoading ? (
+                              <p>Cargando imágenes...</p>
+                            ) : (
+                              imageUrls.map((imageUrl, index) => (
+                                <img
+                                  key={index}
+                                  src={imageUrl.url}
+                                  alt={`Imagen de ${fileName}`}
+                                  className="icon"          
+                                />
+                              ))
+                            )}
+                          </div>
+                        );
+                      })}
 
-                      {/* <img src={visita.image} alt={visita.title} className="icon" /> */}
                       <div className="visit-info">
                         <h3>{visita.title}</h3>
                         <span className="centered-span">{visita.date}</span>
@@ -97,7 +109,6 @@ const sortedVisitas = visitasData.sort((a, b) => {
 }
 
 export default Visitas;
-
 
 
 
