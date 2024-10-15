@@ -56,7 +56,7 @@ function Visitas() {
                                   key={index}
                                   src={imageUrl.url}
                                   alt={`Imagen de ${fileName}`}
-                                  className="img-fluid"          
+                                  className="icon"          
                                 />
                               ))
                             )}
