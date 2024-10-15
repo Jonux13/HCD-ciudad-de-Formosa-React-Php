@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Box, Pagination } from "@mui/material";
 import { visitasData } from "../../data/visitasData";
 import "../Components/visitasDetalle.css";
 import useImageList from "../Hooks/useImageList"; // Importar el hook para obtener las imágenes
-
-const PageContext = React.createContext(null);
 
 function Visitas() {
   const ITEMS_PER_PAGE = 6;
@@ -31,22 +29,23 @@ function Visitas() {
   const currentVisitas = sortedVisitas.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <PageContext.Provider value={{ page }}>
-      <div>
-        <section id="services" className="services section">
-          <div className="container section-title" data-aos="fade-up">
-            <h2 className="title">Visitas al Hcd</h2>
-            <p>Visitas realizadas al Honorable Concejo Deliberante</p>
-          </div>
+    <div>
+      <section id="services" className="services section">
+        <div className="container section-title" data-aos="fade-up">
+          <h2 className="title">Visitas al Hcd</h2>
+          <p>Visitas realizadas al Honorable Concejo Deliberante</p>
+        </div>
 
-          <div className="container">
-            <div className="row g-5">
-              {currentVisitas.map((visita) => (
-                <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                  <NavLink to={`/visita/${visita.id}`} className="read-more">
-                    <div className="service-item item-cyan position-relative">
-                    {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => {
-                      const { imageUrls, isLoading, error } = useImageList(fileName); // Asegúrate de que 'fileName' se pase correctamente
+        <div className="container">
+          <div className="row g-5">
+            {currentVisitas.map((visita) => (
+              <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+                <NavLink to={`/visita/${visita.id}`} className="read-more">
+                  <div className="service-item item-cyan position-relative">
+                    {visita.files && visita.files.map((fileName, fileIndex) => {
+                      // Mover el uso del hook fuera del condicional
+                      const { imageUrls, isLoading, error } = useImageList(fileName);
+
                       return (
                         <div key={`${visita.id}-${fileIndex}`}>
                           {isLoading && <p>Cargando imágenes...</p>}
@@ -63,55 +62,47 @@ function Visitas() {
                       );
                     })}
 
-
-                      <div className="visit-info">
-                        <h3>{visita.title}</h3>
-                        <span className="centered-span">{visita.date}</span>
-                        <p>{visita.description}</p>
-                        <span className="read-more link-visitas">
-                          <span className="text">Ver más</span> <i className="bi bi-arrow-right"></i>
-                        </span>
-                      </div>
+                    <div className="visit-info">
+                      <h3>{visita.title}</h3>
+                      <span className="centered-span">{visita.date}</span>
+                      <p>{visita.description}</p>
+                      <span className="read-more link-visitas">
+                        <span className="text">Ver más</span> <i className="bi bi-arrow-right"></i>
+                      </span>
                     </div>
-                  </NavLink>
-                </div>
-              ))}
-            </div>
-
-            <Box mt={6}>
-              <Pagination
-                count={Math.ceil(visitasData.length / ITEMS_PER_PAGE)}
-                page={page}
-                onChange={handleChange}
-                color="primary"
-                size="large"
-                shape="rounded"
-                sx={{
-                  "& .MuiPaginationItem-root": {
-                    fontSize: "0.8rem",
-                    height: "25px",
-                    minWidth: "15px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  },
-                  "& .MuiPaginationItem-rounded.Mui-selected": {
-                    bgcolor: "#2487ce",
-                  },
-                }}
-              />
-            </Box>
+                  </div>
+                </NavLink>
+              </div>
+            ))}
           </div>
-        </section>
-      </div>
-    </PageContext.Provider>
+
+          <Box mt={6}>
+            <Pagination
+              count={Math.ceil(visitasData.length / ITEMS_PER_PAGE)}
+              page={page}
+              onChange={handleChange}
+              color="primary"
+              size="large"
+              shape="rounded"
+              sx={{
+                "& .MuiPaginationItem-root": {
+                  fontSize: "0.8rem",
+                  height: "25px",
+                  minWidth: "15px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                },
+                "& .MuiPaginationItem-rounded.Mui-selected": {
+                  bgcolor: "#2487ce",
+                },
+              }}
+            />
+          </Box>
+        </div>
+      </section>
+    </div>
   );
 }
 
 export default Visitas;
-
-
-
-
-
-
