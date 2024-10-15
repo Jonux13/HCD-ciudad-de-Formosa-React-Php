@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Box, Pagination } from "@mui/material";
 import { visitasData } from "../../data/visitasData";
-import "../../pages/Visitas/visitas.css";
 import useImageList from "../Hooks/useImageList"; // Importar el hook para obtener las imágenes
 
 const PageContext = React.createContext(null);
@@ -57,7 +56,7 @@ function Visitas() {
                                   key={index}
                                   src={imageUrl.url}
                                   alt={`Imagen de ${fileName}`}
-                                  className="icon"          
+                                  className="img-fluid icon"          
                                 />
                               ))
                             )}
