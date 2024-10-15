@@ -142,5 +142,14 @@ export const visitasData = [
     "description": "Hoy, en el Honorable Concejo Deliberante de la ciudad de Formosa recibimos a la Promoción 79 de la Esc de Comercio de Embarcación Salta”. ",
     "image": "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.52.webp",
     "link": "/promocion_79"
+  },
+  {
+    "id": 19,
+    "title": "Mitos y Realidades sobre el Cáncer de Mama.",
+    "date": "15/10/24",
+    "description": "Este Martes 15 de Octubre te invitamos a participar de una charla sobre prevención, para conocer más sobre la enfermedad y las herramientas que tenemos para cuidarnos.”. ",
+    "image":"/assets/img/visitas/octubre_rosa/AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
+    "link": "/octubre_rosa"
   }
+
 ]

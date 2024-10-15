@@ -1,7 +1,26 @@
 export const itemsData = [
-  { "id": 8082, "text": "N° 8082 - declarase de interes municipal la mesa de trabajo interseccional para el abordaje de  la problematica del suicidio.", "filePath": "8082 - declarase de interes municipal la mesa de trabajo interseccional para el abordaje de  la problematica del suicidio.PDF" },
-  { "id": 8081, "text": "N° 8081 - condonase la deuda que mantiene con el municipio la sociedad protectora de la educacion carlos  cleto castañeda.", "filePath": "8081 -condonase la deuda que mantiene con el municipio la sociedad protectora de la educacion carlos  cleto castañeda.PDF" },
-  { "id": 8080, "text": "N° 8080 - autorizase al señor intendente a extender la escritura translativa de la señora elida villalba.", "filePath": "8080 - autorizase al señor intendente a extender la escritura translativa de la señora elida villalba.PDF" },
-  { "id": 8079, "text": "N° 8079 - autorizase al señor intendente a extender la escritura translativa de la señora agueda beatriz caceres.", "filePath": "8079 -  - autorizase al señor intendente a extender la escritura translativa de la señora agueda beatriz caceres.PDF" }
+  {
+    "id":8088,
+    "text": "8088 - Promuevase la campaña de cancer de mama",
+    "filePath": "8088 - Promuevase la campaña de cancer de mama.PDF"
+  },
+
+  {
+    "id":8087,
+    "text": "8087 - Apruebese la reestructura del presupuesto de gastos y calculos de recursos del año 2024",
+    "filePath": "8087 - Apruebese la reestroctura del pro}esupuesto de gastos y calculos de recursos del año 2024.PDF"
+  },
+
+  {
+    "id":8086,
+    "text": "8086 - Declarase de interes municipal al XXII encuentro nacional e internacional de clubes vespa",
+    "filePath": "8086 - Declarase de interes municipal al XXII encuentro nacional e internacional de clubes vespa.PDF"
+  },
+
+  {
+    "id":8085,
+    "text": "8085 - Declarase de imteres municipal el aanimation solidario",
+    "filePath": "8085 - Declarase de imteres municipal el aanimation solidario.PDF"
+  },
 ];
 

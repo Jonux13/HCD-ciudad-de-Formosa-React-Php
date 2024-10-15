@@ -288,4 +288,15 @@ export const visitasDetalle = [
         "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.46.04.webp",
     ]
   },
+  {
+    "id": 19,
+    "title": "Mitos y Realidades sobre el Cáncer de Mama",
+    "titles":"",
+    "description": "Este Martes 15 de Octubre te invitamos a participar de una charla sobre prevención, para conocer más sobre la enfermedad y las herramientas que tenemos para cuidarnos. 15 De Octubre. 18:00 Hs. Salón Auditorium del Honorable Concejo Deliberante. Dra. Diana Gayoso | Médica Mastóloga",
+    "date": "15/10/24",
+    "image": "/assets/img/visitas/octubre_rosa/AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
+    "images": [
+        
+    ]
+  },
 ]
