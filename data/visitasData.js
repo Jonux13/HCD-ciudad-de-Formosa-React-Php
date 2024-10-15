@@ -44,7 +44,7 @@ export const visitasData = [
     "title": "Inauguración del Espacio Amigo de la Lactancia",
     "date": "05/06/24",
     "description": "En el Día de la Acción por la Salud de las Mujeres, habilitaron el 'Espacio Amigo de Lactancia' en el Concejo Deliberante.",
-     files: ["AnyConv.com__446651424_122101999274335787_7533347121489445389_n.webp"],
+     files: "/assets/img/visitas/lactancia/AnyConv.com__446651424_122101999274335787_7533347121489445389_n.webp",
     "link": "/lactancia"
   },
   {
@@ -68,7 +68,7 @@ export const visitasData = [
     "title": "Visita de Jorge Octavio Alvarenga",
     "date": "28/06/24",
     "description": "Con su sencillez y seguridad, cautivó a todos al recitar una poesía el pasado 28 de junio.",
-     files: ["450307242_122117232362335787_5862900273079745651_n.jpg"],
+     files: ["Jorge Octavio Alvarenga/450307242_122117232362335787_5862900273079745651_n.jpg"],
     "link": "/JorgeAlvarenga"
   },
   {
@@ -76,7 +76,7 @@ export const visitasData = [
     "title": "Visita de alumnos del Colegio Privado Dr. Esteban Laureano.",
     "date": "30/06/24",
     "description": "Hoy con mucha alegría recibimos a los chicos de 6° grado del Colegio Privado Dr. Esteban Laureano.",
-     files: ["449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"],
+     files: ["chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg"],
     "link": "/colegioMaradona"
   },
   {
@@ -84,7 +84,7 @@ export const visitasData = [
     "title": "El presidente del HCD Dario Di Martino recibió al Director Jose Luis Irala.",
     "date": "08/07/24",
     "description": "Reconocimiento de parte del coro “Kanta Conmigo”.",
-     files: ["450229492_122117240402335787_4504032577374047395_n_11zon.jpg"],
+     files: ["Irala/450229492_122117240402335787_4504032577374047395_n_11zon.jpg"],
     "link": "/irala"
   },
   {
@@ -92,7 +92,7 @@ export const visitasData = [
     "title": "Visita de turistas de Comodoro Rivadavia",
     "date": "17/07/24",
     "description": "Esta mañana, turistas de Comodoro Rivadavia, acompañadas por el operador local Fernando Gaona, realizaron eltradicional City Tour por la ciudad de Formosa.",
-     files: ["451693983_122119062884335787_7698212394212258536_n_2_11zon.jpg"],
+     files: ["turistas comodoro rivadavia/451693983_122119062884335787_7698212394212258536_n_2_11zon.jpg"],
     "link": "/turistas"
   },
   {

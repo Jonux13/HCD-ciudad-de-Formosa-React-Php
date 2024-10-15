@@ -45,24 +45,25 @@ function Visitas() {
                 <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                   <NavLink to={`/visita/${visita.id}`} className="read-more">
                     <div className="service-item item-cyan position-relative">
-                    {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => {
-                      const { imageUrls, isLoading, error } = useImageList(fileName); // Asegúrate de que 'fileName' se pase correctamente
-                      return (
-                        <div key={`${visita.id}-${fileIndex}`}>
-                          {isLoading && <p>Cargando imágenes...</p>}
-                          {error && <p>Error al cargar imágenes: {error}</p>}
-                          {!isLoading && !error && imageUrls.map((imageUrl, index) => (
-                            <img
-                              key={`${fileName}-${index}`}
-                              src={imageUrl.url}
-                              alt={`Imagen de ${fileName}`}
-                              className="icon"
-                            />
-                          ))}
-                        </div>
-                      );
-                    })}
-
+                      {visita.files && visita.files.length > 0 && visita.files.map((fileName, fileIndex) => {
+                        const { imageUrls, isLoading } = useImageList(fileName); // Usar el hook para obtener las imágenes
+                        return (
+                          <div key={fileIndex}>
+                            {isLoading ? (
+                              <p>Cargando imágenes...</p>
+                            ) : (
+                              imageUrls.map((imageUrl, index) => (
+                                <img
+                                  key={index}
+                                  src={imageUrl.url}
+                                  alt={`Imagen de ${fileName}`}
+                                  className="icon"          
+                                />
+                              ))
+                            )}
+                          </div>
+                        );
+                      })}
 
                       <div className="visit-info">
                         <h3>{visita.title}</h3>
