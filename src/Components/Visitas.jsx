@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Box, Pagination } from "@mui/material";
 import { visitasData } from "../../data/visitasData";
-import "../Components/visitasDetalle.css";
+import "../Components/visitas.css";
 import useImageList from "../Hooks/useImageList"; // Importar el hook para obtener las imágenes
 
 const PageContext = React.createContext(null);
