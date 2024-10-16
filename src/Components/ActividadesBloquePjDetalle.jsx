@@ -33,7 +33,7 @@ const ActividadDetalle = () => {
 
   return (
     <section id="service-details" className="service-details section section-visitas">
-      <NavLink to="/actividades" className="read-more link-volver">
+      <NavLink to="/actividad" className="read-more link-volver">
         <span className="read-more"><i className="fas fa-reply icon-with-margin" /> Volver</span>
       </NavLink>
 
@@ -53,7 +53,7 @@ const ActividadDetalle = () => {
         <p>{actividad.description}</p>
       </div>
 
-      <NavLink to="/actividades" className="read-more">
+      <NavLink to="/actividad" className="read-more">
         <span className="read-more link-size"><i className="fas fa-reply icon-with-margin" /> Volver</span>
       </NavLink>
     </section>
