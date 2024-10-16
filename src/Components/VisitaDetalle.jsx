@@ -10,17 +10,14 @@ function VisitaDetalle() {
   const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita?.mainImage); // Usar useRef para almacenar la imagen principal
+  const imageRef = useRef(visita?.image); // Usar useRef para almacenar la imagen principal
 
   useEffect(() => {
     const fetchImage = async () => {
       setLoading(true);
       try {
-        // Aquí podrías hacer un fetch si fuera necesario
-        if (visita) {
-          // Asignar directamente la URL de la imagen principal
-          imageRef.current = `https://concejoformosa.org/${visita.mainImage}`;
-        }
+        // No necesitas hacer un fetch aquí ya que la imagen ya está en el objeto
+        imageRef.current = `https://concejoformosa.org/${visita.image}`; // Asignar directamente la URL de la imagen principal
       } catch (error) {
         console.error("Error fetching image:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
@@ -56,7 +53,7 @@ function VisitaDetalle() {
         {loading ? (
           <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
         ) : (
-          <img src={imageRef.current} alt={visita?.title} className="img-fluid services-img" loading="lazy" />
+          <img src={`https://concejoformosa.org/${visita?.image}`} alt={visita?.title} className="img-fluid services-img" loading="lazy" />
         )}
 
         <div className="title-paragrafh">
@@ -65,9 +62,9 @@ function VisitaDetalle() {
         </div>
 
         {/* Renderizar las imágenes adicionales */}
-        {visita?.additionalImages && visita.additionalImages.length > 0 && (
+        {visita?.images && visita.images.length > 0 && (
           <div>
-            {visita.additionalImages.map((imagen, index) => (
+            {visita.images.map((imagen, index) => (
               <img 
                 key={index} 
                 src={`https://concejoformosa.org${imagen}`} 
