@@ -41,6 +41,18 @@ function Visitas() {
     fetchImages();
   }, []);
 
+      // Función para convertir el formato "DD/MM/YY" a un objeto Date
+    const parseDate = (dateString) => {
+      const [day, month, year] = dateString.split('/');
+      // Asumiendo que 'year' es de dos dígitos y perteneciente al siglo 21
+      return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
+    };
+
+    // Ordenar el arreglo visitasData por fecha
+    const sortedVisitas = visitasData.sort((a, b) => {
+      return parseDate(b.date) - parseDate(a.date);
+    });
+
   const indexOfLastItem = page * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentVisitas = visitasData.slice(indexOfFirstItem, indexOfLastItem);
