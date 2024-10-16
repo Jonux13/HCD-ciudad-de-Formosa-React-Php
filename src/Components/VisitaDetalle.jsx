@@ -67,7 +67,7 @@ function VisitaDetalle() {
             {visita.images.map((imagen, index) => (
               <img 
                 key={index} 
-                src={`https://concejoformosa.org${imagen}`} 
+                src={`https://concejoformosa.org${imagen}`} // Asegúrate de que haya una barra diagonal antes de `imagen`
                 alt={`Imagen adicional ${index + 1} de ${visita.title}`} 
                 className="img-fluid services-img text-center" 
                 loading="lazy" 
