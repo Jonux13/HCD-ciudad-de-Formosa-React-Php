@@ -1,48 +1,52 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { visitasDetalle } from "../../data/visitasDetalle";
 import Skeleton from '@mui/material/Skeleton';
 import "../Components/visitasDetalle.css";
+
+// URL base para las imágenes alojadas en el servidor Apache
+const SERVER_URL = "https://concejoformosa.org/storage/visitas";
+const API_URL = "https://concejoformosa.org/visitas.php";
 
 // Componente VisitaDetalle
 function VisitaDetalle() {
   const { id } = useParams(); // Obtiene el id de la URL
-  const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
-  const [visita, setVisita] = useState(visitaEncontrada);
-  const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen principal
+  const [visita, setVisita] = useState(null); // Estado para almacenar los detalles de la visita
+  const [loading, setLoading] = useState(true); // Estado para controlar el loading
+  const [error, setError] = useState(null); // Estado para manejar errores
 
-  // useEffect para cargar las imágenes desde la API
+  // Efecto para hacer fetch a la API
   useEffect(() => {
-    const fetchImages = async () => {
-      setLoading(true);
+    // Realiza la solicitud a la API
+    const fetchVisita = async () => {
       try {
-        const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
-        if (!response.ok) throw new Error("Error en la respuesta de la red");
-
-        const data = await response.json();
-        if (data.length > 0) {
-          // Actualizar la URL de la imagen principal
-          imageRef.current = `https://concejoformosa.org${data[0].url}`;
-
-          // Actualizar el array de imágenes adicionales en el estado
-          setVisita((prevVisita) => ({
-            ...prevVisita,
-            images: data.map((img) => `https://concejoformosa.org${img.url}`) // Crear URLs completas
-          }));
-        } else {
-          imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
+        const response = await fetch(`${API_URL}?id=${id}`); // Llamada a la API con el id de la visita
+        if (!response.ok) {
+          throw new Error("Error al obtener los detalles de la visita");
         }
+        const data = await response.json(); // Parseamos la respuesta a JSON
+        setVisita(data); // Guardamos los detalles en el estado
+        setLoading(false); // Desactivamos el loading
       } catch (error) {
-        console.error("Error fetching images:", error);
-        imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
-      } finally {
-        setLoading(false);
+        setError(error.message); // Manejo de errores
+        setLoading(false); // Desactivamos el loading
       }
     };
 
-    fetchImages();
-  }, [visita.image]);
+    fetchVisita(); // Llama a la función fetch
+  }, [id]); // Se ejecuta cuando cambia el id
+
+  // Manejo de estado de carga y errores
+  if (loading) {
+    return <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (!visita) {
+    return <div>No se encontraron detalles de la visita.</div>;
+  }
 
   return (
     <section id="service-details" className="service-details section section-visitas">
@@ -63,15 +67,16 @@ function VisitaDetalle() {
       </div>
 
       <div className="col-lg-8 ps-lg-5 text-center" data-aos="fade-up" data-aos-delay={100}>
-        {loading ? (
-          <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
-        ) : (
+        {/* Imagen principal */}
+        {visita.image ? (
           <img
-            src={imageRef.current}
+            src={`${SERVER_URL}/${visita.image}`}  // Construye la URL completa para la imagen principal
             alt={visita.title}
             className="img-fluid services-img"
             loading="lazy"
           />
+        ) : (
+          <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
         )}
 
         <div className="title-paragrafh">
@@ -80,19 +85,19 @@ function VisitaDetalle() {
         </div>
 
         {/* Renderizado de imágenes adicionales */}
-        <div>
+        <div className="additional-images">
           {Array.isArray(visita.images) && visita.images.length > 0 ? (
             visita.images.map((imagen, index) => (
               <img
                 key={index}
-                src={imagen}
-                alt={`Imagen de ${visita.title}`}
-                className="img-fluid services-img text-center"
+                src={`${SERVER_URL}/${imagen}`}  // Construye la URL completa para cada imagen adicional
+                alt={`Imagen ${index + 1} de ${visita.title}`}
+                className="img-fluid services-img"
                 loading="lazy"
               />
             ))
           ) : (
-            <p>No hay imágenes disponibles.</p>
+            <p>No hay imágenes adicionales disponibles.</p>
           )}
         </div>
       </div>
