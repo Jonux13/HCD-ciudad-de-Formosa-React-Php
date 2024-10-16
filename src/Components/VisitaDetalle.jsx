@@ -58,7 +58,7 @@ const VisitaDetalle = () => {
       <div className="col-lg-8 ps-lg-5 text-center" data-aos="fade-up" data-aos-delay={100}>
         {/* Imagen principal con Skeleton mientras carga */}
         {loading ? (
-          <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 200 }} />
+          <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 500 }} />
         ) : (
           <img src={mainImageUrl} alt={visita.title} className="img-fluid services-img" loading="lazy" />
         )}
