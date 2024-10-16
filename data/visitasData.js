@@ -124,7 +124,7 @@ export const visitasData = [
     "title": "Recibimos la Primavera en el Concejo Deliberante",
     "date": "21/09/24",
     "description": "Ya tenés cita con nosotros para este sábado 21 de Septiembre a las 18:00 HS. Veni con tu familia y amigos a compartir una linda tarde.",
-    "image": "/assets/img/primavera/AnyConv.com__WhatsApp Image 2024-09-25 at 18.26.45 (1).webp",
+    "image": "AnyConv.com__WhatsApp Image 2024-09-25 at 18.26.45 (1).webp",
     "link": "/primavera_1"
   },
   {
@@ -132,7 +132,7 @@ export const visitasData = [
     "title": "Recibimos la Primavera a Puro Color y Sonrisas",
     "date": "21/09/24",
     "description": "Hoy tuvimos una linda tarde junto a los vecinos donde tuvimos la presencia del Presidente del HCD Dario Di Martino como también estuvieron feriantes, artistas, y el coro “Kanta Conmigo”. ",
-    "image": "/assets/img/primavera_2/AnyConv.com__WhatsApp Image 2024-09-25 at 18.30.12.webp",
+    "image": "AnyConv.com__WhatsApp Image 2024-09-25 at 18.30.12.webp",
     "link": "/primavera_2"
   },
   {
@@ -140,7 +140,7 @@ export const visitasData = [
     "title": "Recibimos a la Promoción 79 de la Esc. de Comercio de Embarcación Salta.",
     "date": "04/10/24",
     "description": "Hoy, en el Honorable Concejo Deliberante de la ciudad de Formosa recibimos a la Promoción 79 de la Esc de Comercio de Embarcación Salta”. ",
-    "image": "/assets/img/promocion_79/AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.52.webp",
+    "image": "AnyConv.com__WhatsApp Image 2024-10-04 at 12.45.52.webp",
     "link": "/promocion_79"
   },
   {
@@ -148,7 +148,7 @@ export const visitasData = [
     "title": "Mitos y Realidades sobre el Cáncer de Mama.",
     "date": "15/10/24",
     "description": "Este Martes 15 de Octubre te invitamos a participar de una charla sobre prevención, para conocer más sobre la enfermedad y las herramientas que tenemos para cuidarnos.”. ",
-    "image":"/assets/img/visitas/octubre_rosa/AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
+    "image":"AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
     "link": "/octubre_rosa"
   }
 
