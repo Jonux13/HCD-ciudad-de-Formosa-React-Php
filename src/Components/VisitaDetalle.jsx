@@ -4,18 +4,19 @@ import { visitasDetalle } from "../../data/visitasDetalle";
 import Skeleton from '@mui/material/Skeleton';
 import "../Components/visitasDetalle.css";
 
-// Componente VisitaDetalle
 function VisitaDetalle() {
-  const { id } = useParams(); // Obtiene el id de la URL
-  const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
+  const { id } = useParams();
+  const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id));
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen
+  const [imageUrls, setImageUrls] = useState([]); // Guardar las URLs completas de las imágenes
+  const imageRef = useRef(visita.image);
 
   useEffect(() => {
     const fetchImage = async () => {
       setLoading(true);
       try {
+        // Fetch para la imagen principal
         const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
         if (!response.ok) throw new Error("Error en la respuesta de la red");
 
@@ -23,14 +24,32 @@ function VisitaDetalle() {
         imageRef.current = data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
       } catch (error) {
         console.error("Error fetching image:", error);
-        imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
+        imageRef.current = "/default-placeholder-image.png";
       } finally {
         setLoading(false);
       }
     };
 
+    const fetchImagesArray = async () => {
+      try {
+        const imagePromises = visita.images.map(async (image) => {
+          const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(image)}`);
+          if (!response.ok) throw new Error(`Error fetching image: ${image}`);
+
+          const data = await response.json();
+          return data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
+        });
+
+        const urls = await Promise.all(imagePromises);
+        setImageUrls(urls); // Guardar las URLs completas
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    };
+
     fetchImage();
-  }, [visita.image]);
+    fetchImagesArray();
+  }, [visita.image, visita.images]);
 
   return (
     <section id="service-details" className="service-details section section-visitas">
@@ -61,20 +80,11 @@ function VisitaDetalle() {
           <p>{visita.description}</p>
         </div>
         <div>
-        {visita.images && visita.images.length > 0 ? (
-          visita.images.map((imagen, index) => (
-            <img
-              key={index}
-              src={imagen}
-              alt={`Imagen ${index + 1} de ${visita.title}`}
-              className="img-fluid services-img text-center"
-              loading="lazy"
-            />
-          ))
-        ) : (
-          <p>No hay imágenes disponibles para esta visita.</p>
-        )}
-      </div>
+          {/* Renderizar las imágenes adicionales después de que se carguen las URLs */}
+          {imageUrls.map((url, index) => (
+            <img key={index} src={url} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
+          ))}
+        </div>
       </div>
 
       <NavLink to="/visitas" className="read-more">
