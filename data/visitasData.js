@@ -76,7 +76,7 @@ export const visitasData = [
     "title": "Visita de alumnos del Colegio Privado Dr. Esteban Laureano.",
     "date": "30/06/24",
     "description": "Hoy con mucha alegría recibimos a los chicos de 6° grado del Colegio Privado Dr. Esteban Laureano.",
-    "image": "chicos de 6__ del Colegio Privado Dr. Esteban Laureano/449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg",
+    "image": "449725208_122115688982335787_2693978756186857485_n_10_11zon.jpg",
     "link": "/colegioMaradona"
   },
   {
@@ -92,7 +92,7 @@ export const visitasData = [
     "title": "Visita de turistas de Comodoro Rivadavia",
     "date": "17/07/24",
     "description": "Esta mañana, turistas de Comodoro Rivadavia, acompañadas por el operador local Fernando Gaona, realizaron eltradicional City Tour por la ciudad de Formosa.",
-    "image": "turistas comodoro rivadavia/451693983_122119062884335787_7698212394212258536_n_2_11zon.jpg",
+    "image": "451693983_122119062884335787_7698212394212258536_n_2_11zon.jpg",
     "link": "/turistas"
   },
   {
