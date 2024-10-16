@@ -71,7 +71,7 @@ function VisitaDetalle() {
             {visita.images.map((imagen, index) => (
               <img 
                 key={index} 
-                src={`https://concejoformosa.org${imagen}`} // Asegúrate de que la URL es correcta
+                src={imageRef.current} 
                 alt={`Imagen de ${visita.title}`} 
                 className="img-fluid services-img text-center" 
                 loading="lazy" 
