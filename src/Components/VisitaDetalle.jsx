@@ -17,7 +17,7 @@ function VisitaDetalle() {
       setLoading(true);
       try {
         // No necesitas hacer un fetch aquí ya que la imagen ya está en el objeto
-        imageRef.current = `https://concejoformosa.org/${visita.image}`; // Asignar directamente la URL de la imagen principal
+        imageRef.current = `https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`; // Asignar directamente la URL de la imagen principal
       } catch (error) {
         console.error("Error fetching image:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error

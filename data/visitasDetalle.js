@@ -7,8 +7,8 @@ export const visitasDetalle = [
     "date": "13/03/24",
     "image": "AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (1).webp",
     "images": [
-      "/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (2).webp",
-      "/AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06.webp"   
+      "AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06 (2).webp",
+      "AnyConv.com__WhatsApp Image 2024-05-03 at 11.29.06.webp"   
     ]
   },
   {
@@ -39,7 +39,7 @@ export const visitasDetalle = [
     "titles":"8 de Abril Aniversario de la Fundación de la Ciudad de Formosa.",
     "description": "En el marco de los festejos por el 145º Aniversario de la Fundación de la Ciudad de Formosa, tuvo lugar en la tarde de este lunes en el espacio cultural del nuevo edificio del Concejo Deliberante un paseo artístico con la presencia de distintos exponentes formoseños de la pintura y la escultura entre otras expresiones. Una actividad abierta al público en general, conté con la colaboración de los jóvenes de distintos colegios y artesanos locales. Agradecemos a los artistas que nos acompañaron: el pintor Clemar Morales, Claudia Belloni, Cielo Dimitroff, Alicia Cuello y el escultor Jorge Balassi. También fue parte de la gala el maestro José Luis Irala y músicos invitados como Diego Naser y su grupo. El fuerte crecimiento de Formosa en estos últimos años, se lo debemos a nuestro Gobernador Gildo Insfrán y al Ingeniero Jorge Jofré.",
     "date": "08/04/24",
-    "image": "AnyConv.com__WhatsApp Image 2024-05-03 at 11.21.47 (1).webp",
+    "image":"AnyConv.com__WhatsApp Image 2024-05-03 at 11.21.47 (1).webp",
     "images": [
         "AnyConv.com__WhatsApp Image 2024-05-03 at 11.21.47 (2).webp",
         "AnyConv.com__WhatsApp Image 2024-05-03 at 11.21.47 (2).webp",
