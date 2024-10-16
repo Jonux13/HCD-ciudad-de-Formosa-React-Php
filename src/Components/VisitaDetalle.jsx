@@ -69,7 +69,13 @@ function VisitaDetalle() {
         {visita?.images && visita.images.length > 0 && (
           <div>
             {visita.images.map((imagen, index) => (
-              <img key={index} src={`https://concejoformosa.org${imagen}`} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
+              <img 
+                key={index} 
+                src={`https://concejoformosa.org${imagen}`} // Asegúrate de que la URL es correcta
+                alt={`Imagen de ${visita.title}`} 
+                className="img-fluid services-img text-center" 
+                loading="lazy" 
+              />
             ))}
           </div>
         )}
