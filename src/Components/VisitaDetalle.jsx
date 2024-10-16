@@ -10,14 +10,17 @@ function VisitaDetalle() {
   const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita?.image); // Usar useRef para almacenar la imagen principal
+  const imageRef = useRef(visita?.mainImage); // Usar useRef para almacenar la imagen principal
 
   useEffect(() => {
     const fetchImage = async () => {
       setLoading(true);
       try {
         // Aquí podrías hacer un fetch si fuera necesario
-        imageRef.current = `https://concejoformosa.org/${visita.image}`; // Asignar directamente la URL de la imagen principal
+        if (visita) {
+          // Asignar directamente la URL de la imagen principal
+          imageRef.current = `https://concejoformosa.org/${visita.mainImage}`;
+        }
       } catch (error) {
         console.error("Error fetching image:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
@@ -62,13 +65,13 @@ function VisitaDetalle() {
         </div>
 
         {/* Renderizar las imágenes adicionales */}
-        {visita?.images && visita.images.length > 0 && (
+        {visita?.additionalImages && visita.additionalImages.length > 0 && (
           <div>
-            {visita.images.map((imagen, index) => (
+            {visita.additionalImages.map((imagen, index) => (
               <img 
                 key={index} 
                 src={`https://concejoformosa.org${imagen}`} 
-                alt={`Imagen de ${visita.title}`} 
+                alt={`Imagen adicional ${index + 1} de ${visita.title}`} 
                 className="img-fluid services-img text-center" 
                 loading="lazy" 
               />
