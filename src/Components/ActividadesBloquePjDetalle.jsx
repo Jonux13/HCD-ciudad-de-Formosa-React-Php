@@ -14,30 +14,26 @@ const ActividadDetalle = () => {
   const actividad = ActividadesBloquePjData.find((a) => a.id === parseInt(id));
   const [loading, setLoading] = useState(true);
   const [mainImageUrl, setMainImageUrl] = useState("");
-  const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(() => {
-    const loadImages = async () => {
+    const loadImage = async () => {
       try {
         setLoading(true);
         const mainImage = await fetchImageUrl(actividad.image);
         setMainImageUrl(mainImage);
-
-        const urls = await Promise.all(actividad.images.map(fetchImageUrl));
-        setImageUrls(urls);
       } catch (error) {
-        console.error("Error loading images:", error);
+        console.error("Error loading image:", error);
       } finally {
         setLoading(false);
       }
     };
 
-    loadImages();
+    loadImage();
   }, [actividad]);
 
   return (
     <section id="service-details" className="service-details section section-visitas">
-      <NavLink to="/actividadesbloque" className="read-more link-volver">
+      <NavLink to="/actividades" className="read-more link-volver">
         <span className="read-more"><i className="fas fa-reply icon-with-margin" /> Volver</span>
       </NavLink>
 
@@ -53,17 +49,11 @@ const ActividadDetalle = () => {
           <img src={mainImageUrl} alt={actividad.title} className="img-fluid services-img" loading="lazy" />
         )}
 
-        <h3>{actividad.titles}</h3>
+        <h3>{actividad.title}</h3>
         <p>{actividad.description}</p>
-
-        <div>
-          {imageUrls.map((url, index) => (
-            <img key={index} src={url} alt={`Imagen de ${actividad.title}`} className="img-fluid services-img" loading="lazy" />
-          ))}
-        </div>
       </div>
 
-      <NavLink to="/actividadesbloque" className="read-more">
+      <NavLink to="/actividades" className="read-more">
         <span className="read-more link-size"><i className="fas fa-reply icon-with-margin" /> Volver</span>
       </NavLink>
     </section>
