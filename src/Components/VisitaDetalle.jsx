@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
+import Skeleton from '@mui/material/Skeleton';
 import "../Components/visitasDetalle.css";
 
 // Componente VisitaDetalle
