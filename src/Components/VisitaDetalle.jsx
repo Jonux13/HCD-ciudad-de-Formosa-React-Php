@@ -10,13 +10,13 @@ function VisitaDetalle() {
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
   const [imageUrls, setImageUrls] = useState([]); // Guardar las URLs completas de las imágenes
+  const [loadingImages, setLoadingImages] = useState(true); // Estado para la carga de imágenes
   const imageRef = useRef(visita.image);
 
   useEffect(() => {
     const fetchImage = async () => {
       setLoading(true);
       try {
-        // Fetch para la imagen principal
         const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
         if (!response.ok) throw new Error("Error en la respuesta de la red");
 
@@ -31,6 +31,7 @@ function VisitaDetalle() {
     };
 
     const fetchImagesArray = async () => {
+      setLoadingImages(true); // Iniciar la carga de imágenes
       try {
         const imagePromises = visita.images.map(async (image) => {
           const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(image)}`);
@@ -44,6 +45,8 @@ function VisitaDetalle() {
         setImageUrls(urls); // Guardar las URLs completas
       } catch (error) {
         console.error("Error fetching images:", error);
+      } finally {
+        setLoadingImages(false); // Terminar la carga de imágenes
       }
     };
 
@@ -80,10 +83,17 @@ function VisitaDetalle() {
           <p>{visita.description}</p>
         </div>
         <div>
-          {/* Renderizar las imágenes adicionales después de que se carguen las URLs */}
-          {imageUrls.map((url, index) => (
-            <img key={index} src={url} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
-          ))}
+          {/* Renderizar las imágenes adicionales con Skeleton mientras se cargan */}
+          {loadingImages ? (
+            // Mostrar Skeletons en lugar de imágenes
+            Array.from({ length: visita.images.length }).map((_, index) => (
+              <Skeleton key={index} variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400, marginBottom: 1 }} />
+            ))
+          ) : (
+            imageUrls.map((url, index) => (
+              <img key={index} src={url} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
+            ))
+          )}
         </div>
       </div>
 
