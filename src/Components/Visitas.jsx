@@ -13,16 +13,23 @@ function Visitas() {
   };
 
   useEffect(() => {
-    // Fetch para obtener las URLs de las imágenes
     const fetchImages = async () => {
       const fetchedImages = {};
       for (const visita of visitasData) {
         try {
-          const response = await fetch(`/storage/visitas.php?file=${visita.image}`);
+          const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
+          
+          // Verificar que la respuesta es OK
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+
           const data = await response.json();
           if (data.length > 0) {
             // Almacena la URL de la imagen
-            fetchedImages[visita.id] = data[0].url;
+            fetchedImages[visita.id] = `https://concejoformosa.org${data[0].url}`; // Añade el dominio
+          } else {
+            console.warn(`No image found for ${visita.image}`);
           }
         } catch (error) {
           console.error("Error fetching image:", error);
