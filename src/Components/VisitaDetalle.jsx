@@ -1,3 +1,4 @@
+// src/components/VisitaDetalle.js
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
