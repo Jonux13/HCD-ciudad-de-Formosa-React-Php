@@ -10,26 +10,38 @@ function VisitaDetalle() {
   const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen
+  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen principal
 
+  // useEffect para cargar las imágenes desde la API
   useEffect(() => {
-    const fetchImage = async () => {
+    const fetchImages = async () => {
       setLoading(true);
       try {
         const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
         if (!response.ok) throw new Error("Error en la respuesta de la red");
 
         const data = await response.json();
-        imageRef.current = data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
+        if (data.length > 0) {
+          // Actualizar la URL de la imagen principal
+          imageRef.current = `https://concejoformosa.org${data[0].url}`;
+
+          // Actualizar el array de imágenes adicionales en el estado
+          setVisita((prevVisita) => ({
+            ...prevVisita,
+            images: data.map((img) => `https://concejoformosa.org${img.url}`) // Crear URLs completas
+          }));
+        } else {
+          imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
+        }
       } catch (error) {
-        console.error("Error fetching image:", error);
+        console.error("Error fetching images:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
       } finally {
         setLoading(false);
       }
     };
 
-    fetchImage();
+    fetchImages();
   }, [visita.image]);
 
   return (
@@ -54,16 +66,34 @@ function VisitaDetalle() {
         {loading ? (
           <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
         ) : (
-          <img src={imageRef.current} alt={visita.title} className="img-fluid services-img" loading="lazy" />
+          <img
+            src={imageRef.current}
+            alt={visita.title}
+            className="img-fluid services-img"
+            loading="lazy"
+          />
         )}
+
         <div className="title-paragrafh">
           <h3>{visita.titles}</h3>
           <p>{visita.description}</p>
         </div>
+
+        {/* Renderizado de imágenes adicionales */}
         <div>
-          {visita.images.map((imagen, index) => (
-            <img key={index} src={imagen} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
-          ))}
+          {Array.isArray(visita.images) && visita.images.length > 0 ? (
+            visita.images.map((imagen, index) => (
+              <img
+                key={index}
+                src={imagen}
+                alt={`Imagen de ${visita.title}`}
+                className="img-fluid services-img text-center"
+                loading="lazy"
+              />
+            ))
+          ) : (
+            <p>No hay imágenes disponibles.</p>
+          )}
         </div>
       </div>
 
