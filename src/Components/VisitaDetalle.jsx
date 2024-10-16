@@ -61,9 +61,19 @@ function VisitaDetalle() {
           <p>{visita.description}</p>
         </div>
         <div>
-          {visita.images.map((imagen, index) => (
-            <img key={index} src={imagen} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
-          ))}
+          {visita.images.map((imagen, index) => {
+            console.log('URL de la imagen:', imagen); // Imprime la URL en la consola
+
+            return (
+              <img
+                key={index}
+                src={imagen}
+                alt={`Imagen ${index + 1} de ${visita.title}`}
+                className="img-fluid services-img text-center"
+                loading="lazy"              
+              />
+            );
+          })}
         </div>
       </div>
 
