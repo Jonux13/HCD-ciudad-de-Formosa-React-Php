@@ -1,92 +1,130 @@
 import React, { useState, useEffect } from "react";
-import PdfList from "../Hooks/PdfList";
-import { itemsSesionesOrdinarias } from "../../data/itemsSesionesOrdinarias";
-import { Box, Pagination } from "@mui/material";
-import "./sesionesOrdinarias.css";
+import { NavLink } from "react-router-dom";
+import { Box, Pagination, Skeleton } from "@mui/material";
+import { visitasData } from "../../data/visitasData";
 
-function SesionesOrdinarias() {
+function Visitas() {
+  const ITEMS_PER_PAGE = 6;
   const [page, setPage] = useState(1);
-  const [sortedItems, setSortedItems] = useState([]);
-
-
-  const ITEMS_PER_PAGE = 4;
-  const indexOfLastItem = page * ITEMS_PER_PAGE;
-  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-  const currentItems = itemsSesionesOrdinarias.slice(indexOfFirstItem, indexOfLastItem);
+  const [images, setImages] = useState({}); // Almacenará las URLs de las imágenes
+  const [loading, setLoading] = useState(true); // Estado para manejar la carga
 
   const handleChange = (event, value) => {
     setPage(value);
   };
 
-   // Función para convertir el formato "DD/MM/YY" a un objeto Date
-const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('-');
-  // Asumiendo que 'year' es de dos dígitos y perteneciente al siglo 21
-  return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
-};
-
-  // Ordenar el arreglo SesionesOrdinarias por fecha
   useEffect(() => {
-    const sortedSesionesOrdinarias = itemsSesionesOrdinarias.sort((a, b) => {
-      return parseDate(b.date) - parseDate(a.date);
-    });
-    setSortedItems(sortedSesionesOrdinarias); // Guardar el arreglo ordenado en el estado
-  }, []); // Solo se ejecuta una vez cuando el componente se monta
+    const fetchImages = async () => {
+      setLoading(true); // Iniciar la carga
+      const fetchedImages = { ...images }; // Mantener las imágenes ya cargadas
+      for (const visita of visitasData) {
+        if (!fetchedImages[visita.id]) { // Solo solicitar si no está en caché
+          try {
+            const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
+            
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
 
-  
+            const data = await response.json();
+            if (data.length > 0) {
+              fetchedImages[visita.id] = `https://concejoformosa.org${data[0].url}`;
+            } else {
+              console.warn(`No image found for ${visita.image}`);
+              fetchedImages[visita.id] = "/default-placeholder-image.png"; // Placeholder si no hay imagen
+            }
+          } catch (error) {
+            console.error("Error fetching image:", error);
+            fetchedImages[visita.id] = "/default-placeholder-image.png"; // Placeholder en caso de error
+          }
+        }
+      }
+      setImages(fetchedImages);
+      setLoading(false); // Finalizar la carga
+    };
+
+    fetchImages();
+  }, [images]); // Dependencia en las imágenes para mantener la caché
+
+  // Función para convertir el formato "DD/MM/YY" a un objeto Date
+  const parseDate = (dateString) => {
+    const [day, month, year] = dateString.split('/');
+    return new Date(`20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
+  };
+
+  // Ordenar el arreglo visitasData por fecha
+  const sortedVisitas = visitasData.sort((a, b) => {
+    return parseDate(b.date) - parseDate(a.date);
+  });
+
+  const indexOfLastItem = page * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentVisitas = sortedVisitas.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
-    <section id="about" className="about about_section">
-      <div className="container" data-aos="fade-up">
-        <div className="section-title acerca">
-          <h2>Sesiones Ordinarias</h2>
-          <p>Honorable Concejo Deliberante de la Ciudad de Formosa</p>
+    <div>
+      <section id="services" className="services section">
+        <div className="container section-title" data-aos="fade-up">
+          <h2 className="title">Visitas al Hcd</h2>
+          <p>Visitas realizadas al Honorable Concejo Deliberante</p>
         </div>
-        <div className="row content sesiones-ordinarias">
-          <div className="col-lg-6 pt-4 pt-lg-0">
-      
-                 <ul className="custom-list">
-              {currentItems.map((item, index) => (
-                <li key={index}>
-                  <i className="ri-circle-fill" />
-                  <p>
-                  SUMARIO Y EFEMERIDES DE ASUNTOS ENTRADOS PARA LA “SESIÓN
-                  ORDINARIA” DEL DÍA <span>{item.date}</span> A LAS 19:00 Hs.
-                </p>
-               
-                <div className="d-flex container-list">
-                  {item.files.map((fileName, fileIndex) => (
-                    <PdfList key={fileIndex} fileName={fileName} />
-                  ))}
-                </div>
-                </li>
-              ))}
-            </ul>
 
-            <Box mt={2}>
-              <Pagination
-                className="page"
-                count={Math.ceil(itemsSesionesOrdinarias.length / ITEMS_PER_PAGE)}
-                page={page}
-                onChange={handleChange}
-                color="primary"
-                size="small"
-                shape="rounded"
-                sx={{
-                  "& .MuiPaginationItem-root": {
-                    fontSize: "0.8rem",
-                    height: "25px",    
-                  },
-                  "& .MuiPaginationItem-rounded.Mui-selected": {
-                    bgcolor: "#2487ce",
-                  },
-                }}
-              />
-            </Box>
+        <div className="container">
+          <div className="row g-5">
+            {currentVisitas.map((visita) => (
+              <div key={visita.id} className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+                <NavLink to={`/visita/${visita.id}`} className="read-more">
+                  <div className="service-item item-cyan position-relative">
+                    {loading ? (
+                      <Skeleton variant="rectangular" width="100%" height={200} />
+                    ) : (
+                      <img
+                        src={images[visita.id] || "/default-placeholder-image.png"}
+                        alt={visita.title}
+                        className="icon"
+                      />
+                    )}
+                    <div className="visit-info">
+                      <h3>{visita.title}</h3>
+                      <span className="centered-span">{visita.date}</span>
+                      <p>{visita.description}</p>
+                      <span className="read-more link-visitas">
+                        <span className="text">Ver más</span> <i className="bi bi-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+            ))}
           </div>
+
+          <Box mt={6}>
+            <Pagination
+              count={Math.ceil(visitasData.length / ITEMS_PER_PAGE)}
+              page={page}
+              onChange={handleChange}
+              color="primary"
+              size="large"
+              shape="rounded"
+              sx={{
+                "& .MuiPaginationItem-root": {
+                  fontSize: "0.8rem",
+                  height: "25px",
+                  minWidth: "15px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                },
+                "& .MuiPaginationItem-rounded.Mui-selected": {
+                  bgcolor: "#2487ce",
+                },
+              }}
+            />
+          </Box>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
-export default SesionesOrdinarias;
+export default Visitas;
