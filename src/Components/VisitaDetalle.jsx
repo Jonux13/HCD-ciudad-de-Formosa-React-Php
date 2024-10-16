@@ -1,3 +1,4 @@
+// src/components/VisitaDetalle.js
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
@@ -16,8 +17,11 @@ function VisitaDetalle() {
     const fetchImage = async () => {
       setLoading(true);
       try {
-        // No necesitas hacer un fetch aquí ya que la imagen ya está en el objeto
-        imageRef.current = `https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`; // Asignar directamente la URL de la imagen principal
+        const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
+        if (!response.ok) throw new Error("Error en la respuesta de la red");
+
+        const data = await response.json();
+        imageRef.current = data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
       } catch (error) {
         console.error("Error fetching image:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
@@ -53,7 +57,7 @@ function VisitaDetalle() {
         {loading ? (
           <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
         ) : (
-          <img src={`https://concejoformosa.org/${visita?.image}`} alt={visita?.title} className="img-fluid services-img" loading="lazy" />
+          <img src={imageRef.current} alt={visita?.title} className="img-fluid services-img" loading="lazy" />
         )}
 
         <div className="title-paragrafh">
@@ -65,13 +69,7 @@ function VisitaDetalle() {
         {visita?.images && visita.images.length > 0 && (
           <div>
             {visita.images.map((imagen, index) => (
-              <img 
-                key={index} 
-                src={`https://concejoformosa.org${imagen}`} // Asegúrate de que haya una barra diagonal antes de `imagen`
-                alt={`Imagen adicional ${index + 1} de ${visita.title}`} 
-                className="img-fluid services-img text-center" 
-                loading="lazy" 
-              />
+              <img key={index} src={`https://concejoformosa.org${imagen}`} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
             ))}
           </div>
         )}
