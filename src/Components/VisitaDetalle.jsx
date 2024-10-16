@@ -1,4 +1,3 @@
-// src/components/VisitaDetalle.js
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
@@ -17,11 +16,8 @@ function VisitaDetalle() {
     const fetchImage = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
-        if (!response.ok) throw new Error("Error en la respuesta de la red");
-
-        const data = await response.json();
-        imageRef.current = data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
+        // Aquí podrías hacer un fetch si fuera necesario
+        imageRef.current = `https://concejoformosa.org/${visita.image}`; // Asignar directamente la URL de la imagen principal
       } catch (error) {
         console.error("Error fetching image:", error);
         imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
@@ -71,7 +67,7 @@ function VisitaDetalle() {
             {visita.images.map((imagen, index) => (
               <img 
                 key={index} 
-                src={imageRef.current} 
+                src={`https://concejoformosa.org${imagen}`} 
                 alt={`Imagen de ${visita.title}`} 
                 className="img-fluid services-img text-center" 
                 loading="lazy" 
