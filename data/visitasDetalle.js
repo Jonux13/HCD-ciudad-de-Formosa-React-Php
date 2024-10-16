@@ -64,10 +64,10 @@ export const visitasDetalle = [
     "titles":"Festejos por el aniversario 214° de la Revolucion de Mayo.",
     "description": "Hoy estuvimos en el \"espacio cultural\" del Honorable Concejo Deliberante junto al presidente Dario Di Martino y concejales estuvimos festejando el aniversario 214° de la Revolucion de Mayo, donde tuvimos el agrado de tener a varios feriantes y artistas de nuestra ciudad, recibiendo a todos con un rico chocolate y disfrutando de una tarde a puro folcklore. ¡VIVA LA PATRIA!",
     "date": "25/05/24",
-    "image": "visitas/25 de mayo/foto-2-2024-05-28.webp",
+    "image": "foto-2-2024-05-28.webp",
     "images": [
-        "visitas/25 de mayo/foto-1-2024-05-28.webp",
-        "visitas/25 de mayo/foto-3-2024-05-28.webp"
+        "foto-1-2024-05-28.webp",
+        "foto-3-2024-05-28.webp"
     ]
   },
   {
