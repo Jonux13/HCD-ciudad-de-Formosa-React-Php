@@ -1,4 +1,3 @@
-// src/components/VisitaDetalle.js
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
@@ -11,7 +10,7 @@ function VisitaDetalle() {
   const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
   const [visita, setVisita] = useState(visitaEncontrada);
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef(visita?.image); // Usar useRef para almacenar la imagen principal
+  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -30,10 +29,8 @@ function VisitaDetalle() {
       }
     };
 
-    if (visita) {
-      fetchImage();
-    }
-  }, [visita]);
+    fetchImage();
+  }, [visita.image]);
 
   return (
     <section id="service-details" className="service-details section section-visitas">
@@ -48,8 +45,8 @@ function VisitaDetalle() {
 
       <div className="container-all" data-aos="fade-up">
         <div className="container-title-visita text-center">
-          <h4>{visita?.title}</h4>
-          <span>{visita?.date}</span>
+          <h4>{visita.title}</h4>
+          <span>{visita.date}</span>
         </div>
       </div>
 
@@ -57,22 +54,17 @@ function VisitaDetalle() {
         {loading ? (
           <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
         ) : (
-          <img src={imageRef.current} alt={visita?.title} className="img-fluid services-img" loading="lazy" />
+          <img src={imageRef.current} alt={visita.title} className="img-fluid services-img" loading="lazy" />
         )}
-
         <div className="title-paragrafh">
-          <h3>{visita?.titles}</h3>
-          <p>{visita?.description}</p>
+          <h3>{visita.titles}</h3>
+          <p>{visita.description}</p>
         </div>
-
-        {/* Renderizar las imágenes adicionales */}
-        {visita?.images && visita.images.length > 0 && (
-          <div>
-            {visita.images.map((imagen, index) => (
-              <img key={index} src={`https://concejoformosa.org${imagen}`} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
-            ))}
-          </div>
-        )}
+        <div>
+          {visita.images.map((imagen, index) => (
+            <img key={index} src={imagen} alt={`Imagen de ${visita.title}`} className="img-fluid services-img text-center" loading="lazy" />
+          ))}
+        </div>
       </div>
 
       <NavLink to="/visitas" className="read-more">
