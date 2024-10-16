@@ -1,14 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { visitasDetalle } from "../../data/visitasDetalle";
 import "../Components/visitasDetalle.css";
 
+// Componente VisitaDetalle
 function VisitaDetalle() {
   const { id } = useParams(); // Obtiene el id de la URL
   const visitaEncontrada = visitasDetalle.find((v) => v.id === parseInt(id)); // Busca la visita por ID
-  const [visita] = useState(visitaEncontrada);
+  const [visita, setVisita] = useState(visitaEncontrada);
+  const [loading, setLoading] = useState(true);
+  const imageRef = useRef(visita.image); // Usar useRef para almacenar la imagen
 
+  useEffect(() => {
+    const fetchImage = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`https://concejoformosa.org/visitas.php?file=${encodeURIComponent(visita.image)}`);
+        if (!response.ok) throw new Error("Error en la respuesta de la red");
 
+        const data = await response.json();
+        imageRef.current = data.length > 0 ? `https://concejoformosa.org${data[0].url}` : "/default-placeholder-image.png";
+      } catch (error) {
+        console.error("Error fetching image:", error);
+        imageRef.current = "/default-placeholder-image.png"; // Placeholder en caso de error
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchImage();
+  }, [visita.image]);
 
   return (
     <section id="service-details" className="service-details section section-visitas">
@@ -29,7 +50,11 @@ function VisitaDetalle() {
       </div>
 
       <div className="col-lg-8 ps-lg-5 text-center" data-aos="fade-up" data-aos-delay={100}>
-        <img src={visita.image} alt={visita.title} className="img-fluid services-img" loading="lazy" />
+        {loading ? (
+          <Skeleton variant="rectangular" sx={{ borderRadius: 1, width: "100%", height: 400 }} />
+        ) : (
+          <img src={imageRef.current} alt={visita.title} className="img-fluid services-img" loading="lazy" />
+        )}
         <div className="title-paragrafh">
           <h3>{visita.titles}</h3>
           <p>{visita.description}</p>
