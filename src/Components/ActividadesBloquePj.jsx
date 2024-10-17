@@ -99,7 +99,7 @@ function ActividadesBloquePj() {
             ))}
           </div>
 
-          <Box mt={6}>
+          {/* <Box mt={6}>
             <Pagination
               count={Math.ceil(ActividadesBloquePjData.length / ITEMS_PER_PAGE)}
               page={page}
@@ -121,7 +121,7 @@ function ActividadesBloquePj() {
                 },
               }}
             />
-          </Box>
+          </Box> */}
         </div>
       </section>
     </div>
