@@ -1,7 +1,7 @@
 export const itemsData = [
   {
     "id":8092,
-    "text": "8088 - condonase la deuda que mantiene con el municipio la union de trabajadores de turismo",
+    "text": "8092 - condonase la deuda que mantiene con el municipio la union de trabajadores de turismo",
     "filePath": "8092 - condonase la deuda que mantiene con el municipio la union de trabajadores de turismo.PDF"
   },
 
