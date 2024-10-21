@@ -298,4 +298,26 @@ export const visitasDetalle = [
         
     ]
   },
+  {
+    "id": 20,
+    "title": "Octubre Rosa",
+    "titles":"Mitos y Realidades sobre el Cáncer de Mama",
+    "description": "Esta tarde en el auditorio Del Honorable Concejo Deliberante de la ciudad de Formosa se realizó la charla “Mitos y realidades sobre el cáncer de mamas” con la participación de la Dra. Diana Gayoso, Médica y Mastóloga, también dieron testimonios varios pacientes oncológicos sobres sus experiencias y lucha contra esta enfermedad.",
+    "date": "16/10/24",
+    "image": "octubre_rosa8.webp",
+    "images": [
+        "octubre_rosa1.webp",
+        "octubre_rosa2.webp",
+        "octubre_rosa3.webp",
+        "octubre_rosa4.webp",
+        "octubre_rosa5.webp",
+        "octubre_rosa6.webp",
+        "octubre_rosa7.webp",
+        "octubre_rosa9.webp",
+        "octubre_rosa10.webp",
+        "octubre_rosa11.webp",
+        "octubre_rosa12.webp",
+
+    ]
+  },
 ]

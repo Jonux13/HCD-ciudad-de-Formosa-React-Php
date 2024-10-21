@@ -1,26 +1,26 @@
 export const itemsData = [
   {
-    "id":8088,
-    "text": "8088 - Promuevase la campaña de cancer de mama",
-    "filePath": "8088 - Promuevase la campaña de cancer de mama.PDF"
+    "id":8092,
+    "text": "8088 - condonase la deuda que mantiene con el municipio la union de trabajadores de turismo",
+    "filePath": "8092 - condonase la deuda que mantiene con el municipio la union de trabajadores de turismo.PDF"
   },
 
   {
-    "id":8087,
-    "text": "8087 - Apruebese la reestructura del presupuesto de gastos y calculos de recursos del año 2024",
-    "filePath": "8087 - Apruebese la reestroctura del pro}esupuesto de gastos y calculos de recursos del año 2024.PDF"
+    "id":8091,
+    "text": "8091 - declarase de interes municipal la II edicion de la formoseñada",
+    "filePath": "8091 - declarase de interes municipal la II edicion de la formoseñada.PDF"
   },
 
   {
-    "id":8086,
-    "text": "8086 - Declarase de interes municipal al XXII encuentro nacional e internacional de clubes vespa",
-    "filePath": "8086 - Declarase de interes municipal al XXII encuentro nacional e internacional de clubes vespa.PDF"
+    "id":8090,
+    "text": "8090 - autorizase al señor intendente a extender la escritura translativa de dominio de la señora nelida elba zalazar",
+    "filePath": "8090 - autorizase al señor intendente a extender la escritura translativa de dominio de la señora nelida elba zalazar.PDF"
   },
 
   {
-    "id":8085,
-    "text": "8085 - Declarase de imteres municipal el aanimation solidario",
-    "filePath": "8085 - Declarase de imteres municipal el aanimation solidario.PDF"
+    "id":8089,
+    "text": "8089 - autorizase al señor intendente a extender la escritura translativa de dominio de la señora ana erlinda garcia",
+    "filePath": "8089 - autorizase al señor intendente a extender la escritura translativa de dominio de la señora ana erlinda garcia.PDF"
   },
 ];
 

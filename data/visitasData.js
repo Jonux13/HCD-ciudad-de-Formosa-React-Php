@@ -150,6 +150,14 @@ export const visitasData = [
     "description": "Este Martes 15 de Octubre te invitamos a participar de una charla sobre prevención, para conocer más sobre la enfermedad y las herramientas que tenemos para cuidarnos.”. ",
     "image":"AnyConv.com__WhatsApp Image 2024-10-15 at 09.38.49.webp",
     "link": "/octubre_rosa"
+  },
+  {
+    "id": 20,
+    "title": "Octubre Rosa",
+    "date": "16/10/24",
+    "description": "Esta tarde en el auditorio Del Honorable Concejo Deliberante de la ciudad de Formosa se realizó la charla “Mitos y realidades sobre el cáncer de mamas” con la participación de la Dra. Diana Gayoso, Médica y Mastóloga",
+    "image":"octubre_rosa8.webp",
+    "link": "/octubre_rosa2"
   }
 
 ]

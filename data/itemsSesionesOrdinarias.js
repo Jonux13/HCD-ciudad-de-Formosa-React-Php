@@ -308,4 +308,15 @@ export const itemsSesionesOrdinarias = [
       "AnyConv.com__WhatsApp Image 2024-10-15 at 09.36.40 (2).webp"
     ]
   },
+  {
+    date: "16-10-24",
+    files: [
+      "WhatsApp Image 2024-10-21 at 09.09.28.pdf",
+      "WhatsApp Image 2024-10-21 at 09.09.29.pdf",
+      "].webp",
+      "AnyConv.com__WhatsApp Image 2024-10-21 at 09.09.29 (2).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-21 at 09.09.29 (3).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-21 at 09.09.31.webp"
+    ]
+  },
 ]
