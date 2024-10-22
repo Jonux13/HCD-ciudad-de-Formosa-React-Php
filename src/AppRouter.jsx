@@ -9,7 +9,7 @@ import Acerca from "./pages/Acerca";
 import ScrollToTop from "./Components/ScrollToTop";
 import AutoridadesAnteriores from "./pages/AutoridadesAnteriores";
 import Edificio from "./pages/Edificio";
-import Consejales from "./pages/Consejales";
+import Concejales from "./pages/Concejales";
 import AutoridadesActuales from "./pages/AutoridadesActuales";
 import BloqueUcr from "./pages/BloqueUcr";
 import BloquePj from "./pages/BloquePj";
@@ -24,37 +24,39 @@ import UltimasOrdenanzas from "./pages/UltimasOrdenanzas";
 import VisitaDetalle from './Components/VisitaDetalle';
 import ActividadesBloquePj from "./Components/ActividadesBloquePj";
 import ActividadesBloquePjDetalle from "./Components/ActividadesBloquePjDetalle";
-
+import NotFoundPage from "./Components/NotFoundPage";
+import Layout from "./Hooks/Layout";
 
 function AppRouter() {
   return (
     <div>
       <ScrollToTop />
-      <Navbar />
+ 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/acerca" element={<Acerca />} />
-        <Route path="/autoridadesActuales" element={<AutoridadesActuales />} />
-        <Route path="/autoridadesAnteriores" element={<AutoridadesAnteriores />} />
-        <Route path="/visitas" element={<Visitas />} />
-        <Route path="/visita/:id" element={<VisitaDetalle />} />
-        <Route path="/edificio" element={<Edificio />} />
-        <Route path="/concejales" element={<Consejales />} />
-        <Route path="/comisiones" element={<Comisiones />} />
-        <Route path="/pj" element={<BloquePj />} />
-        <Route path="/actividades" element={<ActividadesBloquePj />} />
-        <Route path="/actividad/:id" element={<ActividadesBloquePjDetalle />} />
-        <Route path="/ucr" element={<BloqueUcr />} />
-        <Route path="/nuevoPais" element={<BloqueNuevoPais />} />
-        <Route path="/5DeMarzo" element={<Bloque5DeMarzo />} />
-        <Route path="/pro" element={<BloquePro />} />
-        <Route path="/ordenanzas" element={<Ordenanzas />} />
-        <Route path="/ultimasOrdenazas" element={<UltimasOrdenanzas />} />
-        <Route path="/sesionesOrdinarias" element={<SesionesOrdinarias />} />
-        <Route path="/sesionesEnVivo" element={<SesionesVivo />} />
-        <Route path="/contacto" element={<Contacto />} />
+      <Route path="/" element={<Layout><Home /></Layout>} />
+      <Route path="/acerca" element={<Layout><Acerca /></Layout>} />
+        <Route path="/autoridadesActuales" element={<Layout><AutoridadesActuales /></Layout>} />
+        <Route path="/autoridadesAnteriores" element={<Layout><AutoridadesAnteriores /></Layout>} />
+        <Route path="/visitas" element={<Layout><Visitas /></Layout>} />
+        <Route path="/visita/:id" element={<Layout><VisitaDetalle /></Layout>} />
+        <Route path="/edificio" element={<Layout><Edificio /></Layout>} />
+        <Route path="/concejales" element={<Layout><Concejales /></Layout>} />
+        <Route path="/comisiones" element={<Layout><Comisiones /></Layout>} />
+        <Route path="/pj" element={<Layout><BloquePj /></Layout>} />
+        <Route path="/actividades" element={<Layout><ActividadesBloquePj /></Layout>} />
+        <Route path="/actividad/:id" element={<Layout><ActividadesBloquePjDetalle /></Layout>} />
+        <Route path="/ucr" element={<Layout><BloqueUcr /></Layout>} />
+        <Route path="/nuevoPais" element={<Layout><BloqueNuevoPais /></Layout>} />
+        <Route path="/5DeMarzo" element={<Layout><Bloque5DeMarzo /></Layout>} />
+        <Route path="/pro" element={<Layout><BloquePro /></Layout>} />
+        <Route path="/ordenanzas" element={<Layout><Ordenanzas /></Layout>} />
+        <Route path="/ultimasOrdenazas" element={<Layout><UltimasOrdenanzas /></Layout>} />
+        <Route path="/sesionesOrdinarias" element={<Layout><SesionesOrdinarias /></Layout>} />
+        <Route path="/sesionesEnVivo" element={<Layout><SesionesVivo /></Layout>} />
+        <Route path="/contacto" element={<Layout><Contacto /></Layout>} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <Footer />
+   
     </div>
   );
 }
