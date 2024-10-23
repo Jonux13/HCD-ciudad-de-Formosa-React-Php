@@ -587,6 +587,11 @@ h6 {
   font-style: normal;
 }
 
+#hero h1 span {
+  display: block; /* Cada palabra en una nueva línea */
+  margin-bottom: -1.125rem;
+}
+
 #hero h2 {
   color: rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
@@ -600,10 +605,6 @@ h6 {
 
 .custom-margin {
   margin-left: 1.375rem;
-}
-
-.word {
-  margin-bottom: -1.125rem; /* Ajusta el valor según lo necesites */
 }
 
 #hero .btn-get-started {

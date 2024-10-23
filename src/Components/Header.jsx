@@ -18,9 +18,9 @@ function Header() {
             <div className="row justify-content-left custom-margin">
               <div className="col-xl-7 col-lg-9 text-left custom-margin">
                 <h1>
-                  <p className="word">Honorable</p>
-                  <p className="word">Concejo</p>
-                  <p className="word">Deliberante</p>
+                  <span>Honorable</span>
+                  <span>Concejo</span>
+                  <span>Deliberante</span>
                 </h1>
                 <h2>Ciudad de Formosa</h2>
               </div>
