@@ -75,7 +75,7 @@ function SwiperUltimasNovedades() {
             <p>25 de febrero de 2024</p>
           </div>
           <img
-            src="/assets/img/swiper_novedades/insfran2.jpg"
+            src="/assets/img/swiper_novedades/insfran_2.webp"
             alt="Slide 1"
             className="swiper-image"
           />
@@ -90,7 +90,7 @@ function SwiperUltimasNovedades() {
             <p>25 de febrero de 2024</p>
           </div>
           <img
-            src="/assets/img/swiper_novedades/insfraninauguracion.jpg"
+            src="/assets/img/swiper_novedades/insfraninauguracion_3.webp"
             alt="Slide 2"
             className="swiper-image"
           />
@@ -105,7 +105,7 @@ function SwiperUltimasNovedades() {
             <p>25 de febrero de 2024</p>
           </div>
           <img
-            src="/assets/img/swiper_novedades/foto-concejo-novedades.jpg"
+            src="/assets/img/swiper_novedades/concejo-novedades_1.webp"
             alt="Slide 3"
             className="swiper-image"
           />
