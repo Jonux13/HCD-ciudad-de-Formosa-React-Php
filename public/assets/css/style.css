@@ -732,6 +732,11 @@ h6 {
     text-shadow: 0.125rem 0.125rem 0rem rgba(0, 0, 0, 0.7);
   }
 
+  #hero h1 span {
+    display: block; 
+    margin-bottom: 0.3rem;
+  }
+
   #hero h2 {
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -782,6 +787,11 @@ h6 {
     text-shadow: 0.125rem 0.125rem 0rem rgba(0, 0, 0, 0.7);
   }
 
+  #hero h1 span {
+    display: block; 
+    margin-bottom: 0.3rem;
+  }
+
   #hero h2 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -791,10 +801,6 @@ h6 {
   .custom-margin {
     margin-left: -0.375rem;
     text-align: center;
-  }
-
-  .word {
-    margin-bottom: 0.1875rem;
   }
 
   #hero .btn-get-started {
@@ -832,6 +838,11 @@ h6 {
     text-shadow: 0.125rem 0.125rem 0rem rgba(0, 0, 0, 0.7);
   }
 
+  #hero h1 span {
+    display: block; 
+    margin-bottom: 0.3rem;
+  }
+
   #hero h2 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -842,10 +853,6 @@ h6 {
   .custom-margin {
     margin-left: 0rem;
     text-align: center;
-  }
-
-  .word {
-    margin-bottom: 0.1875rem;
   }
 
   #hero .btn-get-started {
