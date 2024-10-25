@@ -13,37 +13,18 @@ function Header() {
           <div
             className="container position-relative"
             data-aos="fade-up"
-            // data-aos-delay={100}
+            data-aos-delay={100}
           >
             <div className="row justify-content-left custom-margin">
-          <div className="col-xl-7 col-lg-9 text-left custom-margin">
-            <h1 
-              style={{
-                fontSize: '3rem',
-                fontWeight: 400,
-                lineHeight: '4.5rem',
-                color: '#fff',
-                fontFamily: 'Merriweather, serif'
-              }}
-            >
-              <span style={{ display: 'block', marginBottom: '-1.125rem' }}>Honorable</span>
-              <span style={{ display: 'block', marginBottom: '-1.125rem' }}>Concejo</span>
-              <span style={{ display: 'block', marginBottom: '-1.125rem' }}>Deliberante</span>
-            </h1>
-            <h2 
-              style={{
-                color: 'rgb(255, 255, 255)',
-                fontFamily: 'Raleway, sans-serif',
-                fontSize: '1.0625rem',
-                fontWeight: 700,
-                letterSpacing: '0.05rem',
-                marginTop: '1.25rem'
-              }}
-            >
-              Ciudad de Formosa
-            </h2>
-          </div>
-        </div>
+              <div className="col-xl-7 col-lg-9 text-left custom-margin">
+                <h1>
+                  <span>Honorable</span>
+                  <span>Concejo</span>
+                  <span>Deliberante</span>
+                </h1>
+                <h2>Ciudad de Formosa</h2>
+              </div>
+            </div>
 
             <ContadorVistas />
 
