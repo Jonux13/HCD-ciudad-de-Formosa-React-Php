@@ -583,22 +583,23 @@ h6 {
   line-height: 4.5rem;
   color: rgb(255, 255, 255);
   font-family: "Merriweather", serif;
-  font-weight: 300;
   font-style: normal;
+  margin-top: 0.55rem;
+  margin-bottom: -0.55rem;
 }
 
 #hero h1 span {
   display: block; /* Cada palabra en una nueva línea */
-  margin-bottom: -1.125rem;
+  /* margin-bottom: -1.125rem; */
+  line-height: 3.37rem;
+  padding: 0;
 }
 
 #hero h2 {
   color: rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
-
   font-size: 1.0625rem;
   font-weight: 700;
-  /* font-style: normal; */
   letter-spacing: 0.05rem;
   margin-top: 1.25rem;
 }
