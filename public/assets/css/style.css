@@ -55,6 +55,13 @@ h6 {
   --nav-font: "Inter", sans-serif;
 }
 
+@font-face {
+  font-family: 'boxicons';
+  src: url('/assets/vendor/boxicons/fonts/boxicons.woff2') format('woff2');
+  font-display: swap;
+}
+
+
 /* Global Colors */
 :root {
   --background-color: #ffffff;
