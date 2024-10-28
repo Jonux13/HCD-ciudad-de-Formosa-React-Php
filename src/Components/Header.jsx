@@ -15,7 +15,7 @@ function Header() {
             data-aos="fade-up"
             data-aos-delay={100}
           >
-            <div className="row justify-content-left custom-margin">
+           
               <div className="col-xl-7 col-lg-9 text-left custom-margin">
                 <h1>
                   <span>Honorable</span>
@@ -24,7 +24,7 @@ function Header() {
                 </h1>
                 <h2>Ciudad de Formosa</h2>
               </div>
-            </div>
+          
 
             <ContadorVistas />
 
