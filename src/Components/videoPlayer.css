@@ -1,0 +1,47 @@
+/* videoPlayer.css */
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* semitransparente para mejor contraste */
+  z-index: 10;
+}
+
+.custom-video {
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.05));
+}
+
+.home-blurred {
+  filter: blur(8px); /* Ajusta el valor de desenfoque */
+}
+
+.play-button {
+  position: absolute; /* Posiciona el botón sobre el video */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta la posición para centrarlo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño de fuente */
+  z-index: 10; /* Asegura que el botón esté por encima del video */
+  transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Cambia el color al pasar el ratón */
+}

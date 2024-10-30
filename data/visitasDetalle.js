@@ -320,4 +320,20 @@ export const visitasDetalle = [
 
     ]
   },
+  {
+    "id": 21,
+    "title": "Gracias por visitarnos Instituto SAnta Isabel",
+    "titles":"Agradable visita del \"Instituto Santa Isabel\" ",
+    "description": "Hoy en el HCD tuvimos una agradable visita del \"Instituto Santa Isabel\" junto a los concejales de ambos bloques nos regalaron una hermosa mañana.¡GRACIAS POR SU VISITA!.",
+    "date": "29/10/24",
+    "image": "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58.webp",
+    "images": [
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (1).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (2).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (3).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (4).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (5).webp",
+      "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (6).webp"
+    ]
+  },
 ]

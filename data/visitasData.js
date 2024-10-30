@@ -158,6 +158,14 @@ export const visitasData = [
     "description": "En el auditorio Del Honorable Concejo Deliberante de la ciudad de Formosa se realizó la charla “Mitos y realidades sobre el cáncer de mamas” con la participación de la Dra. Diana Gayoso, Médica y Mastóloga",
     "image":"octubre_rosa8.webp",
     "link": "/octubre_rosa2"
+  },
+  {
+    "id": 21,
+    "title": "Gracias por visitarnos Instituto SAnta Isabel",
+    "date": "29/10/24",
+    "description": "Hoy en el HCD tuvimos una agradable visita del \"Instituto Santa Isabel\" junto a los concejales de ambos bloques nos regalaron una hermosa mañana.¡GRACIAS POR SU VISITA!",
+    "image":"AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58.webp",
+    "link": "/inst_santa_isa"
   }
 
 ]
