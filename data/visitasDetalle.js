@@ -322,7 +322,7 @@ export const visitasDetalle = [
   },
   {
     "id": 21,
-    "title": "Gracias por visitarnos Instituto SAnta Isabel",
+    "title": "Gracias por visitarnos Instituto Santa Isabel",
     "titles":"Agradable visita del \"Instituto Santa Isabel\" ",
     "description": "Hoy en el HCD tuvimos una agradable visita del \"Instituto Santa Isabel\" junto a los concejales de ambos bloques nos regalaron una hermosa mañana.¡GRACIAS POR SU VISITA!.",
     "date": "29/10/24",

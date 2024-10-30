@@ -161,7 +161,7 @@ export const visitasData = [
   },
   {
     "id": 21,
-    "title": "Gracias por visitarnos Instituto SAnta Isabel",
+    "title": "Gracias por visitarnos Instituto Santa Isabel",
     "date": "29/10/24",
     "description": "Hoy en el HCD tuvimos una agradable visita del \"Instituto Santa Isabel\" junto a los concejales de ambos bloques nos regalaron una hermosa mañana.¡GRACIAS POR SU VISITA!",
     "image":"AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58.webp",
