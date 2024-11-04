@@ -336,4 +336,15 @@ export const visitasDetalle = [
       "AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58 (6).webp"
     ]
   },
+  {
+    "id": 22,
+    "title": "Pirotecnia Sonora Cero",
+    "titles":"En el Marco de la campaña \“Pirotecnia cero\”",
+    "description": "En el Marco de la campaña “Pirotecnia cero”, el Honorable Concejo Deliberante de la ciudad de Formosa, conjuntamente con las distintas asociaciones intermedias de la ciudad de Formosa, continúan con esta iniciativa, en esta ocasion realizando aportes de gráfica en general para la difusión y conocimiento de esta ordenanza tan importante para todos los vecinos de la Ciudad.",
+    "date": "31/10/24",
+    "image": "AnyConv.com__WhatsApp Image 2024-11-04 at 10.20.30.webp",
+    "images": [
+      
+    ]
+  },
 ]

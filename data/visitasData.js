@@ -166,6 +166,14 @@ export const visitasData = [
     "description": "Hoy en el HCD tuvimos una agradable visita del \"Instituto Santa Isabel\" junto a los concejales de ambos bloques nos regalaron una hermosa mañana.¡GRACIAS POR SU VISITA!",
     "image":"AnyConv.com__WhatsApp Image 2024-10-30 at 09.41.58.webp",
     "link": "/inst_santa_isa"
+  },
+  {
+    "id": 22,
+    "title": "Pirotecnia Sonora Cero",
+    "date": "31/10/24",
+    "description": "En el Marco de la campaña “Pirotecnia cero”, el Honorable Concejo Deliberante de la ciudad de Formosa, conjuntamente con las distintas asociaciones intermedias de la ciudad de Formosa, continúan con esta iniciativa",
+    "image":"AnyConv.com__WhatsApp Image 2024-11-04 at 10.20.30 (1).webp",
+    "link": "/pirotecnia-cero"
   }
 
 ]
