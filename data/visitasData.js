@@ -174,6 +174,22 @@ export const visitasData = [
     "description": "En el Marco de la campaña “Pirotecnia cero”, el Honorable Concejo Deliberante de la ciudad de Formosa, conjuntamente con las distintas asociaciones intermedias de la ciudad de Formosa, continúan con esta iniciativa",
     "image":"AnyConv.com__WhatsApp Image 2024-11-04 at 10.20.30 (1).webp",
     "link": "/pirotecnia-cero"
+  },
+  {
+    "id": 23,
+    "title": "Paseo la Estación",
+    "date": "07/11/24",
+    "description": "Hoy en el \"Paseo la Estación\" los empleados del HCD recibieron medallas , placas y diplomas",
+    "image":"4.webp",
+    "link": "/paseo-la-estación"
+  },
+  {
+    "id": 24,
+    "title": "Día de la Tradición",
+    "date": "10/11/24",
+    "description": "En el Honorable Concejo Deliberante a cabo el festival por el día de la Tradición",
+    "image":"9.webp",
+    "link": "/tradicion"
   }
 
 ]
