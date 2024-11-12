@@ -353,12 +353,12 @@ export const visitasDetalle = [
     "titles":"Los empleados del HCD recibieron medallas , placas y diplomas.",
     "description": "En el \"Paseo la Estación\" los empleados del HCD BARBOZA RICARDO CATALINO , BARRETO MARIA ELIZABET , CHAVEZ RUMILDA , MACIEL BERNARDA ROSA , NICASTRO NORMA ELIZABETH , OBREGON GERARDO FLORENTIN , ROLON ARISTIDES ROBUSTIANO recibieron medallas , placas y diplomas por los años de trabajo y compromiso a nuestra querida institución.",
     "date": "07/11/24",
-    "image": "4.webp",
+    "image": "estacion-4.webp",
     "images": [
-      "1.webp",
-      "2.webp",
-      "3.webp",
-      "5.webp",
+      "estacion-1.webp",
+      "estacion-2.webp",
+      "estacion-3.webp",
+      "estacion-5.webp",
     ]
   },
   {
@@ -367,17 +367,17 @@ export const visitasDetalle = [
     "titles":"Festival por el día de la Tradición",
     "description": "En el Honorable Concejo Deliberante a cabo el festival por el día de la Tradición, donde estuvieron presentes el Intendente Jorge Jofré, Presidente Dario Di Martino, el concejal Marcelo Sosa, funcionario municipales y vecinos, compartimos una maravillosa tarde a puro folclore y baile con actuación de peñas folclóricas, bandas en vivo y el popular coro \"Kanta Conmigo\".",
     "date": "10/11/24",
-    "image": "9.webp",
+    "image": "tradicion-9.webp",
     "images": [
-      "1.webp",
-      "2.webp",
-      "3.webp",
-      "4.webp",
-      "5.webp",
-      "6.webp",
-      "7.webp",
-      "8.webp",
-      "10.webp"
+      "tradicion-1.webp",
+      "tradicion-2.webp",
+      "tradicion-3.webp",
+      "tradicion-4.webp",
+      "tradicion-5.webp",
+      "tradicion-6.webp",
+      "tradicion-7.webp",
+      "tradicion-8.webp",
+      "tradicion-10.webp"
     ]
   },
 ]

@@ -180,7 +180,7 @@ export const visitasData = [
     "title": "Paseo la Estación",
     "date": "07/11/24",
     "description": "Hoy en el \"Paseo la Estación\" los empleados del HCD recibieron medallas , placas y diplomas",
-    "image":"4.webp",
+    "image":"estacion-4.webp",
     "link": "/paseo-la-estación"
   },
   {
@@ -188,7 +188,7 @@ export const visitasData = [
     "title": "Día de la Tradición",
     "date": "10/11/24",
     "description": "En el Honorable Concejo Deliberante a cabo el festival por el día de la Tradición",
-    "image":"9.webp",
+    "image":"tradicion-9.webp",
     "link": "/tradicion"
   }
 
