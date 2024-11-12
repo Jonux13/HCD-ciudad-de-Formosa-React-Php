@@ -365,7 +365,7 @@ export const visitasDetalle = [
     "id": 24,
     "title": "Día de la Tradición",
     "titles":"Festival por el día de la Tradición",
-    "description": "En el Honorable Concejo Deliberante a cabo el festival por el día de la Tradición, donde estuvieron presentes el Intendente Jorge Jofré, Presidente Dario Di Martino, el concejal Marcelo Sosa, funcionario municipales y vecinos, compartimos una maravillosa tarde a puro folclore y baile con actuación de peñas folclóricas, bandas en vivo y el popular coro \"Kanta Conmigo\".",
+    "description": "En el Honorable Concejo Deliberante se llevó a cabo el festival por el día de la Tradición, donde estuvieron presentes el Intendente Jorge Jofré, Presidente Dario Di Martino, el concejal Marcelo Sosa, funcionario municipales y vecinos, compartimos una maravillosa tarde a puro folclore y baile con actuación de peñas folclóricas, bandas en vivo y el popular coro \"Kanta Conmigo\".",
     "date": "10/11/24",
     "image": "tradicion-9.webp",
     "images": [

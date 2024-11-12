@@ -187,7 +187,7 @@ export const visitasData = [
     "id": 24,
     "title": "Día de la Tradición",
     "date": "10/11/24",
-    "description": "En el Honorable Concejo Deliberante a cabo el festival por el día de la Tradición",
+    "description": "En el Honorable Concejo Deliberante se llevó a cabo el festival por el día de la Tradición",
     "image":"tradicion-9.webp",
     "link": "/tradicion"
   }
