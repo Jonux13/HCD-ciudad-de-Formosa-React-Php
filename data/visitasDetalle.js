@@ -380,4 +380,15 @@ export const visitasDetalle = [
       "tradicion-10.webp"
     ]
   },
+  {
+    "id": 25,
+    "title": "Torneo de Ajedrez",
+    "titles":"",
+    "description": "Estamos muy contentos de haber declarado de interés municipal al 1° “Torneo de Ajedrez”, a realizarse el día sábado 30 de Noviembre del corriente año, a las 8.30 horas, en el Salón Auditorio del Honorable Concejo Deliberante de la Ciudad de Formosa.",
+    "date": "15/11/24",
+    "image": "AnyConv.com__WhatsApp Image 2024-11-19 at 09.26.20 (1).webp",
+    "images": [
+        "AnyConv.com__WhatsApp Image 2024-11-19 at 09.26.20.webp"
+    ]
+  },
 ]

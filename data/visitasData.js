@@ -190,6 +190,14 @@ export const visitasData = [
     "description": "En el Honorable Concejo Deliberante se llevó a cabo el festival por el día de la Tradición",
     "image":"tradicion-9.webp",
     "link": "/tradicion"
+  },
+  {
+    "id": 25,
+    "title": "Torneo de Ajedrez",
+    "date": "15/11/24",
+    "description": "Estamos muy contentos de haber declarado de interés municipal al 1° “Torneo de Ajedrez”, a realizarse el día sábado 30 de Noviembre del corriente año",
+    "image":"AnyConv.com__WhatsApp Image 2024-11-19 at 09.26.20 (1).webp",
+    "link": "/torneo-ajedrez"
   }
 
 ]
