@@ -26,18 +26,27 @@ import ActividadesBloquePj from "./Components/ActividadesBloquePj";
 import ActividadesBloquePjDetalle from "./Components/ActividadesBloquePjDetalle";
 import NotFoundPage from "./Components/NotFoundPage";
 import Layout from "./Hooks/Layout";
-import { VidePlayer } from "./Components/VidePlayer";
-import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
+// import { VidePlayer } from "./Components/VidePlayer";
+import { ShowImage } from "./Components/ShowImage"
+import  videoSrc from "/assets/img/cumple-dimartino/foto-cumple-dimartino.webp"
+// import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
 
 function AppRouter() {
-  const [showVideo, setShowVideo] = useState(true);
+  const [showImage, setShowImage] = useState(true);
 
-  const handleVideoEnd = () => {
-    setShowVideo(false);
+  const handleHideImage = () => {
+    setShowImage(false);
   };
+  // const [showVideo, setShowVideo] = useState(true);
+
+  // const handleVideoEnd = () => {
+  //   setShowVideo(false);
+  // };
 
   return (
     <div>
+       {showImage && <ShowImage src={videoSrc} onHide={handleHideImage} />}
+      <div className={showImage ? "home-blurred" : ""}>
       {/* {showVideo && <VidePlayer src={videoSrc} onVideoEnd={handleVideoEnd}/>}
       <div className={showVideo ? "home-blurred" : ""}> */}
         <ScrollToTop />

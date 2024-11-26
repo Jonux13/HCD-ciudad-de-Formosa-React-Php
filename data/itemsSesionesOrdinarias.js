@@ -368,4 +368,14 @@ export const itemsSesionesOrdinarias = [
       "13-11-8.webp",
     ]
   },
+  {
+    date: "20-11-24",
+    files: [
+      "20-11-1-pdf.pdf",
+      "20-11-2-pdf.pdf",
+      "20-11-1.webp",
+      "20-11-2.webp",
+      "20-11-3.webp",
+    ]
+  },
 ]
