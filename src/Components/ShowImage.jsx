@@ -13,8 +13,12 @@ export const ShowImage = ({ src, onHide }) => {
   }, [onHide]);
 
   return (
-    <div className="image" >
-      <img src={src} alt="Vista previa" className="custom-image" />
-    </div>
+    <div className="image">
+    <img
+      src="/assets/img/cumple-dimartino/foto-cumple-dimartino.webp"
+      alt="Vista previa"
+      className="custom-image"
+    />
+  </div>
   );
 };
