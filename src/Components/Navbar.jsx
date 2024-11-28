@@ -382,7 +382,7 @@ function Navbar() {
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
                   >
-                    Fin Sesiones Ordinarias 2024
+                    Cierre Sesiones Ordinarias 2024
                   </NavLink>
                 </li>
                 <li>
