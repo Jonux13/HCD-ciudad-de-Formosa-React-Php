@@ -18,7 +18,7 @@ const FinSesionesOrdinarias = () => {
     </NavLink>
     <div className="container-all" data-aos="fade-up">
       <div className="container-title-visita text-center">
-        <h4>Fin de Sesiones Ordinarias 2024</h4>
+        <h4>Fin de Sesiones Ordinarias del Año 2024</h4>
         <span>27/11/24</span>
       </div>
     </div>
