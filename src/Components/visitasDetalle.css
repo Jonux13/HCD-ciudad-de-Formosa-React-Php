@@ -18,6 +18,10 @@
   color: #469fdf;
 }
 
+.title-paragrafh {
+  text-align: left;
+}
+
 @media (max-width: 61.9375rem) {
   .section {
     padding: 0.625rem;

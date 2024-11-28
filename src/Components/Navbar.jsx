@@ -378,6 +378,15 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
+                    to="/finSesionesOrdinarias"
+                    className="nav-link scrollto"
+                    onClick={closeMobileNav}
+                  >
+                    Fin Sesiones Ordinarias
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to="/sesionesEnVivo"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}

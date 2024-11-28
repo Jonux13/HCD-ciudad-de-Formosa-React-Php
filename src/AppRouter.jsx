@@ -17,6 +17,7 @@ import BloqueNuevoPais from "./pages/BloqueNuevoPais";
 import Bloque5DeMarzo from "./pages/Bloque5DeMarzo";
 import BloquePro from "./pages/BloquePro";
 import SesionesOrdinarias from "./pages/SesionesOrdinarias";
+import FinSesionesOrdinarias from "./pages/FinSesionesOrdinarias"
 import Comisiones from "./pages/Comisiones";
 import SesionesVivo from "./pages/SesionesVivo";
 import Visitas from "./Components/Visitas";
@@ -70,6 +71,7 @@ function AppRouter() {
           <Route path="/ordenanzas" element={<Layout><Ordenanzas /></Layout>} />
           <Route path="/ultimasOrdenazas" element={<Layout><UltimasOrdenanzas /></Layout>} />
           <Route path="/sesionesOrdinarias" element={<Layout><SesionesOrdinarias /></Layout>} />
+          <Route path="/finSesionesOrdinarias" element={<Layout><FinSesionesOrdinarias /></Layout>} />
           <Route path="/sesionesEnVivo" element={<Layout><SesionesVivo /></Layout>} />
           <Route path="/contacto" element={<Layout><Contacto /></Layout>} />
           <Route path="*" element={<NotFoundPage />} />
