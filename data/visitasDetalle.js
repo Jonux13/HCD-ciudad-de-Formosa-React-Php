@@ -401,7 +401,7 @@ export const visitasDetalle = [
     "images": [
         "ta-1.webp",
         "ta-2.webp",
-        "ta-4\.webp",
+        "ta-4.webp",
         "ta-5.webp",
         "ta-6.webp",
         "ta-7.webp",
