@@ -198,6 +198,14 @@ export const visitasData = [
     "description": "Estamos muy contentos de haber declarado de interés municipal al 1° “Torneo de Ajedrez”, a realizarse el día sábado 30 de Noviembre del corriente año",
     "image":"AnyConv.com__WhatsApp Image 2024-11-19 at 09.26.20 (1).webp",
     "link": "/torneo-ajedrez"
+  },
+  {
+    "id": 26,
+    "title": "1° Torneo de Ajedrez",
+    "date": "01/12/24",
+    "description": "En el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\"",
+    "image":"ta-3.webp",
+    "link": "/1-torneo-ajedrez"
   }
 
 ]

@@ -1,25 +1,25 @@
 export const itemsData = [
   {
-    "id":8108,
-    "text": "8108 - modificase la ord 7839-23",
-    "filePath": "8108 - modificase la ord 7839-23.PDF"
+    "id":8116,
+    "text": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989",
+    "filePath": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989.PDF"
   },
 
   {
-    "id":8107,
-    "text": "8107 - exceptuase del art 166 del codigo urbanistico vigente orde 6959-16",
-    "filePath": "8107 - exceptuase del art 166 del codigo urbanistico vigente orde 6959-16.PDF"
+    "id":8115,
+    "text": "8115 - condonase la deuda del señor alberto de jorge",
+    "filePath": "8115 - condonase la deuda del señor alberto de jorge.PDF"
   },
   {
-    "id":8106,
-    "text": "8106 - declarase de interes municipal al 1° torneo de ajedrez",
-    "filePath": "8106 - declarase de interes municipal al 1 torneo de ajedrez.PDF"
+    "id":8114,
+    "text": "8114 - exencionase del pago de contribucion por servicios de la señora elvira marlene aranda",
+    "filePath": "8114 - exencionase del pago de contribucion por servicios de la señora elvira marlene aranda.PDF"
   },
 
   {
-    "id":8105,
-    "text": "8105 - declarase de interes municipal la 31° campaña de prevencion del cancer de piel",
-    "filePath": "8105 - declarase de interes municipal la 31° campaña de prevencion del cancer de piel.PDF"
+    "id":8113,
+    "text": "8113 - condonase la deuda que mantiene la iglesia adventista del septimo dia",
+    "filePath": "8113 - condonase la deuda que mantiene la iglesia adventista del septimo dia.PDF"
   },
 ];
 

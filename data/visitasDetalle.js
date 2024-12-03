@@ -391,4 +391,22 @@ export const visitasDetalle = [
         "AnyConv.com__WhatsApp Image 2024-11-19 at 09.26.20.webp"
     ]
   },
+  {
+    "id": 26,
+    "title": "1° Torneo de Ajedrez",
+    "titles":"En el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\"",
+    "description": "En el dia de hoy, en el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\", donde niños,jóvenes y adultos ajedrecistas demostraron su destreza. Un torneo declarado de Interés Municipal , Ordenanza N° 8106 Esta disciplina, hoy poco visible, promueven múltiples beneficios para el desarrollo personal y social para quienes la practican, así como también  su salud mental mejorando la concentración, y dando lugar al respeto, compañerismo, razonamiento, análisis y estrategias de resolución. ¡Un gran orgullo volver a relucir este deporte! Felicitaciones a todos",
+    "date": "01/12/24",
+    "image": "ta-3.webp",
+    "images": [
+        "ta-1.webp",
+        "ta-2.webp",
+        "ta-4.webp",
+        "ta-5.webp",
+        "ta-6.webp",
+        "ta-7.webp",
+        "ta-8.webp",
+        "ta-9.webp",
+    ]
+  },
 ]
