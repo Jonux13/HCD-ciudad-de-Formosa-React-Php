@@ -206,6 +206,14 @@ export const visitasData = [
     "description": "En el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\"",
     "image":"ta-3.webp",
     "link": "/1-torneo-ajedrez"
+  },
+  {
+    "id": 27,
+    "title": "El presidente Dario Di Martino recibió al concejal Ariel Leiva de Perín",
+    "date": "03/12/24",
+    "description": "En el nuevo edificio del Honorable Concejo Deliberante el presidente Dario Di Martino recibió al concejal Ariel Leiva de Perín",
+    "image":"perin-1.webp",
+    "link": "/concejal-perin"
   }
 
 ]
