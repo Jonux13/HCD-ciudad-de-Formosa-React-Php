@@ -393,6 +393,24 @@ export const visitasDetalle = [
   },
   {
     "id": 26,
+    "title": "1° Torneo de Ajedrez",
+    "titles":"En el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\"",
+    "description": "En el dia de hoy, en el auditorio del Concejo Deliberante se dió lugar al Primer torneo de Ajedrez \"Honorable Concejo Deliberante\", donde niños,jóvenes y adultos ajedrecistas demostraron su destreza. Un torneo declarado de Interés Municipal , Ordenanza N° 8106 Esta disciplina, hoy poco visible, promueven múltiples beneficios para el desarrollo personal y social para quienes la practican, así como también  su salud mental mejorando la concentración, y dando lugar al respeto, compañerismo, razonamiento, análisis y estrategias de resolución. ¡Un gran orgullo volver a relucir este deporte! Felicitaciones a todos",
+    "date": "01/12/24",
+    "image": "ta-3.webp",
+    "images": [
+        "ta-1.webp",
+        "ta-2.webp",
+        "ta-4.webp",
+        "ta-5.webp",
+        "ta-6.webp",
+        "ta-7.webp",
+        "ta-8.webp",
+        "ta-9.webp",
+    ]
+  },
+  {
+    "id": 27,
     "title": "El presidente Dario Di Martino recibió al concejal Ariel Leiva de Perín",
     "titles":"",
     "description": "El presidente Dario Di Martino recibió al concejal Ariel Leiva de Perín en el nuevo edificio del Honorable Concejo Deliberante (HCD). Allí, Leiva tuvo la oportunidad de conocer las instalaciones y mantener una reunión con el presidente Di Martino.",
