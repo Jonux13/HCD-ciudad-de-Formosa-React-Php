@@ -15,9 +15,7 @@ const fetchImageUrl = async (imageName) => {
 
 const VisitaDetalle = () => {
   const { id } = useParams();
-  console.log("ID recibido de useParams:", id);
   const visita = visitasDetalle.find((v) => v.id === parseInt(id));
-  console.log("Visita encontrada:", visita);
   const [loading, setLoading] = useState(true);
   const [mainImageUrl, setMainImageUrl] = useState("");
   const [imageUrls, setImageUrls] = useState([]);
