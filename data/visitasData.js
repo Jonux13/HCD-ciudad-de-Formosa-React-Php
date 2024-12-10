@@ -214,6 +214,14 @@ export const visitasData = [
     "description": "En el nuevo edificio del Honorable Concejo Deliberante el presidente Dario Di Martino recibió al concejal Ariel Leiva de Perín",
     "image":"perin-1.webp",
     "link": "/concejal-perin"
+  },
+  {
+    "id": 28,
+    "title": "Cantos de Navidad",
+    "date": "08/12/24",
+    "description": "Estuvimos en el predio del HCD junto a concejales, funcionarios municipales y vecinos de la ciudad en una noche a puro espíritu navideño",
+    "image":"8-10.webp",
+    "link": "/8-diciembre"
   }
 
 ]

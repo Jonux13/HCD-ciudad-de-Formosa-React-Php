@@ -28,16 +28,16 @@ import ActividadesBloquePjDetalle from "./Components/ActividadesBloquePjDetalle"
 import NotFoundPage from "./Components/NotFoundPage";
 import Layout from "./Hooks/Layout";
 // import { VidePlayer } from "./Components/VidePlayer";
-import { ShowImage } from "./Components/ShowImage"
-// import  videoSrc from "/assets/img/cumple-dimartino/foto-cumple-dimartino.webp"
+// import { ShowImage } from "./Components/ShowImage"
 // import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
 
 function AppRouter() {
-  const [showImage, setShowImage] = useState(true);
+  // const [showImage, setShowImage] = useState(true);
 
-  const handleHideImage = () => {
-    setShowImage(false);
-  };
+  // const handleHideImage = () => {
+  //   setShowImage(false);
+  // };
+
   // const [showVideo, setShowVideo] = useState(true);
 
   // const handleVideoEnd = () => {
@@ -46,8 +46,8 @@ function AppRouter() {
 
   return (
     <div>
-       {showImage && <ShowImage  onHide={handleHideImage} />}
-      <div className={showImage ? "home-blurred" : ""}>
+       {/* {showImage && <ShowImage  onHide={handleHideImage} />} */}
+      {/* <div className={showImage ? "home-blurred" : ""}> */}
       {/* {showVideo && <VidePlayer src={videoSrc} onVideoEnd={handleVideoEnd}/>}
       <div className={showVideo ? "home-blurred" : ""}> */}
         <ScrollToTop />
@@ -77,7 +77,7 @@ function AppRouter() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-    </div>
+    // </div>
   );
 }
 
