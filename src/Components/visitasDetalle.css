@@ -28,6 +28,10 @@
     margin-bottom: 1.25rem; /* Reduce el padding para pantallas pequeñas */
   }
 
+  .service-details {
+    margin-top: 4.6875rem;
+  }
+
   .link-volver {
     font-size: 0.75rem;
     margin-right: -50rem !important;
@@ -50,6 +54,10 @@
 
   .services .service-item h3 {
     text-align: center;
+  }
+
+  .service-details {
+    margin-top: 4.6875rem;
   }
 
   .visit-info {
