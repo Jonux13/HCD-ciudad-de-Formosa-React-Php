@@ -1,3 +1,31 @@
-.title {
-  margin-top: 3.125rem;
+
+
+@media (max-width: 61.9375rem) {
+  .title {
+    margin-top: 3.125rem;
+  }
+
+  .container-visitas {
+    margin-top: -4.6875rem;
+  }
+}
+
+@media (max-width: 30.6875rem) {
+  .title {
+    margin-top: 3.75rem;
+  }
+
+  .container-visitas {
+    margin-top: -4.6875rem;
+  }
+}
+
+@media (max-width: 22.5rem) {
+  .title {
+    margin-top: 3.125rem;
+  }
+
+  .container-visitas {
+    margin-top: -4.6875rem;
+  }
 }

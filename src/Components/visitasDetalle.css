@@ -32,6 +32,10 @@
     margin-top: 4.6875rem;
   }
 
+  .service-details h4 {
+    margin-top: 1.25rem;
+  }
+
   .link-volver {
     font-size: 0.75rem;
     margin-right: -50rem !important;
@@ -91,6 +95,10 @@
     object-position: center;
   }
 
+  .service-details h4 {
+    margin-top: 1.25rem;
+  }
+
   .service-details h3 {
     font-size: 1.125rem;
     margin-bottom: 0.9375rem;
@@ -108,6 +116,10 @@
 
   .services {
     margin-bottom: 4.375rem;
+  }
+
+  .service-details h4 {
+    margin-top: 1.25rem;
   }
 
 .section-visitas {

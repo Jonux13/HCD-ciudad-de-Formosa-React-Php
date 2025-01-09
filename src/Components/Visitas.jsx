@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef, memo } from "react";
 import { NavLink } from "react-router-dom";
 import { Box, Pagination, Skeleton } from "@mui/material";
 import { visitasData } from "../../data/visitasData";
+import "../Components/visitas.css";
+
 
 // Componente memoizado para evitar renderizados innecesarios
 const VisitItem = memo(({ visita, image, loading }) => (
@@ -90,7 +92,7 @@ function Visitas() {
         </div>
 
         <div className="container">
-          <div className="row g-5">
+          <div className="row g-5 container-visitas">
             {currentVisitas.map((visita) => (
               <VisitItem key={visita.id} visita={visita} image={images[visita.id]} loading={loading} />
             ))}
