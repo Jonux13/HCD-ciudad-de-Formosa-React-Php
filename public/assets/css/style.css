@@ -1253,7 +1253,7 @@ section {
 .link-visitas {
   margin-left: 13.75rem;
   color: #2487ce !important;
-  text-decoration: none; /* Remueve cualquier subrayado predeterminado */
+  text-decoration: none; 
 }
 
 .link-visitas .text {
@@ -1297,9 +1297,6 @@ section {
   color: rgba(var(--default-color-rgb), 0.9);
 }
 
-/* .services .service-item:hover span {
-  color: rgba(var(--default-color-rgb), 0.9);
-} */
 
 .service-details .services-img {
   margin-bottom: 1.25rem;

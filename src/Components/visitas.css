@@ -8,6 +8,15 @@
   .container-visitas {
     margin-top: -4.6875rem;
   }
+
+  .link-visitas {
+    margin-top: 20px;
+    width: 30%;
+  }
+
+  .link-visitas .text {
+    font-size: 0.8rem !important;
+  }
 }
 
 @media (max-width: 30.6875rem) {
@@ -18,6 +27,16 @@
   .container-visitas {
     margin-top: -4.6875rem;
   }
+
+  .link-visitas {
+    margin-top: 20px;
+    width: 30%;
+  }
+
+  .link-visitas .text {
+    font-size: 0.8rem !important;
+  }
+
 }
 
 @media (max-width: 22.5rem) {
