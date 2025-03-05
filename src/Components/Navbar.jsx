@@ -387,6 +387,15 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
+                    to="/aperturaSesiones2025"
+                    className="nav-link scrollto"
+                    onClick={closeMobileNav}
+                  >
+                    Apertura Sesiones Ordinarias 2025
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to="/sesionesEnVivo"
                     className="nav-link scrollto"
                     onClick={closeMobileNav}
