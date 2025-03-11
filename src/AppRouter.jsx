@@ -33,6 +33,12 @@ import Layout from "./Hooks/Layout";
 // import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
 
 function AppRouter() {
+
+  if (typeof window !== "undefined") {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }
   // const [showImage, setShowImage] = useState(true);
 
   // const handleHideImage = () => {
