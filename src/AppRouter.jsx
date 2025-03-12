@@ -28,17 +28,13 @@ import ActividadesBloquePj from "./Components/ActividadesBloquePj";
 import ActividadesBloquePjDetalle from "./Components/ActividadesBloquePjDetalle";
 import NotFoundPage from "./Components/NotFoundPage";
 import Layout from "./Hooks/Layout";
+import SesionesOrdinarias2025 from "./pages/SesionesOrdinarias2025";
 // import { VidePlayer } from "./Components/VidePlayer";
 // import { ShowImage } from "./Components/ShowImage"
 // import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
 
 function AppRouter() {
 
-  if (typeof window !== "undefined") {
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
-  }
   // const [showImage, setShowImage] = useState(true);
 
   // const handleHideImage = () => {
@@ -78,6 +74,7 @@ function AppRouter() {
           <Route path="/ordenanzas" element={<Layout><Ordenanzas /></Layout>} />
           <Route path="/ultimasOrdenazas" element={<Layout><UltimasOrdenanzas /></Layout>} />
           <Route path="/sesionesOrdinarias" element={<Layout><SesionesOrdinarias /></Layout>} />
+          <Route path="/sesionesOrdinarias2025" element={<Layout><SesionesOrdinarias2025 /></Layout>} />
           <Route path="/finSesionesOrdinarias" element={<Layout><FinSesionesOrdinarias /></Layout>} />
           <Route path="/aperturaSesiones2025" element={<Layout><AperturaSesiones2025 /></Layout>}/>
           <Route path="/sesionesEnVivo" element={<Layout><SesionesVivo /></Layout>} />

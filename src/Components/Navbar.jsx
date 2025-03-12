@@ -226,7 +226,7 @@ function Navbar() {
                         : ""
                     }`}
                   >
-                      <a
+                  <a
                     href="#"
                     className="nav-link scrollto"
                     onClick={toggleDropdownBloqueConcejales}
@@ -367,15 +367,50 @@ function Navbar() {
                   dropdownLegislativoOpen ? "dropdown-active" : ""
                 }`}
               >
-                <li>
-                  <NavLink
-                    to="/sesionesOrdinarias"
+                
+                <li
+                  className={`dropdown ${
+                    dropdownBloqueConcejalesOpen ? "active" : ""
+                  }`}
+                >
+                  <a
+                    href="#"
                     className="nav-link scrollto"
-                    onClick={closeMobileNav}
+                    onClick={toggleDropdownBloqueConcejales}
                   >
-                    Sesiones Ordinarias
-                  </NavLink>
+                    Sesiones Ordinarias <i className="bi bi-chevron-right" />
+                  </a>
+                  <ul
+                    className={`dropdown ${
+                      dropdownConcejalesOpen && dropdownBloqueConcejalesOpen
+                        ? "dropdown-active"
+                        : ""
+                    }`}
+                  >
+                      <li>
+                      <NavLink
+                        to="/sesionesOrdinarias"
+                        className="nav-link scrollto"
+                        onClick={closeMobileNav}
+                      >
+                        Sesiones Ordinarias 2024
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/sesionesOrdinarias2025"
+                        className="nav-link scrollto"
+                        onClick={closeMobileNav}
+                      >
+                        Sesiones Ordinarias 2025
+                      </NavLink>
+                    </li>
+                  </ul>
+                  
+                   
+                  
                 </li>
+
                 <li>
                   <NavLink
                     to="/finSesionesOrdinarias"
