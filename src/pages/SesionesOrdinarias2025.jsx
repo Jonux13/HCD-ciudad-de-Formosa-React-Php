@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PdfList from "../Hooks/PdfList2025";
-import { itemsSesionesOrdinarias } from "../../data/itemsSesionesOrdinarias2025";
+import { itemsSesionesOrdinarias2025 } from "../../data/itemsSesionesOrdinarias2025";
 import { Box, Pagination } from "@mui/material";
 import "./sesionesOrdinarias.css";
 
@@ -27,7 +27,7 @@ const parseDate = (dateString) => {
 
   // Ordenar el arreglo SesionesOrdinarias por fecha
   useEffect(() => {
-    const sortedSesionesOrdinarias = itemsSesionesOrdinarias.sort((a, b) => {
+    const sortedSesionesOrdinarias = itemsSesionesOrdinarias2025.sort((a, b) => {
       return parseDate(b.date) - parseDate(a.date);
     });
     setSortedItems(sortedSesionesOrdinarias); // Guardar el arreglo ordenado en el estado
