@@ -12,7 +12,7 @@ function SesionesOrdinarias2025() {
   const ITEMS_PER_PAGE = 4;
   const indexOfLastItem = page * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-  const currentItems = itemsSesionesOrdinarias.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = itemsSesionesOrdinarias2025.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleChange = (event, value) => {
     setPage(value);
@@ -65,7 +65,7 @@ const parseDate = (dateString) => {
             <Box mt={2}>
               <Pagination
                 className="page"
-                count={Math.ceil(itemsSesionesOrdinarias.length / ITEMS_PER_PAGE)}
+                count={Math.ceil(itemsSesionesOrdinarias2025.length / ITEMS_PER_PAGE)}
                 page={page}
                 onChange={handleChange}
                 color="primary"
