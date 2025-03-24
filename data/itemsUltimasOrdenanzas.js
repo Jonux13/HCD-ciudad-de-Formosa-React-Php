@@ -1,25 +1,28 @@
 export const itemsData = [
   {
+    "id":8119,
+    "text": "8119 - exencionase del pago al centro cultural y deportivo gral martin miguel de guemes",
+    "filePath": "8119 - exencionase del pago al centro cultural y deportivo gral martin miguel de guemes.PDF"
+  },
+
+  {
+    "id":8118,
+    "text": "8118 - apruebase  la baja del patrimonio municipal una camioneta ddw-304",
+    "filePath": "8118 - apruebase  la baja del patrimonio municipal una camioneta ddw-304.PDF"
+  },
+
+  {
+    "id":8117,
+    "text": "8117 - exceptuase de la aplicacion 166 deñ codigo vigente de la ord 6959-16 de carmen mafalda tonelli.PDF",
+    "filePath": "8117 - exceptuase de la aplicacion 166 deñ codigo vigente de la ord 6959-16 de carmen mafalda tonelli (1).PDF"
+  },
+
+  
+  {
     "id":8116,
     "text": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989",
     "filePath": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989.PDF"
   },
 
-  {
-    "id":8115,
-    "text": "8115 - condonase la deuda del señor alberto de jorge",
-    "filePath": "8115 - condonase la deuda del señor alberto de jorge.PDF"
-  },
-  {
-    "id":8114,
-    "text": "8114 - exencionase del pago de contribucion por servicios de la señora elvira marlene aranda",
-    "filePath": "8114 - exencionase del pago de contribucion por servicios de la señora elvira marlene aranda.PDF"
-  },
-
-  {
-    "id":8113,
-    "text": "8113 - condonase la deuda que mantiene la iglesia adventista del septimo dia",
-    "filePath": "8113 - condonase la deuda que mantiene la iglesia adventista del septimo dia.PDF"
-  },
 ];
 
