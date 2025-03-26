@@ -1,27 +1,27 @@
 export const itemsData = [
   {
-    "id":8119,
-    "text": "8119 - exencionase del pago al centro cultural y deportivo gral martin miguel de guemes",
-    "filePath": "8119 - exencionase del pago al centro cultural y deportivo gral martin miguel de guemes.PDF"
+    "id":8125,
+    "text": "8125 - exencionase del pago de servicios al instituto general san martin",
+    "filePath": "8125 - exencionase del pago de servicios al instituto general san martin.PDF"
   },
 
   {
-    "id":8118,
-    "text": "8118 - apruebase  la baja del patrimonio municipal una camioneta ddw-304",
-    "filePath": "8118 - apruebase  la baja del patrimonio municipal una camioneta ddw-304.PDF"
+    "id":8124,
+    "text": "8124 - condonase la deuda del señor francisco javier molina",
+    "filePath": "8124 - condonase la deuda del señor francisco javier molina.PDF"
   },
 
   {
-    "id":8117,
-    "text": "8117 - exceptuase de la aplicacion 166 deñ codigo vigente de la ord 6959-16 de carmen mafalda tonelli.PDF",
-    "filePath": "8117 - exceptuase de la aplicacion 166 deñ codigo vigente de la ord 6959-16 de carmen mafalda tonelli (1).PDF"
+    "id":8123,
+    "text": "8123 - condonase la deuda que mantiene el club domingo faustino sarmiiento",
+    "filePath": "8123 - condonase la deuda que mantiene el club domingo faustino sarmiiento.PDF"
   },
 
   
   {
-    "id":8116,
-    "text": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989",
-    "filePath": "8116 - desafectese del dominio municipal segun plano de mensura expte n 177-m-1989.PDF"
+    "id":8122,
+    "text": "8122 - exencionase del pago de la tasa unica al club san lorenzo",
+    "filePath": "8122 - exencionase del pago de la tasa unica al club san lorenzo.PDF"
   },
 
 ];
