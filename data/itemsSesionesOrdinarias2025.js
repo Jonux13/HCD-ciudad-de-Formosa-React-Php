@@ -40,4 +40,27 @@ export const itemsSesionesOrdinarias2025 =
       "19-3-10.webp",
     ]
   },
+  {
+    date: "26-03-25",
+    files: [
+      "pdf-26-3-1.pdf",
+      "pdf-26-3-2.pdf",
+      "pdf-26-3-3.pdf",
+      "26-3-1.webp",
+      "26-3-2.webp",
+      "26-3-3.webp",
+      "26-3-4.webp",
+      "26-3-5.webp",
+      "26-3-6.webp",
+      "26-3-7.webp",
+      "26-3-8.webp",
+      "26-3-9.webp",
+      "26-3-10.webp",
+      "26-3-11.webp",
+      "26-3-12.webp",
+      "26-3-13.webp",
+      "26-3-14.webp",
+      "26-3-10.webp",
+    ]
+  },
 ]
