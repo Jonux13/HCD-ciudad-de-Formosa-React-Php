@@ -1,27 +1,27 @@
 export const itemsData = [
   {
-    "id":8125,
-    "text": "8125 - exencionase del pago de servicios al instituto general san martin",
-    "filePath": "8125 - exencionase del pago de servicios al instituto general san martin.PDF"
+    "id":8132,
+    "text": "8132 - declarase de interes municipal a la travesia nautica",
+    "filePath": "8132 - declarase de interes municipal a la travesia nautica.PDF"
   },
 
   {
-    "id":8124,
-    "text": "8124 - condonase la deuda del señor francisco javier molina",
-    "filePath": "8124 - condonase la deuda del señor francisco javier molina.PDF"
+    "id":8131,
+    "text": "8131 - condonase la deuda al señor aldo oscar gusteler",
+    "filePath": "8131 - condonase la deuda al señor aldo oscar gusteler.PDF"
   },
 
   {
-    "id":8123,
-    "text": "8123 - condonase la deuda que mantiene el club domingo faustino sarmiiento",
-    "filePath": "8123 - condonase la deuda que mantiene el club domingo faustino sarmiiento.PDF"
+    "id":8130,
+    "text": "8130 - exencionase del pago a la capymef",
+    "filePath": "8130 - exencionase del pago a la capymef.PDF"
   },
 
   
   {
-    "id":8122,
-    "text": "8122 - exencionase del pago de la tasa unica al club san lorenzo",
-    "filePath": "8122 - exencionase del pago de la tasa unica al club san lorenzo.PDF"
+    "id":8129,
+    "text": "8129 - exencionase del pago a la liga de madre de familia",
+    "filePath": "8129 - exencionase del pago a la liga de madre de familia.PDF"
   },
 
 ];
