@@ -30,27 +30,27 @@ import NotFoundPage from "./Components/NotFoundPage";
 import Layout from "./Hooks/Layout";
 import SesionesOrdinarias2025 from "./pages/SesionesOrdinarias2025";
 // import { VidePlayer } from "./Components/VidePlayer";
-// import { ShowImage } from "./Components/ShowImage"
+import { ShowImage } from "./Components/ShowImage"
 // import  videoSrc from "/assets/img/swiper_novedades/WhatsApp Video 2024-04-29 at 19.42.15_1.mp4"
 
 function AppRouter() {
 
-  // const [showImage, setShowImage] = useState(true);
+  const [showImage, setShowImage] = useState(true);
 
-  // const handleHideImage = () => {
-  //   setShowImage(false);
-  // };
+  const handleHideImage = () => {
+    setShowImage(false);
+  };
 
-  // const [showVideo, setShowVideo] = useState(true);
+  const [showVideo, setShowVideo] = useState(true);
 
-  // const handleVideoEnd = () => {
-  //   setShowVideo(false);
-  // };
+  const handleVideoEnd = () => {
+    setShowVideo(false);
+  };
 
   return (
     <div>
-       {/* {showImage && <ShowImage  onHide={handleHideImage} />} */}
-      {/* <div className={showImage ? "home-blurred" : ""}> */}
+       {showImage && <ShowImage  onHide={handleHideImage} />}
+      <div className={showImage ? "home-blurred" : ""}>
       {/* {showVideo && <VidePlayer src={videoSrc} onVideoEnd={handleVideoEnd}/>}
       <div className={showVideo ? "home-blurred" : ""}> */}
         <ScrollToTop />

@@ -97,7 +97,7 @@ function SwiperUltimasNovedades() {
         </SwiperSlide>
 
 
-        <SwiperSlide className="swiper-slide" style={{ height: "400px" }}>
+        {/* <SwiperSlide className="swiper-slide" style={{ height: "400px" }}>
           <div className="slide-content">
             <h2>
               Jorge Jofré inaugura el período de Sesiones Ordinarias del HCD
@@ -109,9 +109,9 @@ function SwiperUltimasNovedades() {
             alt="Slide 3"
             className="swiper-image"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
-        <SwiperSlide className="swiper-slide" style={{ height: "400px" }}>
+        {/* <SwiperSlide className="swiper-slide" style={{ height: "400px" }}>
           <div className="slide-content">
             <h2>
               Bievenida al secretario legislativo Lic. Nestor Mario Barrios{" "}
@@ -131,7 +131,7 @@ function SwiperUltimasNovedades() {
               objectFit: "cover"   
             }}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
