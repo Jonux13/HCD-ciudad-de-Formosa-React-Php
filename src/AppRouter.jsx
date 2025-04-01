@@ -82,7 +82,7 @@ function AppRouter() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-    // </div>
+     </div>
   );
 }
 
