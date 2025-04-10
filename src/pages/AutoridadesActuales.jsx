@@ -35,7 +35,7 @@ function AutoridadesActuales() {
               </div>
             </div>
 
-            <div
+            {/* <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-actuales"
               data-aos="fade-up"
               data-aos-delay={400}
@@ -54,7 +54,7 @@ function AutoridadesActuales() {
                   <span>Secretario Legislativo</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch container-actuales"
@@ -72,7 +72,7 @@ function AutoridadesActuales() {
                 </div>
                 <div className="member-info">
                   <h4>Dr. Jose Recalde</h4>
-                  <span>Prosecretario Legislativo</span>
+                  <span>Secretario Legislativo</span>
                 </div>
               </div>
             </div>
